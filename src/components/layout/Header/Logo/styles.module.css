@@ -5,12 +5,13 @@
 }
 
 .logoText {
+  font-family: 'Josefin Sans', sans-serif;
   font-size: var(--text-large);
-  font-weight: bold;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
   cursor: pointer;
-  color: var(--dark-primary);
-  font-family: var(--font-accent);
-  letter-spacing: var(--letter-spacing-small);
+  color: var(--color-hover-link);
 }
 
 .logo {

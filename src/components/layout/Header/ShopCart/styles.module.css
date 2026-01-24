@@ -5,11 +5,10 @@
 }
 
 .cartIcon {
-  color: var(--dark-primary);
+  color: var(--color-text);
   background-color: none;
 }
 
 .cartIcon:hover {
   color: var(--color-hover-link);
 }
-

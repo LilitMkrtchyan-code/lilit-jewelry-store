@@ -1,18 +1,33 @@
 :root {
-  --color-primary: #ffffff;
+  --font-heading: 'Brilliant Cut Pro', serif;
+  --font-body: 'Fancy Cut Pro', 'Almarai', 'Inter', sans-serif;
+  --font-accent: 'Playwrite CU', cursive;
+  --color-background: #ffffff;
   --color-secondary: #b13024;
   --color-hover-link: #921813;
-  --dark-primary: #1d1c1c;
-  --font-heading: 'Brilliant Cut Pro';
-  --font-body: 'Fancy Cut Pro', Almarai, Times, serif;
-  --font-accent: 'Playwrite CU', cursive;
+  --color-text: #1d1c1c;
+  --color-text-inverse: #ffffff;
+  --gray-dark: #343a40;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
   --text-small: 14px;
   --text-regular: 16px;
   --text-large: 22px;
   --letter-spacing-small: 0.4px;
   --letter-spacing-medium: 0.8px;
+  --letter-spacing-large: 2px;
   --line-height-text: 1.5;
   --line-height-title: 1.2;
+  --header-height: 75px;
+  --section-padding-y: 75px;
+  --section-padding-mobile: 30px;
 }
 
 *,
@@ -25,9 +40,9 @@
 
 body {
   margin: 0;
-  background-color: var(--color-white);
-  color: var(--dark-primary);
-  font-size: 15px;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-size: var(--text-small);
   font-family: var(--font-body);
   font-weight: 400;
   line-height: var(--line-height-text);
@@ -37,13 +52,18 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
-  color: var(--dark-primary);
+  color: var(--color-text);
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -57,16 +77,20 @@ ul {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1460px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .underlineEffect {
   position: relative;
   display: inline-block;
-  cursor: pointer;
 }
 
 .underlineEffect::after {
@@ -75,11 +99,44 @@ ul {
   bottom: -2px;
   left: 0;
   width: 0;
-  height: 3px;
+  height: 2px;
   background-color: var(--color-hover-link);
-  transition: width 0.25s ease;
+  /* transition: width 0.25s ease; */
+  transition:
+    width 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .underlineEffect:hover::after {
   width: 100%;
+}
+
+.luxuryImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  will-change: transform;
+  transition: transform 1.2s cubic-bezier(0.2, 0, 0.2, 1);
+  transform: scale(1);
+}
+
+.luxuryImage:hover {
+  transform: scale(1.1);
+}
+
+@keyframes luxuryFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-monolith {
+  opacity: 0;
+  animation: luxuryFadeUp 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }

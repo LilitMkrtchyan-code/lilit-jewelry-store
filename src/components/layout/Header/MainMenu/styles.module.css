@@ -28,7 +28,7 @@
   letter-spacing: var(--letter-spacing-medium);
   text-transform: uppercase;
   font-family: var(--font-heading);
-  color: var(--dark-primary);
+  color: var(--color-text);
 }
 
 .navItem > a:hover {

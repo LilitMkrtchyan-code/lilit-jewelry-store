@@ -3,7 +3,7 @@
   font-size: 48px;
   line-height: var(--line-height-title);
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-background);
 }
 
 .sectionTitle {
@@ -14,7 +14,7 @@
   text-transform: uppercase;
   letter-spacing: 4px;
   line-height: var(--line-height-text);
-  color: var(--dark-primary);
+  color: var(--color-text);
 }
 
 .cardTitle {
@@ -24,7 +24,7 @@
   font-size: var(--text-small);
   letter-spacing: var(--letter-spacing-small);
   line-height: var(--line-height-text);
-  color: var(--dark-primary);
-  text-transform: capitalize;
+  color: var(--color-text);
+  text-transform: uppercase;
   cursor: pointer;
 }

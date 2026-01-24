@@ -1,6 +1,11 @@
 .header {
-  background-color: var(--color-primary);
+  background-color: var(--color-background);
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: var(--header-height);
 }
 
 .headerContent {

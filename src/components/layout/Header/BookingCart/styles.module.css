@@ -1,7 +1,7 @@
 .bookingcarticon {
   font-size: var(--text-large);
   cursor: pointer;
-  color: var(--dark-primary);
+  color: var(--color-text);
   transition: color 0.3s ease;
 }
 

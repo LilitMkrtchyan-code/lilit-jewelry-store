@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import AppTitle from '../../AppTitle';
 import type { BaseBannerProps } from './types';
 import styles from './styles.module.css';
-import BaseButton from '../../BaseButton';
+import BaseButton from '../../buttons/BaseButton';
 
 const BaseBanner = ({ image, title, subtitle, alt, cta }: BaseBannerProps) => {
   const navigate = useNavigate();
@@ -14,7 +14,9 @@ const BaseBanner = ({ image, title, subtitle, alt, cta }: BaseBannerProps) => {
       <div className={styles.bannerContent}>
         <img src={image} alt={altText} className={styles.image} />
         <div className={styles.textContainer}>
-          <AppTitle variant="pageTitle">{title}</AppTitle>
+          <AppTitle variant="pageTitle" className={styles.title}>
+            {title}
+          </AppTitle>
           {cta && (
             <div className={styles.buttons}>
               {cta.book && (

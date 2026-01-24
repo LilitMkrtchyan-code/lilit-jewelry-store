@@ -8,7 +8,7 @@
 .mobileUserText {
   font-size: var(--text-small);
   font-family: var(--font-heading);
-  color: var(--dark-primary);
+  color: var(--color-text);
   letter-spacing: var(--letter-spacing-medium);
   text-transform: uppercase;
 }

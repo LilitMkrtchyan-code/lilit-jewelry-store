@@ -19,7 +19,7 @@
 }
 
 .copyright {
-  color: var(--dark-primary);
+  color: var(--color-text);
   font-size: var(--text-small);
   font-family: var(--font-heading);
   margin-left: 10px;
