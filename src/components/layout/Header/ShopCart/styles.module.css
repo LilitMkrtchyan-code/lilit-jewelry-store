@@ -1,15 +1,14 @@
 .cartIcon {
-  font-size: var(--text-large);
+  font-size: var(--fs-300);
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 .cartIcon {
-  color: var(--dark-primary);
+  color: var(--color-text);
   background-color: none;
 }
 
 .cartIcon:hover {
   color: var(--color-hover-link);
 }
-

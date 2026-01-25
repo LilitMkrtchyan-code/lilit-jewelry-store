@@ -6,7 +6,7 @@
 }
 
 .userIcon {
-  font-size: var(--text-large);
+  font-size: var(--fs-300);
 }
 
 .userIcon:hover {
@@ -15,6 +15,6 @@
 
 @media (max-width: 480px) {
   .userIcon {
-    font-size: var(--text-regular);
+    font-size: var(--fs-200);
   }
 }

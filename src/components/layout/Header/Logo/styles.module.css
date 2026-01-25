@@ -5,12 +5,12 @@
 }
 
 .logoText {
-  font-size: var(--text-large);
-  font-weight: bold;
-  cursor: pointer;
-  color: var(--dark-primary);
   font-family: var(--font-accent);
-  letter-spacing: var(--letter-spacing-small);
+  font-size: var(--fs-300);
+  font-weight: 500;
+  letter-spacing: 4px;
+  cursor: pointer;
+  color: var(--color-hover-link);
 }
 
 .logo {
@@ -28,7 +28,7 @@
   }
 
   .logoText {
-    font-size: var(--text-regular);
+    font-size: var(--fs-200);
     letter-spacing: 0.1px;
   }
 
