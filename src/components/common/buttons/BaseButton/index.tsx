@@ -1,17 +1,20 @@
-import { Button } from 'antd';
 import type { BaseButtonProps } from './types';
 import styles from './styles.module.css';
 
-const BaseButton = ({ className, label, onClick, children, ...rest }: BaseButtonProps) => {
+const BaseButton = ({
+  label,
+  onClick,
+  children,
+  variant = 'link',
+  className = '',
+  ...rest
+}: BaseButtonProps) => {
+  const buttonClasses = [styles.baseButton, styles[variant], className].join(' ');
+
   return (
-    <Button
-      className={`${styles.baseButton} ${className ?? ''}`}
-      type="link"
-      onClick={onClick}
-      {...rest}
-    >
+    <button className={buttonClasses} onClick={onClick} {...rest}>
       {children ?? label}
-    </Button>
+    </button>
   );
 };
 export default BaseButton;

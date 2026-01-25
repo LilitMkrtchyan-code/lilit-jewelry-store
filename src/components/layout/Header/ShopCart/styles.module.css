@@ -1,5 +1,5 @@
 .cartIcon {
-  font-size: var(--text-large);
+  font-size: var(--fs-300);
   cursor: pointer;
   transition: color 0.3s ease;
 }

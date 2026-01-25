@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Card } from 'antd';
 import type { ProductCardProps } from './types';
-import BaseButton from '../../buttons/BaseButton';
 import BaseCard from '../BaseCard/index';
 import styles from './styles.module.css';
 import { getProductMaterialsAndStones, getProductText } from '../../../../i18n/utils/product';
@@ -28,8 +27,6 @@ const ProductCard = ({ product, width, height, onClickProduct, onClickBook }: Pr
           {product.price} {product.currency}
         </div>
       </div>
-
-      {/* <BaseButton type="link" label={t('productCard.book')} onClick={onClickBook} /> */}
     </BaseCard>
   );
 };

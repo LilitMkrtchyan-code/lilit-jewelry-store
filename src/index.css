@@ -17,17 +17,18 @@
   --gray-700: #495057;
   --gray-800: #343a40;
   --gray-900: #212529;
-  --text-small: 14px;
-  --text-regular: 16px;
-  --text-large: 22px;
-  --letter-spacing-small: 0.4px;
-  --letter-spacing-medium: 0.8px;
-  --letter-spacing-large: 2px;
-  --line-height-text: 1.5;
-  --line-height-title: 1.2;
+  --fs-100: 14px;
+  --fs-200: 16px;
+  --fs-300: 22px;
+  --ls-100: 0.4px;
+  --ls-200: 0.8px;
+  --ls-300: 2px;
+  --ls-400: 4px;
+  --lh-100: 1.2;
+  --lh-200: 1.5;
   --header-height: 75px;
-  --section-padding-y: 75px;
-  --section-padding-mobile: 30px;
+  --section-padding-y: 80px;
+  --section-padding-mobile: 40px;
 }
 
 *,
@@ -42,11 +43,11 @@ body {
   margin: 0;
   background-color: var(--color-background);
   color: var(--color-text);
-  font-size: var(--text-small);
+  font-size: var(--fs-100);
   font-family: var(--font-body);
   font-weight: 400;
-  line-height: var(--line-height-text);
-  letter-spacing: var(--letter-spacing-small);
+  line-height: var(--lh-200);
+  letter-spacing: var(--ls-100);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -101,7 +102,6 @@ button {
   width: 0;
   height: 2px;
   background-color: var(--color-hover-link);
-  /* transition: width 0.25s ease; */
   transition:
     width 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
     left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);

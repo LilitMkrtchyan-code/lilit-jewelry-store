@@ -7,9 +7,9 @@
 
 .errorText {
   font-family: var(--font-heading);
-  font-size: var(--text-large);
+  font-size: var(--fs-300);
   font-weight: 500;
-  line-height: var(--line-height-text);
+  line-height: var(--lh-200);
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-large);
   color: var(--color-hover-link);

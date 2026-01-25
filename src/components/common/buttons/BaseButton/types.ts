@@ -1,8 +1,11 @@
-import type { ButtonProps } from 'antd';
+import type { ButtonHTMLAttributes, ReactNode } from 'react';
 
-export type BaseButtonProps = {
-  className?: string;
+export type ButtonVariant = 'link' | 'shadow';
+
+export type BaseButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   label?: string;
+  variant?: ButtonVariant;
+  className?: string;
   onClick?: () => void;
-  children?: React.ReactNode;
-} & ButtonProps;
+  children?: ReactNode;
+};

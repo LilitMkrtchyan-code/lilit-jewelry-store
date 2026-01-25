@@ -22,18 +22,18 @@
   font-family: var(--font-heading);
   font-weight: 500;
   font-size: 20px;
-  letter-spacing: var(--letter-spacing-medium);
-  line-height: var(--line-height-title);
+  letter-spacing: var(--ls-300);
+  line-height: var(--lh-100);
   color: var(--color-text);
   text-transform: uppercase;
 }
 
 .subtitle {
   font-family: var(--font-body);
-  font-size: var(--text-regular);
+  font-size: var(--fs-200);
   font-weight: 500;
   color: var(--color-text);
-  letter-spacing: var(--letter-spacing-small);
-  line-height: var(--line-height-text);
+  letter-spacing: var(--ls-200);
+  line-height: var(--lh-200);
   padding: 16px 0 8px;
 }

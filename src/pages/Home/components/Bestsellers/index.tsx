@@ -27,7 +27,7 @@ const Bestsellers = () => {
             <SwiperSlide key={product.id}>
               <ProductCard
                 product={product}
-                width={340}
+                width={330}
                 onClickProduct={() => navigate(`/product/${product.id}`)}
                 onClickBook={() => navigate(`/booking`)}
               />

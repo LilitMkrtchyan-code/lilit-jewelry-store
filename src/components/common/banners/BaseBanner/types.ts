@@ -7,4 +7,5 @@ export type BaseBannerProps = {
   subtitle?: string;
   alt?: string;
   cta?: BannerCTA;
+  className?: string;
 };

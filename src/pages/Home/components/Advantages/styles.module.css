@@ -24,7 +24,7 @@
   font-family: var(--font-heading);
   font-size: var(--text-medium);
   line-height: 1.5;
-  letter-spacing: var(--letter-spacing-medium);
+  letter-spacing: var(--ls-200);
   text-transform: uppercase;
   font-weight: 400;
   color: var(--color-text);
@@ -38,7 +38,7 @@
 
   .title {
     font-size: 12px;
-    letter-spacing: var(--letter-spacing-small);
+    letter-spacing: var(--ls-100);
     white-space: normal;
   }
 }

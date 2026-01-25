@@ -20,7 +20,7 @@
 
 .copyright {
   color: var(--color-text);
-  font-size: var(--text-small);
+  font-size: var(--fs-100);
   font-family: var(--font-heading);
   margin-left: 10px;
 }
