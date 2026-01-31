@@ -5,9 +5,9 @@
   --color-background: #ffffff;
   --color-secondary: #b13024;
   --color-hover-link: #921813;
-  --color-text: #1d1c1c;
+  --color-text: #1a1a1a;
   --color-text-inverse: #ffffff;
-  --gray-dark: #343a40;
+  --color-shadow-glow: #e7d1cf;
   --gray-100: #f8f9fa;
   --gray-200: #e9ecef;
   --gray-300: #dee2e6;
@@ -17,18 +17,39 @@
   --gray-700: #495057;
   --gray-800: #343a40;
   --gray-900: #212529;
-  --fs-100: 14px;
-  --fs-200: 16px;
-  --fs-300: 22px;
-  --ls-100: 0.4px;
+  --fs-100: 12px;
+  --fs-200: 14px;
+  --fs-300: 16px;
+  --fs-400: clamp(17px, 0.3vw + 16px, 20px);
+  --fs-500: clamp(18px, 0.5vw + 17px, 22px);
+  --fs-600: clamp(20px, 0.5vw + 18px, 24px);
+  --fs-700: clamp(32px, 1.5vw + 26px, 48px);
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --ls-100: 0.5px;
   --ls-200: 0.8px;
   --ls-300: 2px;
-  --ls-400: 4px;
+  --ls-400: 5px;
+  --ls-title-100: 0.05em;
+  --ls-title-200: 0.1em;
+  --ls-title-300: 0.15em;
+  --ls-title-400: 0.25em;
   --lh-100: 1.2;
-  --lh-200: 1.5;
+  --lh-200: 1.6;
   --header-height: 75px;
-  --section-padding-y: 80px;
-  --section-padding-mobile: 40px;
+  --space-100: clamp(12px, 0.5vw + 10px, 16px);
+  --space-200: clamp(18px, 1vw + 12px, 24px);
+  --space-300: clamp(22px, 1.5vw + 12px, 32px);
+  --space-400: clamp(28px, 2vw + 15px, 40px);
+  --space-section-mobile: 50px;
+  --space-section-tablet: 65px;
+  --space-section-desktop: 80px;
+  --space-section: clamp(50px, 4vw + 20px, 80px);
+  --shadow-100: 0 0 4px 0 var(--color-shadow-glow) inset, 0 0 6px 4px var(--color-shadow-glow);
+  --shadow-200: 0 0 6px 0 var(--color-shadow-glow) inset, 0 0 8px 5px var(--color-shadow-glow);
 }
 
 *,
@@ -43,9 +64,9 @@ body {
   margin: 0;
   background-color: var(--color-background);
   color: var(--color-text);
-  font-size: var(--fs-100);
+  font-size: var(--fs-300);
   font-family: var(--font-body);
-  font-weight: 400;
+  font-weight: var(--fw-400);
   line-height: var(--lh-200);
   letter-spacing: var(--ls-100);
   -webkit-font-smoothing: antialiased;
@@ -139,4 +160,6 @@ button {
 .animate-monolith {
   opacity: 0;
   animation: luxuryFadeUp 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
 }

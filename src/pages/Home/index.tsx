@@ -4,6 +4,7 @@ import FeaturedCollections from './components/FeaturedCollections';
 import Bestsellers from './components/Bestsellers/index';
 import Philosophy from './components/Philosophy';
 import Advantages from './components/Advantages';
+import VisitUs from './components/VisitUs';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
         <FeaturedCollections />
         <Bestsellers />
         <Philosophy />
+        <VisitUs />
       </div>
       <Advantages />
     </>

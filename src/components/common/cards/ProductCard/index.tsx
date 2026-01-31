@@ -7,7 +7,7 @@ import { getProductMaterialsAndStones, getProductText } from '../../../../i18n/u
 
 const { Meta } = Card;
 
-const ProductCard = ({ product, width, height, onClickProduct, onClickBook }: ProductCardProps) => {
+const ProductCard = ({ product, width, height, onClickProduct }: ProductCardProps) => {
   const { t } = useTranslation();
 
   return (
@@ -22,7 +22,6 @@ const ProductCard = ({ product, width, height, onClickProduct, onClickBook }: Pr
           <Meta title={getProductText(product.nameKey, 'name')} />
         </div>
         <Meta description={getProductMaterialsAndStones(product.nameKey)} />
-
         <div className={styles.price}>
           {product.price} {product.currency}
         </div>

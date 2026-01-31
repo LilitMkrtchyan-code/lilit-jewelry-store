@@ -7,7 +7,7 @@
   flex-wrap: nowrap;
   padding-bottom: 15px;
   margin-left: 32px;
-  padding: var(--section-padding-y) 0;
+  padding: var(--space-section-desktop) 0;
 }
 
 .column {

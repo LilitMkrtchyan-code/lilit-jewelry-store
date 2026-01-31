@@ -6,20 +6,11 @@
 
 .logoText {
   font-family: var(--font-accent);
-  font-size: var(--fs-300);
+  font-size: var(--fs-400);
   font-weight: 500;
   letter-spacing: 4px;
   cursor: pointer;
   color: var(--color-hover-link);
-}
-
-.logo {
-  height: 30px;
-  width: auto;
-  cursor: pointer;
-  display: inline-block;
-  border-radius: 50%;
-  object-fit: cover;
 }
 
 @media (max-width: 480px) {
@@ -30,9 +21,5 @@
   .logoText {
     font-size: var(--fs-200);
     letter-spacing: 0.1px;
-  }
-
-  .logo {
-    height: 20px;
   }
 }

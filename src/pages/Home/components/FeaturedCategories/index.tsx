@@ -1,9 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useCategories } from '../../../../hooks/useCategories';
-import AppTitle from '../../../../components/common/AppTitle';
-import styles from './styles.module.css';
 import VisualCard from '../../../../components/common/cards/VisualCard';
+import AppTitle from '../../../../components/common/AppTitle';
+import { ErrorMessage } from '../../../../components/common/ErrorMessage';
+import styles from './styles.module.css';
 
 const FeaturedCategories = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const FeaturedCategories = () => {
   return (
     <section className={styles.categories}>
       {isError ? (
-        <div className="errorMessage">{t(`errors.failedToLoad`)}</div>
+        <ErrorMessage message={t('errors.default')} />
       ) : isLoading ? (
         <div className="loading">Loading Categories...</div>
       ) : (
@@ -25,6 +26,7 @@ const FeaturedCategories = () => {
               width={300}
               image={{ src: category.image, alt: category.slug }}
               hoverEffect={true}
+              contentClassName={styles.categoryContent}
               onClick={() => navigate(`/catalog/${category.slug}`)}
             >
               <AppTitle variant="cardTitle" inline={true} className={styles.cardTitle}>

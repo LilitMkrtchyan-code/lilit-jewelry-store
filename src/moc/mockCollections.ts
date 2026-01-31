@@ -18,7 +18,6 @@ export const MOCK_COLLECTIONS = [
     image: prestige,
     slug: 'prestige',
   },
-
   {
     id: '3',
     titleKey: 'productCollections.timeless.title',

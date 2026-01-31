@@ -2,14 +2,14 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto auto;
-  gap: 16px;
+  gap: clamp(12px, 1.2vw, 16px);
   width: 100%;
 }
 
 .gridItem {
   overflow: hidden;
   position: relative;
-  background-color: var(--gray-200);
+  background-color: var(--gray-400);
 }
 
 .gridItem:nth-child(1),
@@ -29,10 +29,16 @@
   object-fit: cover;
 }
 
+@media (max-width: 992px) {
+  .gridItem:nth-child(1),
+  .gridItem:nth-child(2) {
+    aspect-ratio: 1 / 1;
+  }
+}
+
 @media (max-width: 768px) {
   .galleryGrid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
   }
 
   .gridItem:nth-child(n) {

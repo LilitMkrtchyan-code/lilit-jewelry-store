@@ -8,22 +8,25 @@ const BaseCard = ({
   width,
   height,
   onImageClick,
-  imageClassName,
-  className,
+  className = '',
+  imageClassName = '',
   children,
 }: BaseCardProps) => (
   <Card
-    className={`${styles.card} ${className ?? ''}`}
+    className={`${styles.card} ${className}`}
     style={{ width: width ?? '100%' }}
     cover={
       <div
         className={styles.imgWrapper}
         onClick={onImageClick}
-        style={{ height: height ?? 'auto', aspectRatio: !height ? 'var(--card-aspect-ratio, 3 / 4)' : undefined }}
+        style={{
+          height: height ?? 'auto',
+          aspectRatio: !height ? 'var(--card-aspect-ratio, 3 / 4)' : undefined,
+        }}
       >
         {imageNode ?? (
           <img
-            className={`${styles.image} ${imageClassName ?? ''}`}
+            className={`${styles.image} ${imageClassName}`}
             draggable={false}
             alt={image?.alt ?? 'card image'}
             src={image?.src}

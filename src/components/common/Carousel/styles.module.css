@@ -1,6 +1,5 @@
 .mySwiper {
   width: 100%;
-  padding: 20px 0;
 }
 
 :global(.swiper-slide) {
@@ -19,7 +18,7 @@
 }
 
 :global(.swiper-pagination-bullet) {
-  background: #ccc;
+  background: var(--gray-400);
   opacity: 1;
 }
 

@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
-import AppTitle from '../../AppTitle';
 import type { BaseBannerProps } from './types';
-import styles from './styles.module.css';
+import AppTitle from '../../AppTitle';
 import BaseButton from '../../buttons/BaseButton';
+import styles from './styles.module.css';
 
 const BaseBanner = ({ image, title, subtitle, alt, cta, className = '' }: BaseBannerProps) => {
   const navigate = useNavigate();

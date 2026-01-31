@@ -4,7 +4,7 @@
       {
         "id": "1",
         "image": "ring9",
-        "title": "Fine Jewelry. Handmade.",
+        "title": "Fine Jewelry. Handmade",
         "alt": "Handmade fine jewelry ring with diamonds",
         "cta": {
           "book": "Book an Item",
@@ -14,7 +14,7 @@
       {
         "id": "2",
         "image": "ring10",
-        "title": "Latest Rings Collection.",
+        "title": "Latest Rings Collection",
         "alt": "Close-up of luxury ring from latest collection",
         "cta": {
           "book": "Book an Item",
@@ -24,7 +24,7 @@
       {
         "id": "3",
         "image": "cufflinks5",
-        "title": "Premium Cufflinks.",
+        "title": "Premium Cufflinks",
         "alt": "Set of premium men’s cufflinks",
         "cta": {
           "book": "Book an Item",
@@ -34,7 +34,7 @@
       {
         "id": "4",
         "image": "necklace3",
-        "title": "Luxury Necklaces for Men.",
+        "title": "Luxury Necklaces for Men",
         "alt": "Luxury necklace for men made from gold",
         "cta": {
           "book": "Book an Item",
@@ -44,6 +44,13 @@
     ],
     "featuredCategories": {
       "title": "Featured Categories"
+    },
+    "featuredCollections": {
+      "title": "Featured Collections",
+      "cta": "View the collection"
+    },
+    "bestsellers": {
+      "title": "Bestsellers"
     },
     "philosophy": {
       "title": "Always in progress",
@@ -56,6 +63,18 @@
         "process2": "Traditional jewelry crafting techniques",
         "process3": "Dedicated focus on every small detail"
       }
+    },
+    "visitUs": {
+      "title": "Visit Us",
+      "description": "Experience the artistry of fine jewelry and find your perfect piece in an atmosphere of warmth and inspiration.",
+      "subtitle": "Hours & Location",
+      "address": "Movses Khorenatsu St., 15 Building, Yerevan",
+      "weekdays": "Monday - Saturday",
+      "weekdaysTime": "10:00 AM - 08:00 PM",
+      "weekend": "Sunday",
+      "weekendTime": "10:00 AM - 06:00 PM",
+      "cta": "Find a Boutique",
+      "altText": "Visit our boutique"
     },
     "advantages": {
       "materials": {

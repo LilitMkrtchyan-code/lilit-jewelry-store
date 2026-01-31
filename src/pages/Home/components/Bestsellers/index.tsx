@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { useProducts } from '../../../../hooks/useProducts';
 import { SwiperSlide } from 'swiper/react';
 import ProductCard from '../../../../components/common/cards/ProductCard';
@@ -9,16 +10,17 @@ import styles from './styles.module.css';
 
 const Bestsellers = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const { data: products, isLoading, isError } = useProducts();
 
   return (
     <section className={styles.bestsellers}>
       <AppTitle as={'h2'} variant={'sectionTitle'} className={styles.title}>
-        Bestsellers
+        {t('home.bestsellers.title')}
       </AppTitle>
       {isError ? (
-        <ErrorMessage />
+        <ErrorMessage message={t('errors.default')} />
       ) : isLoading ? (
         <div className="loading">Loading Bestsellers...</div>
       ) : (

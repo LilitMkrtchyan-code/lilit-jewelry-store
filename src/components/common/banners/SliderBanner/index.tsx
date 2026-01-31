@@ -1,7 +1,7 @@
 import { Carousel, Grid } from 'antd';
 import type { SliderBannerProps } from './types';
-import BaseBanner from '../BaseBanner';
 import { AUTOPLAY_SPEED, BANNER_IMAGES, CAROUSEL_EFFECT, CAROUSEL_SPEED } from './const';
+import BaseBanner from '../BaseBanner';
 
 const SliderBanner = ({ banners }: SliderBannerProps) => {
   const screens = Grid.useBreakpoint();

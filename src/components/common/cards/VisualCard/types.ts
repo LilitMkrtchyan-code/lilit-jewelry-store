@@ -11,5 +11,6 @@ export type VisualCardProps = {
   width?: string | number;
   height?: string | number;
   className?: string;
+  contentClassName?: string;
   imgClassName?: string;
 };
