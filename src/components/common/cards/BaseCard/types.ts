@@ -7,9 +7,9 @@ export type BaseCardProps = {
   };
   children: ReactNode;
   imageNode?: ReactNode;
-  onImageClick?: () => void;
   width?: string | number;
   height?: string | number;
+  onImageClick?: () => void;
   className?: string;
   imageClassName?: string;
 };

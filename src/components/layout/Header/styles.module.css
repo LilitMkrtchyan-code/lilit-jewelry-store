@@ -1,51 +1,63 @@
 .header {
-  background-color: var(--color-background);
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  width: 100%;
   height: var(--header-height);
+  z-index: 1000;
+  background-color: var(--color-background);
+  display: flex;
+  align-items: center;
+  padding: var(--space-fluid-200) 0;
 }
 
-.headerContent {
+.topBar {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  padding: 20px 0;
+  width: 100%;
 }
 
-.logoContainer {
-  justify-self: start;
-}
-
-.menuDesktop {
-  display: block;
-}
-
-.headerRight {
-  justify-self: end;
+.topLeft,
+.topRight {
   display: flex;
-  gap: 10px;
-  align-items: center;
+  gap: var(--space-fluid-200);
 }
 
-@media (max-width: 1020px) {
-  .menuDesktop {
-    display: none;
-  }
+.topLeft {
+  justify-content: flex-start;
+}
 
-  .hideOnMobile {
+.topRight {
+  justify-content: flex-end;
+}
+
+.topCenter {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.menuText,
+.searchText {
+  text-transform: capitalize;
+  font-size: var(--fs-100);
+}
+
+@media (max-width: 768px) {
+  .userIcon {
     display: none;
   }
 }
 
 @media (max-width: 480px) {
-  .header {
-    gap: 8px;
+  .topLeft,
+  .topRight {
+    gap: var(--space-200);
   }
 
-  .headerContent {
-    grid-template-columns: 1fr 1fr 8fr;
+  .topCenter {
+    padding: 0 10px;
   }
 }

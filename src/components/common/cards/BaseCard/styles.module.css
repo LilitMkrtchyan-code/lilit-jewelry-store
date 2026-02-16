@@ -7,7 +7,7 @@
   width: 100%;
   overflow: hidden;
   cursor: pointer;
-  background-color: var(--gray-400);
+  background-color: var(--color-surface-soft);
 }
 
 .image {
@@ -19,4 +19,3 @@
   transform-origin: center center;
   transform: translateZ(0);
 }
-

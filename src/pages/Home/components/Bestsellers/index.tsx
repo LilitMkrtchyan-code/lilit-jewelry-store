@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { useProducts } from '../../../../hooks/useProducts';
+import { T_PATH } from './const';
 import { SwiperSlide } from 'swiper/react';
 import ProductCard from '../../../../components/common/cards/ProductCard';
 import Carousel from '../../../../components/common/Carousel';
@@ -9,16 +11,17 @@ import styles from './styles.module.css';
 
 const Bestsellers = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const { data: products, isLoading, isError } = useProducts();
 
   return (
     <section className={styles.bestsellers}>
       <AppTitle as={'h2'} variant={'sectionTitle'} className={styles.title}>
-        Bestsellers
+        {t(`${T_PATH}.title`)}
       </AppTitle>
       {isError ? (
-        <ErrorMessage />
+        <ErrorMessage message={t('errors.default')} />
       ) : isLoading ? (
         <div className="loading">Loading Bestsellers...</div>
       ) : (
@@ -27,7 +30,7 @@ const Bestsellers = () => {
             <SwiperSlide key={product.id}>
               <ProductCard
                 product={product}
-                width={330}
+                width={340}
                 onClickProduct={() => navigate(`/product/${product.id}`)}
                 onClickBook={() => navigate(`/booking`)}
               />

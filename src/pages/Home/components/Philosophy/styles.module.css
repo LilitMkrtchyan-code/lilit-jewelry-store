@@ -1,11 +1,39 @@
 .philosophy {
-  padding: var(--section-padding-y) 0;
+  width: 100%;
+  padding: var(--space-section) 0;
+  background-color: var(--color-background);
 }
 
-.content {
-  padding: 0 2%;
+.contentWrapper {
+  width: 100%;
+  height: 100%;
+  padding: 30px 3% 20px;
 }
 
-.desc {
-  padding: 22px 0 14px;
+.philosophy .title {
+  font-size: var(--fs-400);
+}
+
+.philosophy .desc {
+  padding: var(--space-fluid-200) 0 var(--space-fluid-200);
+}
+
+@media (min-width: 992px) {
+  .contentWrapper {
+    padding-left: 11%;
+    padding-right: 7%;
+  }
+}
+
+@media (min-width: 992px) {
+  .contentWrapper {
+    padding-left: 11%;
+    padding-right: 7%;
+  }
+}
+
+@media (max-width: 320px) {
+  .philosophy .desc {
+    font-size: var(--fs-200);
+  }
 }

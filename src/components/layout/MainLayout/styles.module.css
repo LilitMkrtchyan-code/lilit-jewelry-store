@@ -2,10 +2,9 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .main {
+  flex: 1;
   margin-top: var(--header-height);
 }

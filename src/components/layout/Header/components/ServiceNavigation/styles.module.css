@@ -1,0 +1,19 @@
+.serviceNavigation {
+  padding: var(--space-fluid-200) var(--space-fluid-400);
+}
+
+.serviceList {
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceItem {
+  font-size: var(--fs-100);
+  text-transform: uppercase;
+  color: var(--color-text);
+  padding: 20px 0;
+}
+
+.serviceLink {
+  gap: 18px;
+}

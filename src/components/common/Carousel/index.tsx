@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import styles from './styles.module.css';
 
-const Carousel = ({ children, className }: CarouselProps) => {
+const Carousel = ({ children, className = '' }: CarouselProps) => {
   return (
     <>
       <Swiper
@@ -20,7 +20,7 @@ const Carousel = ({ children, className }: CarouselProps) => {
           768: { slidesPerView: 3 },
           1024: { slidesPerView: 4 },
         }}
-        className={`${styles.mySwiper} ${className ?? ''}`}
+        className={`${styles.mySwiper} ${className}`}
       >
         {children}
       </Swiper>

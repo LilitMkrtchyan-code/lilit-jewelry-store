@@ -1,6 +1,5 @@
 .mySwiper {
   width: 100%;
-  padding: 20px 0;
 }
 
 :global(.swiper-slide) {
@@ -10,19 +9,19 @@
 
 :global(.swiper-button-next),
 :global(.swiper-button-prev) {
-  color: var(--color-hover-link);
+  color: var(--color-secondary);
 }
 
 :global(.swiper-button-next::after),
 :global(.swiper-button-prev::after) {
-  color: var(--color-hover-link);
+  color: var(--color-secondary);
 }
 
 :global(.swiper-pagination-bullet) {
-  background: #ccc;
+  background: var(--color-surface-soft);
   opacity: 1;
 }
 
 :global(.swiper-pagination-bullet-active) {
-  background: var(--color-hover-link);
+  background: var(--color-secondary);
 }

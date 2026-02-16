@@ -1,13 +1,13 @@
 import { useTranslation } from 'react-i18next';
 import { Card } from 'antd';
 import type { ProductCardProps } from './types';
-import BaseCard from '../BaseCard/index';
-import styles from './styles.module.css';
+import BaseCard from '../BaseCard';
 import { getProductMaterialsAndStones, getProductText } from '../../../../i18n/utils/product';
+import styles from './styles.module.css';
 
 const { Meta } = Card;
 
-const ProductCard = ({ product, width, height, onClickProduct, onClickBook }: ProductCardProps) => {
+const ProductCard = ({ product, width, height, onClickProduct }: ProductCardProps) => {
   const { t } = useTranslation();
 
   return (
@@ -22,7 +22,6 @@ const ProductCard = ({ product, width, height, onClickProduct, onClickBook }: Pr
           <Meta title={getProductText(product.nameKey, 'name')} />
         </div>
         <Meta description={getProductMaterialsAndStones(product.nameKey)} />
-
         <div className={styles.price}>
           {product.price} {product.currency}
         </div>

@@ -11,9 +11,14 @@ const VisualCard = ({
   width,
   height,
   className = '',
+  contentClassName = '',
   imgClassName = '',
 }: VisualCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
+
+  const imageClasses = [imgClassName, styles.image, hoverEffect && isHovered ? styles.zoomed : '']
+    .filter(Boolean)
+    .join(' ');
 
   return (
     <BaseCard
@@ -22,15 +27,14 @@ const VisualCard = ({
       height={height}
       className={`${className}`}
       onImageClick={onClick}
-      imageClassName={`${imgClassName} ${styles.image} ${hoverEffect && isHovered ? styles.zoomed : ''}`}
+      imageClassName={imageClasses}
     >
-      <div className={styles.contentWrapper}>
+      <div className={`${styles.contentWrapper} ${contentClassName}`}>
         <div
           onMouseEnter={() => hoverEffect && setIsHovered(true)}
           onMouseLeave={() => hoverEffect && setIsHovered(false)}
           onClick={onClick}
-          className={hoverEffect ? 'underlineEffect' : ''}
-          style={{ width: 'max-content' }}
+          className={`${hoverEffect && 'line-flow'}`}
         >
           {children}
         </div>

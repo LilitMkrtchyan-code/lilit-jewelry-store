@@ -10,6 +10,7 @@ const CardContent = ({
   animate = false,
   align = 'center',
   className = '',
+  titleClassName = '',
   descClassName = '',
 }: CardContentProps) => {
   const contentClasses = [
@@ -17,14 +18,16 @@ const CardContent = ({
     styles[align],
     animate ? 'animate-monolith' : '',
     className,
-  ].join(' ');
+  ]
+    .filter(Boolean)
+    .join(' ');
 
   return (
     <div className={contentClasses}>
       <div className={styles.titleWrapper}>
-        <div className={styles.title}>{title}</div>
+        <div className={`${styles.title} ${titleClassName}`}>{title}</div>
       </div>
-      {description && <div className={`${styles.subtitle} ${descClassName}`}>{description}</div>}
+      {description && <div className={`${styles.description} ${descClassName}`}>{description}</div>}
       {buttonText && (
         <div className={styles.buttonWrapper}>
           <BaseButton label={buttonText} onClick={onBtnClick} className={styles.cardBtn} />

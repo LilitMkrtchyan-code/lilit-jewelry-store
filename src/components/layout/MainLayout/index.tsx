@@ -1,7 +1,7 @@
 import Header from '../Header';
 import Footer from '../Footer';
-import styles from './styles.module.css';
 import { Outlet } from 'react-router-dom';
+import styles from './styles.module.css';
 
 const MainLayout = () => {
   return (

@@ -1,7 +1,7 @@
 .banner {
   position: relative;
   width: 100%;
-  height: clamp(60vh, 90vh, 100vh);
+  height: clamp(500px, 90vh, 75vw);
 }
 
 .bannerContent {
@@ -18,7 +18,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
@@ -27,17 +27,29 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  z-index: 0;
 }
 
 .textContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: var(--space-fluid-300);
   position: absolute;
   bottom: 15%;
   z-index: 2;
+  padding: 0 20px;
   text-align: center;
+  opacity: 0;
+}
+
+.subtitle {
+  color: var(--color-text-inverse);
+  font-family: var(--font-body);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-400);
+  line-height: var(--lh-200);
+  letter-spacing: var(--ls-200);
 }
 
 .buttons {
@@ -45,53 +57,34 @@
   gap: 20px;
 }
 
-.buttonBook {
-  padding: 9px 22px;
-}
-
+.buttonBook,
 .buttonShop {
-  padding: 9px 34px;
+  min-width: 200px;
+  font-size: var(--fs-300);
+  color: #fff;
 }
 
-@media (max-width: 768px) {
-  .title {
-    font-size: 32px;
-  }
-
-  .buttons {
-    gap: 20px;
-  }
-
+@media (max-width: 575px) {
   .buttonBook,
   .buttonShop {
-    font-size: 16px;
-    padding: 10px 25px;
-  }
-
-  .buttonBook {
-    padding: 10px 16px;
+    min-width: 180px;
   }
 }
 
 @media (max-width: 480px) {
-  .title {
-    font-size: 28px;
-  }
-
-  .buttons {
-    gap: 15px;
-  }
-
   .buttonBook,
   .buttonShop {
-    font-size: 15px;
+    flex: 1;
+    min-width: 130px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
+}
 
-  .buttonBook {
-    padding: 1px 9px !important;
-  }
-
-  .buttonShop {
-    padding: 1px 18px;
+@media (max-width: 320px) {
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
   }
 }

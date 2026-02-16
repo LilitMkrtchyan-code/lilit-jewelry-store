@@ -8,5 +8,6 @@ export type CardContentProps = {
   animate?: boolean;
   align?: 'left' | 'center' | 'right';
   className?: string;
+  titleClassName?: string;
   descClassName?: string;
 };

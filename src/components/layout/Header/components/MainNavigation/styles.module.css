@@ -1,0 +1,45 @@
+.mainAccordion :global(.ant-collapse-header) {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-400);
+  font-size: var(--fs-100);
+  color: var(--color-text);
+  padding: 18px 0 !important;
+  text-transform: uppercase;
+}
+
+.mainTitle:hover {
+  opacity: var(--hover-opacity);
+}
+
+.mainNavigation {
+  padding: var(--space-fluid-200) var(--space-fluid-400);
+}
+
+.subItem {
+  padding: var(--space-300) 0;
+}
+
+.subLink {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-400);
+  font-size: var(--fs-200);
+  color: var(--color-text);
+  letter-spacing: var(--ls-200);
+}
+
+.subLink:hover {
+  opacity: var(--hover-opacity);
+}
+
+.subLink:visited,
+.subLink:active {
+  color: var(--color-text);
+}
+
+.subLink.activeLink {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: var(--color-text);
+}

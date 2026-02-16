@@ -10,6 +10,6 @@ export const BANNER_IMAGES = {
   necklace3,
 } as const;
 
-export const AUTOPLAY_SPEED = 9000;
+export const AUTOPLAY_SPEED = 10000;
 export const CAROUSEL_SPEED = 1100;
 export const CAROUSEL_EFFECT: 'scrollx' | 'fade' = 'fade';

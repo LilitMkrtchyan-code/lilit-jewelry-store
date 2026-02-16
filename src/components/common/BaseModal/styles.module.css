@@ -1,0 +1,86 @@
+.baseModal :global(.ant-modal-container) {
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+  max-width: 1100px;
+}
+
+.baseModal :global(.ant-modal-close) {
+  position: absolute;
+  z-index: 1000;
+  top: var(--space-200);
+  right: var(--space-200);
+  color: var(--color-text);
+  opacity: 0.8;
+  transition:
+    color var(--t-fast) var(--ease-reveal),
+    opacity var(--t-fast) var(--ease-reveal);
+}
+
+.baseModal :global(.ant-modal-close) svg {
+  width: 20px;
+  height: 20px;
+}
+
+.baseModal :global(.ant-modal-close):hover {
+  background: none;
+  opacity: var(--hover-opacity);
+}
+
+.modalContent {
+  width: 100%;
+  background-color: var(--color-background);
+  position: relative;
+}
+
+:global(.fade-enter),
+:global(.fade-appear) {
+  opacity: 0;
+}
+
+:global(.fade-enter-active),
+:global(.fade-appear-active) {
+  opacity: 1;
+  transition: opacity 0.6s var(--ease-gentle);
+}
+
+:global(.fade-leave-active) {
+  opacity: 0;
+  transition: opacity 0.6s var(--ease-gentle);
+}
+
+:global(.fade-slide-enter),
+:global(.fade-slide-appear) {
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+}
+
+:global(.fade-slide-enter-active),
+:global(.fade-slide-appear-active) {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition:
+    opacity 0.7s var(--ease-gentle),
+    transform 0.7s var(--ease-gentle);
+}
+
+:global(.fade-slide-leave-active) {
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity var(--t-smooth) var(--ease-gentle),
+    transform var(--t-smooth) var(--ease-gentle);
+}
+
+@media (max-width: 768px) {
+  .baseModal :global(.ant-modal-close) {
+    background: var(--color-white-glass);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+  }
+}

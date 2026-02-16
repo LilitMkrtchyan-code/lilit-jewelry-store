@@ -6,7 +6,7 @@ export type BannerImageKey = keyof typeof BANNER_IMAGES;
 export type SliderBannerItem = {
   id: string;
   image: BannerImageKey;
-  title: string;
+  title?: string;
   subtitle?: string;
   alt?: string;
   cta?: BannerCTA;

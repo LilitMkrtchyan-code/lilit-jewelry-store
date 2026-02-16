@@ -11,3 +11,5 @@ export const GALLERY_IMAGES = [
   { src: hardwork5, key: 'process2' },
   { src: hardwork6, key: 'process3' },
 ];
+
+export const T_PATH = 'home.philosophy' as const;

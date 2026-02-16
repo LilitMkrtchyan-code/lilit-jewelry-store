@@ -2,10 +2,13 @@ import type { BannerCTA } from '../types';
 
 export type BaseBannerProps = {
   id: string;
-  image: string;
+  image: {
+    src: string;
+    alt?: string;
+  };
   title?: string;
   subtitle?: string;
-  alt?: string;
   cta?: BannerCTA;
   className?: string;
+  isActive?: boolean;
 };
