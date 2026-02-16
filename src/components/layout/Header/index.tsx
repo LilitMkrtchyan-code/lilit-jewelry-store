@@ -1,42 +1,61 @@
-import { useNavigate } from 'react-router-dom';
 import { useToggle } from '../../../hooks/useToggle';
-import Logo from './Logo/index';
-import MainMenu from './MainMenu';
-import User from './User';
-import BookingCart from './BookingCart';
-import LanguageSwitcher from '../../common/LanguageSwitcher';
-import ShoppingCart from './ShopCart';
-import Hamburger from './Hamburger';
-import ShoppingCartDrawer from './ShopCartDrawer';
-import MenuDrawer from './MenuDrawer';
+import { useTranslation } from 'react-i18next';
+import LabelIcon from '../../common/icons/LabelIcon';
+import BadgeIcon from '../../common/icons/BadgeIcon';
+import Logo from '../../common/Logo';
+import { ClipboardClock, Menu, Search, ShoppingBag, UserRound } from 'lucide-react';
+import NavigationDrawer from './components/NavigationDrawer';
 import styles from './styles.module.css';
-import { useLang } from '../../../hooks/useLang';
 
 const Header = () => {
-  const { currentLang, changeLanguage } = useLang();
-  const navigate = useNavigate();
-
-  const menu = useToggle();
-  const cart = useToggle();
+  const { isVisible, hide, show } = useToggle();
+  const { t } = useTranslation();
 
   return (
     <header className={styles.header}>
       <div className="container">
-        <div className={styles.headerContent}>
-          <Hamburger onClick={menu.toggle} />
-          <Logo />
-          <div className={styles.menuDesktop}>
-            <MainMenu />
+        <div className={styles.topBar}>
+          <div className={styles.topLeft}>
+            <LabelIcon
+              icon={<Menu size={20} strokeWidth={1} />}
+              text={t('header.iconsText.menu')}
+              onClick={show}
+              as="button"
+              ariaLabel={t('header.ariaLabels.menu')}
+              hideTextMobile={true}
+              textClassName={styles.menuText}
+            />
+            <LabelIcon
+              icon={<Search size={20} strokeWidth={1} />}
+              text={t('header.iconsText.search')}
+              as="button"
+              ariaLabel={t('header.ariaLabels.search')}
+              hideTextMobile={true}
+              textClassName={styles.searchText}
+            />
+            <NavigationDrawer open={isVisible} onClose={hide} />
           </div>
-          <div className={styles.headerRight}>
-            <div className={styles.hideOnMobile}>
-              <User />
-            </div>
-            <LanguageSwitcher currentLang={currentLang} onChange={changeLanguage} />
-            <BookingCart count={1} onClick={() => navigate('/booking')} />
-            <ShoppingCart count={1} onClick={cart.toggle} />
-            <ShoppingCartDrawer open={cart.isOpen} onClose={cart.close} />
-            <MenuDrawer open={menu.isOpen} onClose={menu.close} />
+          <div className={styles.topCenter}>
+            <Logo />
+          </div>
+          <div className={styles.topRight}>
+            <LabelIcon
+              icon={<UserRound size={20} strokeWidth={1} />}
+              as="navlink"
+              to="/account"
+              className={styles.userIcon}
+              ariaLabel={t('header.ariaLabels.account')}
+            />
+            <BadgeIcon
+              icon={<ClipboardClock size={20} strokeWidth={1} />}
+              as="navlink"
+              to="/booking"
+              ariaLabel={t('header.ariaLabels.bookingCart')}
+            />
+            <BadgeIcon
+              icon={<ShoppingBag size={20} strokeWidth={1} />}
+              ariaLabel={t('header.ariaLabels.cart')}
+            />
           </div>
         </div>
       </div>

@@ -2,13 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px 0;
+  padding: var(--space-500) 0;
 }
 
 .image {
-  transition: transform 6s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: transform var(--t-image) var(--ease-cinematic);
 }
 
 .image.zoomed {
   transform: scale(1.1);
+}
+
+.contentWrapper :global(.line-flow) {
+  --underline-color: var(--color-secondary);
+  --ease-gentle: var(--ease-reveal);
+  --underline-height: 0.094rem;
 }

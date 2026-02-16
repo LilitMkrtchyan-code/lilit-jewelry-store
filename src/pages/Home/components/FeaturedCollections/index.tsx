@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useCollections } from '../../../../hooks/useCollections';
+import { T_PATH } from './const';
 import { Col, Row } from 'antd';
 import VisualCard from '../../../../components/common/cards/VisualCard';
 import CardContent from '../../../../components/common/cards/CardContent';
@@ -16,8 +17,8 @@ const FeaturedCollections = () => {
 
   return (
     <section className={styles.collections}>
-      <AppTitle as={'h2'} variant={'sectionTitle'} className={styles.title}>
-        {t('home.featuredCollections.title')}
+      <AppTitle variant={'sectionTitle'} className={styles.title}>
+        {t(`${T_PATH}.title`)}
       </AppTitle>
       {isError ? (
         <ErrorMessage message={t('errors.default')} />
@@ -31,14 +32,14 @@ const FeaturedCollections = () => {
                 <VisualCard
                   className={styles.ratio}
                   contentClassName={styles.content}
-                  image={{ src: collection.image, alt: collection.slug }}
+                  image={{ src: collection.image.src, alt: t(`${collection.image.alt}`) }}
                   onClick={() => navigate(`/collections/${collection.slug}`)}
                   hoverEffect={false}
                 >
                   <CardContent
                     title={t(collection.titleKey)}
                     description={collection.subtitleKey ? t(collection.subtitleKey) : undefined}
-                    buttonText={t('home.featuredCollections.cta')}
+                    buttonText={t(`${T_PATH}.cta`)}
                     animate={true}
                     titleClassName={styles.contentTitle}
                     descClassName={styles.desc}

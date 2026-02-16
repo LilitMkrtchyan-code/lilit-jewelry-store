@@ -1,0 +1,10 @@
+.navLogo {
+  font-size: 18px;
+  padding: var(--space-fluid-200) var(--space-300);
+}
+
+.navLogo:hover,
+.navLogo:visited,
+.navLogo:active {
+  color: var(--color-text);
+}

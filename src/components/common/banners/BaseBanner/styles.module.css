@@ -1,7 +1,7 @@
 .banner {
   position: relative;
   width: 100%;
-  height: clamp(60vh, 90vh, 100vh);
+  height: clamp(500px, 90vh, 75vw);
 }
 
 .bannerContent {
@@ -18,7 +18,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
@@ -34,11 +34,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 26px;
+  gap: var(--space-fluid-300);
   position: absolute;
   bottom: 15%;
   z-index: 2;
+  padding: 0 20px;
   text-align: center;
+  opacity: 0;
+}
+
+.subtitle {
+  color: var(--color-text-inverse);
+  font-family: var(--font-body);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-400);
+  line-height: var(--lh-200);
+  letter-spacing: var(--ls-200);
 }
 
 .buttons {
@@ -50,13 +61,10 @@
 .buttonShop {
   min-width: 200px;
   font-size: var(--fs-300);
+  color: #fff;
 }
 
 @media (max-width: 575px) {
-  .textContainer {
-    padding: 0 20px;
-    gap: 28px;
-  }
   .buttonBook,
   .buttonShop {
     min-width: 180px;
@@ -64,31 +72,19 @@
 }
 
 @media (max-width: 480px) {
-  .buttons {
-    gap: 15px;
-    padding: 0 20px;
-  }
-
   .buttonBook,
   .buttonShop {
-    font-size: var(--fs-200);
     flex: 1;
-    min-width: 140px;
+    min-width: 130px;
     padding-top: 8px;
     padding-bottom: 8px;
   }
 }
 
 @media (max-width: 320px) {
-  .title {
-    font-size: 26px;
-  }
-
-  .buttonBook,
-  .buttonShop {
-    font-size: var(--fs-100);
-    padding: 8px 10px;
-    min-width: 100px;
-    flex: none;
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
   }
 }

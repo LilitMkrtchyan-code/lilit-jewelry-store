@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 16px 0;
+  padding: var(--space-400) 0;
 }
 
 :global(.ant-card .ant-card-cover > *) {
@@ -28,9 +28,10 @@
   font-size: var(--fs-300);
   font-weight: var(--fw-400);
   letter-spacing: var(--ls-100);
+  line-height: var(--lh-200);
   text-align: center;
   color: var(--color-text);
-  margin: 16px 0 8px;
+  margin: var(--space-400) 0 var(--space-200);
 }
 
 .price {
@@ -38,5 +39,6 @@
   font-size: var(--fs-200);
   font-weight: var(--fw-500);
   letter-spacing: var(--ls-200);
+  line-height: var(--lh-200);
   color: var(--color-secondary);
 }

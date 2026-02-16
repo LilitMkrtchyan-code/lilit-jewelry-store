@@ -2,59 +2,35 @@
   font-family: var(--font-body);
   font-size: var(--fs-300);
   font-weight: var(--fw-400);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   letter-spacing: var(--ls-200);
   white-space: nowrap;
-  border: none;
-  outline: none;
-  background: none;
   color: var(--color-text);
-  padding: 0;
   cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.shadow {
-  color: var(--color-text-inverse);
-  border-radius: 0;
-  padding: 10px 20px;
-  background-color: transparent;
-  box-shadow: var(--shadow-100);
-}
-
-.shadow:hover {
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-200);
-}
-
-.link {
-  position: relative;
-  padding-bottom: 4px;
-  overflow: hidden;
-  background-image: linear-gradient(to right, var(--color-text) 50%, transparent 50%);
-  background-size: 200% 1px;
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  color: var(--color-text);
-  transition:
-    background-position 0.6s cubic-bezier(0.23, 1, 0.32, 1),
-    opacity 0.2s ease;
 }
 
 .link:hover {
-  background-position: 100% 100%;
-  opacity: 0.6;
+  opacity: var(--hover-opacity);
 }
 
-@media (max-width: 768px) {
+.shadow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-inverse);
+  border-radius: 0;
+  padding: 9px 20px;
+  background-color: transparent;
+  box-shadow: var(--shadow-200);
+  will-change: box-shadow;
+  transition: box-shadow var(--t-base) var(--ease-punchy);
+}
+
+.shadow:hover {
+  box-shadow: var(--shadow-100);
+}
+
+@media (max-width: 320px) {
   .baseButton {
     font-size: var(--fs-200);
-  }
-
-  .shadow {
-    padding-top: 9px;
-    padding-bottom: 9px;
   }
 }

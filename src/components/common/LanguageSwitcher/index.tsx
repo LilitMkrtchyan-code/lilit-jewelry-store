@@ -1,29 +1,20 @@
-import { Dropdown, Avatar, Space } from 'antd';
-import type { MenuProps } from 'antd';
-import { LANGUAGES } from './const';
+import { useLang } from '../../../hooks/useLang';
 import type { LanguageSwitcherProps } from './types';
+import BaseModal from '../BaseModal';
+import LanguagePicker from './LanguagePicker';
 
-const LanguageSwitcher = ({ currentLang, onChange }: LanguageSwitcherProps) => {
-  const currentItem = LANGUAGES.find(lang => lang.key === currentLang) || LANGUAGES[0];
+const LanguageSwitcher = ({ open, onCancel }: LanguageSwitcherProps) => {
+  const { currentLang, changeLanguage } = useLang();
 
-  const items: MenuProps['items'] = LANGUAGES.map(item => ({
-    key: item.key,
-    label: (
-      <Space>
-        <Avatar size={18} src={item.icon} />
-        {item.label}
-      </Space>
-    ),
-    onClick: () => onChange(item.key),
-  }));
+  const handleSelect = (langKey: string) => {
+    changeLanguage(langKey);
+    onCancel();
+  };
 
   return (
-    <Dropdown menu={{ items }} trigger={['click']} placement="bottomRight">
-      <Space style={{ cursor: 'pointer' }}>
-        <Avatar size={20} src={currentItem.icon} />
-      </Space>
-    </Dropdown>
+    <BaseModal open={open} onCancel={onCancel}>
+      <LanguagePicker currentLang={currentLang} onSelect={handleSelect} />
+    </BaseModal>
   );
 };
-
 export default LanguageSwitcher;

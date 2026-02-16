@@ -15,6 +15,7 @@ import NotFound from './pages/NotFound';
 import Product from './pages/Product';
 import Services from './pages/Services';
 import Category from './pages/Category';
+import StoreLocator from './pages/StoreLocator';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="faq" element={<FAQ />} />
         <Route path="blog" element={<Blog />} />
         <Route path="account" element={<Account />} />
+        <Route path="store-locator" element={<StoreLocator />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

@@ -1,4 +1,48 @@
 {
+  "header": {
+    "ariaLabels": {
+      "logo": "Перейти на главную страницу",
+      "menu": "Открыть меню навигации",
+      "search": "Открыть панель поиска",
+      "account": "Перейти в личный кабинет",
+      "cart": "Открыть корзину покупок",
+      "bookingCart": "Открыть корзину бронирований",
+      "services": "Открыть меню услуг",
+      "contact": "Перейти на страницу Контакты",
+      "storeLocator": "Перейти к поиску бутиков",
+      "language": "Сменить язык"
+    },
+    "iconsText": {
+      "menu": "Меню",
+      "search": "Поиск",
+      "user": "Мой аккаунт"
+    },
+    "menu": {
+      "sections": {
+        "shopByCategory": "По категориям",
+        "collections": "Коллекции"
+      },
+      "categories": {
+        "bracelets": "Браслеты",
+        "cufflinks": "Запонки",
+        "necklaces": "Ожерелья",
+        "rings": "Кольца"
+      },
+      "collections": {
+        "signature": "Signature",
+        "prestige": "Prestige",
+        "timeless": "Timeless",
+        "wedding": "Wedding"
+      },
+      "service": {
+        "contact": "Связаться с нами",
+        "services": "Услуги",
+        "account": "Мой кабинет",
+        "storeLocator": "Найти бутик",
+        "language": "Русский"
+      }
+    }
+  },
   "home": {
     "heroBanners": [
       {
@@ -172,19 +216,23 @@
   "productCollections": {
     "signature": {
       "title": "Signature",
-      "subtitle": "Воплощение уникального стиля нашего бренда"
+      "subtitle": "Воплощение уникального стиля нашего бренда",
+      "altText": "Украшение из коллекции Signature"
     },
     "timeless": {
       "title": "Timeless",
-      "subtitle": "Классика, неподвластная времени и трендам"
+      "subtitle": "Классика, неподвластная времени и трендам",
+      "altText": "Классический элегантный ювелирный дизайн"
     },
     "prestige": {
       "title": "Prestige",
-      "subtitle": "Исключительное мастерство для особых моментов"
+      "subtitle": "Исключительное мастерство для особых моментов",
+      "altText": "Роскошные украшения ручной работы"
     },
     "wedding": {
       "title": "Wedding",
-      "subtitle": "Изящные символы начала вашей общей истории"
+      "subtitle": "Изящные символы начала вашей общей истории",
+      "altText": "Элегантный комплект обручальных колец"
     }
   },
   "products": {
@@ -383,6 +431,12 @@
   },
   "productCard": {
     "book": "Забронировать товар"
+  },
+  "modals": {
+    "language": {
+      "title": "Выберите язык",
+      "altText": "Изящная деталь ювелирного изделия ручной работы"
+    }
   },
   "errors": {
     "default": "Произошла ошибка. Пожалуйста, попробуйте позже"

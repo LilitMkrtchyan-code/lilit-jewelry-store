@@ -9,7 +9,12 @@ const BaseButton = ({
   className = '',
   ...rest
 }: BaseButtonProps) => {
-  const buttonClasses = [styles.baseButton, styles[variant], className].join(' ');
+  const buttonClasses = [
+    styles.baseButton,
+    styles[variant],
+    variant === 'link' ? 'line-disappear' : '',
+    className,
+  ].join(' ');
 
   return (
     <button className={buttonClasses} onClick={onClick} {...rest}>

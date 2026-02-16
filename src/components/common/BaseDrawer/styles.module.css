@@ -1,0 +1,33 @@
+.baseDrawer :global(.ant-drawer-content-wrapper) {
+  transition: transform var(--t-base) var(--ease-reveal);
+}
+
+.baseDrawer.isOpen :global(.ant-drawer-content-wrapper) {
+  transition: transform var(--t-smooth) var(--ease-punchy);
+}
+
+.baseDrawer :global(.ant-drawer-mask) {
+  transition: opacity 0.4s linear;
+}
+
+.baseDrawer :global(.ant-drawer-body) {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-secondary) transparent;
+}
+
+.baseDrawer :global(.ant-drawer-body)::-webkit-scrollbar {
+  width: 4px;
+}
+
+.baseDrawer :global(.ant-drawer-body)::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.baseDrawer :global(.ant-drawer-body)::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+}
+
+.baseDrawer :global(.ant-drawer-body)::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hover-opacity);
+}

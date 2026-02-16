@@ -4,19 +4,23 @@ import AppTitle from '../../AppTitle';
 import BaseButton from '../../buttons/BaseButton';
 import styles from './styles.module.css';
 
-const BaseBanner = ({ image, title, subtitle, alt, cta, className = '' }: BaseBannerProps) => {
+const BaseBanner = ({ image, title, subtitle, cta, className = '', isActive }: BaseBannerProps) => {
   const navigate = useNavigate();
 
-  const altText = alt ?? subtitle ?? title;
+  const animationClass = isActive ? 'animate-reveal' : '';
+  const altText = image?.alt || title || 'Banner';
 
   return (
-    <div className={`${styles.banner} ${className}`}>
+    <section className={`${styles.banner} ${className}`}>
       <div className={styles.bannerContent}>
-        <img src={image} alt={altText} className={styles.image} />
-        <div className={`${styles.textContainer} animate-monolith`}>
-          <AppTitle variant="pageTitle" className={styles.title}>
-            {title}
-          </AppTitle>
+        <img src={image.src} alt={altText} className={styles.image} loading="eager" />
+        <div className={`${styles.textContainer} ${animationClass}`}>
+          {title && (
+            <AppTitle variant="pageTitle" className={styles.title}>
+              {title}
+            </AppTitle>
+          )}
+          {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
           {cta && (
             <div className={styles.buttons}>
               {cta.book && (
@@ -39,7 +43,7 @@ const BaseBanner = ({ image, title, subtitle, alt, cta, className = '' }: BaseBa
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default BaseBanner;

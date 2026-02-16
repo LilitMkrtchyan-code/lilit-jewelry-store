@@ -1,12 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Row, Col } from 'antd';
 import type { AdvantageItem } from './types';
-import {
-  SafetyCertificateOutlined,
-  FormatPainterOutlined,
-  SyncOutlined,
-  InboxOutlined,
-} from '@ant-design/icons';
+import { ShieldCheck, Brush, RefreshCcw, Box } from 'lucide-react';
 import styles from './styles.module.css';
 
 const Advantages = () => {
@@ -14,19 +9,19 @@ const Advantages = () => {
 
   const ADVANTAGES: AdvantageItem[] = [
     {
-      icon: <SafetyCertificateOutlined />,
+      icon: <ShieldCheck size={32} strokeWidth={1} />,
       title: t('home.advantages.materials.title'),
     },
     {
-      icon: <FormatPainterOutlined />,
+      icon: <Brush size={32} strokeWidth={1} />,
       title: t('home.advantages.cleaning.title'),
     },
     {
-      icon: <SyncOutlined />,
+      icon: <RefreshCcw size={32} strokeWidth={1} />,
       title: t('home.advantages.resizing.title'),
     },
     {
-      icon: <InboxOutlined />,
+      icon: <Box size={32} strokeWidth={1} />,
       title: t('home.advantages.delivery.title'),
     },
   ];

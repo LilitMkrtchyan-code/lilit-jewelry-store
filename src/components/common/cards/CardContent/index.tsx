@@ -18,7 +18,9 @@ const CardContent = ({
     styles[align],
     animate ? 'animate-monolith' : '',
     className,
-  ].join(' ');
+  ]
+    .filter(Boolean)
+    .join(' ');
 
   return (
     <div className={contentClasses}>

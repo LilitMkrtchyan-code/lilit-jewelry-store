@@ -6,11 +6,11 @@ const AppTitle = ({
   variant = 'cardTitle',
   inline = false,
   children,
-  className,
+  className = '',
 }: AppTitleProps) => {
   const Component =
     as ??
     (variant === 'pageTitle' ? 'h1' : variant === 'sectionTitle' ? 'h2' : inline ? 'span' : 'div');
-  return <Component className={`${styles[variant]} ${className ?? ''}`}>{children}</Component>;
+  return <Component className={`${styles[variant]} ${className}`}>{children}</Component>;
 };
 export default AppTitle;

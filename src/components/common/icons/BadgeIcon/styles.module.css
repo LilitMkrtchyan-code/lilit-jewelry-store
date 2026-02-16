@@ -1,0 +1,36 @@
+.badgeIcon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-text);
+  cursor: pointer;
+  transition:
+    color var(--t-fast) var(--ease-reveal),
+    opacity var(--t-fast) var(--ease-reveal);
+}
+
+.badgeIcon:hover {
+  opacity: var(--hover-opacity);
+}
+
+.badgeIcon.quantity,
+.badgeIcon.active {
+  color: var(--color-secondary);
+}
+
+.badgeIcon svg {
+  flex-shrink: 0;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: 1px;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: var(--fw-500);
+  color: inherit;
+  line-height: 1;
+  letter-spacing: var(--ls-100);
+  transition: color var(--t-fast) var(--ease-reveal);
+}

@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useProducts } from '../../../../hooks/useProducts';
+import { T_PATH } from './const';
 import { SwiperSlide } from 'swiper/react';
 import ProductCard from '../../../../components/common/cards/ProductCard';
 import Carousel from '../../../../components/common/Carousel';
@@ -17,7 +18,7 @@ const Bestsellers = () => {
   return (
     <section className={styles.bestsellers}>
       <AppTitle as={'h2'} variant={'sectionTitle'} className={styles.title}>
-        {t('home.bestsellers.title')}
+        {t(`${T_PATH}.title`)}
       </AppTitle>
       {isError ? (
         <ErrorMessage message={t('errors.default')} />
@@ -29,7 +30,7 @@ const Bestsellers = () => {
             <SwiperSlide key={product.id}>
               <ProductCard
                 product={product}
-                width={330}
+                width={340}
                 onClickProduct={() => navigate(`/product/${product.id}`)}
                 onClickBook={() => navigate(`/booking`)}
               />

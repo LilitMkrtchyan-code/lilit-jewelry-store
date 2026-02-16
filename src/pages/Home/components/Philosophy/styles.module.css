@@ -15,12 +15,25 @@
 }
 
 .philosophy .desc {
-  padding: var(--space-200) 0 16px;
+  padding: var(--space-fluid-200) 0 var(--space-fluid-200);
 }
 
 @media (min-width: 992px) {
   .contentWrapper {
-    padding-left: 10%;
-    padding-right: 2%;
+    padding-left: 11%;
+    padding-right: 7%;
+  }
+}
+
+@media (min-width: 992px) {
+  .contentWrapper {
+    padding-left: 11%;
+    padding-right: 7%;
+  }
+}
+
+@media (max-width: 320px) {
+  .philosophy .desc {
+    font-size: var(--fs-200);
   }
 }

@@ -1,0 +1,1 @@
+export const T_PATH = 'home.bestsellers' as const;

@@ -1,4 +1,48 @@
 {
+  "header": {
+    "ariaLabels": {
+      "logo": "Go to home",
+      "menu": "Open navigation menu",
+      "search": "Open search bar",
+      "account": "Go to your account",
+      "cart": "Open shopping cart",
+      "bookingCart": "Open booking cart",
+      "services": "Open Services menu",
+      "contact": "Go to Contact page",
+      "storeLocator": "Go to store locator",
+      "language": "Change language"
+    },
+    "iconsText": {
+      "menu": "Menu",
+      "search": "Search",
+      "user": "My Account"
+    },
+    "menu": {
+      "sections": {
+        "shopByCategory": "Shop by Category",
+        "collections": "Collections"
+      },
+      "categories": {
+        "bracelets": "Bracelets",
+        "cufflinks": "Cufflinks",
+        "necklaces": "Necklaces",
+        "rings": "Rings"
+      },
+      "collections": {
+        "signature": "Signature",
+        "prestige": "Prestige",
+        "timeless": "Timeless",
+        "wedding": "Wedding"
+      },
+      "service": {
+        "contact": "Contact Us",
+        "services": "Services",
+        "account": "My Account",
+        "storeLocator": "Find a Boutique",
+        "language": "English"
+      }
+    }
+  },
   "home": {
     "heroBanners": [
       {
@@ -172,19 +216,23 @@
   "productCollections": {
     "signature": {
       "title": "Signature",
-      "subtitle": "The essence of our brand's unique identity"
+      "subtitle": "The essence of our brand's unique identity",
+      "altText": "Signature jewelry collection piece"
     },
     "timeless": {
       "title": "Timeless",
-      "subtitle": "Classic elegance that transcends generations"
+      "subtitle": "Classic elegance that transcends generations",
+      "altText": "Classic elegant jewelry design"
     },
     "prestige": {
       "title": "Prestige",
-      "subtitle": "Exceptional craftsmanship for special moments"
+      "subtitle": "Exceptional craftsmanship for special moments",
+      "altText": "Luxury handcrafted jewelry detail"
     },
     "wedding": {
       "title": "Wedding",
-      "subtitle": "Elegant symbols for your beginning of forever"
+      "subtitle": "Elegant symbols for your beginning of forever",
+      "altText": "Elegant wedding ring set"
     }
   },
   "products": {
@@ -383,6 +431,12 @@
   },
   "productCard": {
     "book": "Book an item"
+  },
+  "modals": {
+    "language": {
+      "title": "Select Language",
+      "altText": "Exquisite handcrafted jewelry detail"
+    }
   },
   "errors": {
     "default": "Something went wrong. Please try again later"

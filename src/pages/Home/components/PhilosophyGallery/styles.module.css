@@ -9,13 +9,13 @@
 .gridItem {
   overflow: hidden;
   position: relative;
-  background-color: var(--gray-400);
+  background-color: var(--color-surface-soft);
 }
 
 .gridItem:nth-child(1),
 .gridItem:nth-child(2) {
   grid-column: span 3;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 5.6;
 }
 
 .gridItem:nth-child(n + 3) {

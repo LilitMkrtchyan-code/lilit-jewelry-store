@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import { Card } from 'antd';
 import type { ProductCardProps } from './types';
-import BaseCard from '../BaseCard/index';
-import styles from './styles.module.css';
+import BaseCard from '../BaseCard';
 import { getProductMaterialsAndStones, getProductText } from '../../../../i18n/utils/product';
+import styles from './styles.module.css';
 
 const { Meta } = Card;
 

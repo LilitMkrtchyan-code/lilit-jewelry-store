@@ -5,7 +5,7 @@
 }
 
 .infoContent {
-  padding: 30px 20px;
+  padding: 30px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,8 +13,8 @@
 }
 
 .infoContent .title {
-  font-size: var(--fs-500);
-  margin-bottom: var(--space-200);
+  font-size: var(--fs-400);
+  margin-bottom: var(--space-fluid-200);
   text-align: center;
 }
 
@@ -33,7 +33,7 @@
   max-width: 480px;
   padding: 30px 0 40px;
   text-align: left;
-  border-top: 1px solid #f0f0f0;
+  border-top: 1px solid var(--color-line-light);
 }
 
 .subtitle {
@@ -42,8 +42,8 @@
   font-weight: var(--fw-400);
   text-transform: uppercase;
   letter-spacing: var(--ls-300);
-  color: var(--gray-600);
-  margin-bottom: var(--space-200);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-fluid-200);
 }
 
 .address {
@@ -71,7 +71,7 @@
   font-family: var(--font-body);
   font-size: var(--fs-200);
   font-weight: var(--fw-400);
-  color: var(--gray-600);
+  color: var(--color-text-secondary);
   text-transform: uppercase;
   letter-spacing: var(--ls-200);
   margin-bottom: 4px;
@@ -85,7 +85,7 @@
 }
 
 .imageWrapper {
-  background-color: var(--gray-400);
+  background-color: var(--color-surface-soft);
   width: 100%;
   aspect-ratio: 3 / 2.2;
   overflow: hidden;
@@ -98,30 +98,21 @@
   display: block;
 }
 
-.button {
-  font-size: 17px;
-}
-
 @media (min-width: 992px) {
   .infoContent {
-    padding: 0 10% 0 5%;
+    padding: 0 11% 0 7%;
     text-align: left;
     align-items: flex-start;
-  }
-
-  .infoContent .title {
-    text-align: left;
   }
 
   .description {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 32px;
-    text-align: left;
   }
 
   .imageWrapper {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 4 / 5;
   }
 
   .infoBox {
@@ -133,5 +124,21 @@
 @media (max-width: 767px) {
   .imageWrapper {
     aspect-ratio: 1 / 1;
+  }
+}
+
+@media (max-width: 320px) {
+  .subtitle {
+    font-size: 10px;
+  }
+
+  .description,
+  .address {
+    font-size: var(--fs-200);
+  }
+
+  .day,
+  .time {
+    font-size: var(--fs-100);
   }
 }
