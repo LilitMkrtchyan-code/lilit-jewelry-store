@@ -5,10 +5,11 @@ export type NavItem = {
   children?: NavItem[];
   image?: {
     src: string;
-    alt: string;
+    alt?: string;
   };
 };
 
 export type MainNavigationProps = {
- onClose?: () => void;
-}
+  onClose: () => void;
+  isOpen: boolean;
+};

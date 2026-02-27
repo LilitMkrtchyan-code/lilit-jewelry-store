@@ -37,13 +37,16 @@
   --color-white-glass: #ffffff80;
   --color-shadow-glow: #e7d1cf;
   --color-surface-soft: #f6f6f6;
-  --color-surface-dim: #f0f0f0;
+  --color-surface-dim: #f9f9f9;
   --color-line-light: #e6e6e6;
+  --color-line-dark: #cccbce;
 
   --ease-reveal: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --ease-gentle: cubic-bezier(0.4, 0, 0.2, 1);
   --ease-punchy: cubic-bezier(0.33, 1, 0.68, 1);
   --ease-cinematic: cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  --t-interactive: color var(--t-fast) var(--ease-reveal), opacity var(--t-fast) var(--ease-reveal);
 
   --t-reveal: 1.4s;
   --t-fast: 0.2s;
@@ -68,12 +71,13 @@
   --space-400: 16px;
   --space-500: 24px;
   --space-600: 32px;
+  --space-700: 40px;
 
   --space-section: clamp(50px, 4vw + 20px, 80px);
   --space-fluid-100: clamp(12px, 0.5vw + 10px, 16px);
   --space-fluid-200: clamp(18px, 1vw + 12px, 24px);
   --space-fluid-300: clamp(22px, 1.5vw + 12px, 32px);
-  --space-fluid-400: clamp(28px, 2vw + 15px, 40px);
+  --space-fluid-400: clamp(30px, 2vw + 15px, 40px);
   --space-fluid-500: clamp(38px, 3.5vw + 15px, 60px);
 }
 
@@ -174,27 +178,22 @@ button {
 
 .line-disappear::after {
   transform: scaleX(1);
-  transform-origin: right;
+  transform-origin: left;
   transition:
     transform var(--t-smooth) var(--ease-gentle),
     opacity var(--t-smooth) var(--ease-gentle);
 }
 
 .line-disappear:hover::after {
-  transform-origin: left;
+  transform-origin: right;
   transform: scaleX(0);
   opacity: var(--hover-opacity);
 }
 
 .line-flow::after {
   transform: scaleX(0);
-  transform-origin: left;
+  transform-origin: right;
   transition: transform var(--t-smooth) var(--ease-gentle);
-}
-
-.line-flow:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
 }
 
 .image-scale {
@@ -227,4 +226,22 @@ button {
   animation: revealUp var(--t-reveal) var(--ease-reveal) forwards;
   will-change: transform, opacity;
   backface-visibility: hidden;
+}
+
+@media (hover: hover) {
+  .line-flow:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+@media (hover: none) {
+  .line-flow:active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  .line-flow:not(:active)::after {
+    transform: scaleX(0);
+  }
 }

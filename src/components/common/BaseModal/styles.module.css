@@ -14,9 +14,7 @@
   right: var(--space-200);
   color: var(--color-text);
   opacity: 0.8;
-  transition:
-    color var(--t-fast) var(--ease-reveal),
-    opacity var(--t-fast) var(--ease-reveal);
+  transition: var(--t-interactive);
 }
 
 .baseModal :global(.ant-modal-close) svg {

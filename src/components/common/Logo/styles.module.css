@@ -36,7 +36,7 @@
 
 .inverted {
   transform: rotate(180deg);
-  margin-top: -2px;
+  margin-top: -1px;
 }
 
 .normal {

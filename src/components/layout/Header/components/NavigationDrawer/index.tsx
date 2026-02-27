@@ -26,7 +26,7 @@ const NavigationDrawer = ({ open, onClose }: NavDrawerProps) => {
         }}
       >
         <>
-          <MainNavigation onClose={onClose} />
+          <MainNavigation onClose={onClose} isOpen={open} />
           <ServiceNavigation onClose={onClose} onOpenLang={show} />
         </>
       </BaseDrawer>

@@ -1,5 +1,7 @@
 .serviceNavigation {
-  padding: var(--space-fluid-200) var(--space-fluid-400);
+  padding: var(--space-500) var(--space-700);
+  --t-smooth: 0.3s;
+  --ease-gentle: var(--ease-cinematic);
 }
 
 .serviceList {
@@ -9,11 +11,16 @@
 
 .serviceItem {
   font-size: var(--fs-100);
-  text-transform: uppercase;
   color: var(--color-text);
   padding: 20px 0;
 }
 
 .serviceLink {
   gap: 18px;
+}
+
+@media (max-width: 480px) {
+  .serviceNavigation {
+    padding: 18px var(--space-600);
+  }
 }

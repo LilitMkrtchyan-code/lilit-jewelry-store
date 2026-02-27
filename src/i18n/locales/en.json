@@ -10,7 +10,9 @@
       "services": "Open Services menu",
       "contact": "Go to Contact page",
       "storeLocator": "Go to store locator",
-      "language": "Change language"
+      "language": "Change language",
+      "instagram": "Follow us on Instagram",
+      "facebook": "Follow us on Facebook"
     },
     "iconsText": {
       "menu": "Menu",
@@ -114,7 +116,7 @@
       "subtitle": "Hours & Location",
       "address": "Movses Khorenatsu St., 15 Building, Yerevan",
       "weekdays": "Monday - Saturday",
-      "weekdaysTime": "10:00 AM - 08:00 PM",
+      "weekdaysTime": "10:30 AM - 07:30 PM",
       "weekend": "Sunday",
       "weekendTime": "10:00 AM - 06:00 PM",
       "cta": "Find a Boutique",
@@ -442,50 +444,37 @@
     "default": "Something went wrong. Please try again later"
   },
   "footer": {
-    "stayConnected": "Stay Connected",
-    "getInsiderInfo": "Get insider information about exclusive",
-    "offersEvents": "offers, events and more",
-    "signUpForEmail": "Sign Up For Email",
-    "contactUs": "Contact Us",
-    "copyright": "© {{year}} Kassaman. All rights reserved",
     "columns": {
-      "help": "Help",
-      "faq": "FAQ",
-      "contactUs": "Contact Us",
-      "ourServices": "Our Services",
-      "booking": "Booking",
-      "checkout": "Checkout",
-      "workingHours": "Working Hours",
-      "resources": "Resources",
-      "catalog": "Catalog",
-      "collections": "Collections",
-      "product": "Product",
-      "payment": "Payment",
-      "followUs": "Follow Us",
-      "address": "Address",
-      "about": "About",
-      "blog": "Blog",
-      "aboutUs": "About Us",
-      "rings": "Rings",
-      "bracelets": "Bracelets",
-      "cufflinks": "Cufflinks",
-      "necklaces": "Necklaces"
+      "customerCare": {
+        "title": "Customer Care",
+        "contact": "Contact Us",
+        "faq": "FAQ",
+        "booking": "Book An Appointment",
+        "services": "Services"
+      },
+      "discover": {
+        "title": "Discover",
+        "catalog": "Catalog",
+        "collections": "Collections",
+        "bracelets": "Bracelets",
+        "necklaces": "Necklaces",
+        "rings": "Rings",
+        "cufflinks": "Cufflinks"
+      },
+      "ourCompany": {
+        "title": "Our Company",
+        "about": "About Us",
+        "guide": "Stone & Metal Guide",
+        "blog": "Blog",
+        "shipping": "Shipping & Returns",
+        "privacy": "Privacy Policy"
+      },
+      "followUs": {
+        "title": "Follow Us",
+        "contact": "Contact Us"
+      }
     },
-    "social": {
-      "twitter": "Twitter",
-      "facebook": "Facebook",
-      "instagram": "Instagram",
-      "youtube": "YouTube"
-    }
-  },
-  "emailSignup": {
-    "title": "Stay Connected",
-    "firstTimeText": "First-time customer? Sign up for free shipping on your first order.",
-    "alreadyShopText": "Already shop with us? Sign up to get early access to new drops, styling inspiration, and exclusive offers.",
-    "placeholder": "Enter your email address",
-    "buttonText": "Subscribe",
-    "successMessage": "Thanks for subscribing!",
-    "errorMessage": "Invalid email address",
-    "emptyEmailMessage": "Please enter your email address"
+    "copyright": "Copyright © {{year}} Kassaman. All rights reserved",
+    "cta": "Change Language"
   }
 }
