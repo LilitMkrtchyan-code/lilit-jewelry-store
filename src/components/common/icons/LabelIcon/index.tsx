@@ -14,26 +14,38 @@ const LabelIcon = ({
   as = 'button',
 }: LabelIconProps) => {
   const Tag = COMPONENTS[as];
+  const isNavLink = as === 'navlink';
 
   const baseClasses = `${styles.iconLabel} ${className}`.trim();
-  const NavLinkClasses = ({ isActive }: { isActive: boolean }) =>
+
+  const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
     `${baseClasses} ${isActive ? styles.active : ''}`.trim();
 
-  return (
-    <Tag
-      {...(to ? { to } : { type: 'button' })}
-      className={as === 'navlink' ? NavLinkClasses : baseClasses}
-      onClick={onClick}
-      aria-label={ariaLabel || text}
-    >
+  const labelContent = (isActive: boolean = false) => (
+    <>
       {icon}
       {text && (
         <span
-          className={`${styles.text} ${textClassName} ${hideTextMobile ? styles.hideText : ''}`}
+          className={`
+            ${styles.text} 
+            ${textClassName} 
+            ${hideTextMobile ? styles.hideText : ''} 
+            ${isActive ? 'line-disappear' : 'line-flow'}`.trim()}
         >
           {text}
         </span>
       )}
+    </>
+  );
+
+  return (
+    <Tag
+      {...(isNavLink ? { to } : { type: 'button' })}
+      className={isNavLink ? navLinkClasses : baseClasses}
+      onClick={onClick}
+      aria-label={ariaLabel || text}
+    >
+      {isNavLink ? ({ isActive }: { isActive: boolean }) => labelContent(isActive) : labelContent()}
     </Tag>
   );
 };

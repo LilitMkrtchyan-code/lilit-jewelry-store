@@ -39,8 +39,8 @@
   padding: 0 20px;
 }
 
-.menuText,
-.searchText {
+.header .menuText,
+.header .searchText {
   text-transform: capitalize;
   font-size: var(--fs-100);
 }
@@ -54,7 +54,7 @@
 @media (max-width: 480px) {
   .topLeft,
   .topRight {
-    gap: var(--space-200);
+    gap: var(--space-300);
   }
 
   .topCenter {

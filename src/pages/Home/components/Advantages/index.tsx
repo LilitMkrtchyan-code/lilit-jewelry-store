@@ -29,9 +29,15 @@ const Advantages = () => {
   return (
     <section className={styles.advantages}>
       <div className="container">
-        <Row gutter={[32, 64]} justify="center">
+        <Row
+          gutter={[
+            { xs: 16, sm: 24, md: 60, lg: 48 },
+            { xs: 32, sm: 32, md: 32, lg: 48 },
+          ]}
+          justify="center"
+        >
           {ADVANTAGES.map((item, index) => (
-            <Col xs={24} sm={12} lg={6} key={index}>
+            <Col xs={24} sm={12} lg={8} xl={6} key={index}>
               <div className={styles.advantageItem}>
                 <div className={styles.icon}>{item.icon}</div>
                 <h3 className={styles.title}>{item.title}</h3>

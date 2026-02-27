@@ -1,0 +1,32 @@
+.baseCollapse {
+  --t-smooth: 0.3s;
+  --ease-gentle: var(--ease-cinematic);
+}
+
+.baseCollapse :global(.ant-collapse-header) {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-400);
+  font-size: var(--fs-100);
+  color: var(--color-text);
+  padding: 20px 0 !important;
+  text-transform: uppercase;
+  letter-spacing: var(--ls-200);
+  transition: var(--t-interactive);
+  opacity: 1;
+}
+
+.baseCollapse :global(.ant-collapse-header:focus),
+.baseCollapse :global(.ant-collapse-header:focus-visible),
+.baseCollapse :global(.ant-collapse-item-active > .ant-collapse-header) {
+  opacity: 1;
+}
+
+.baseCollapse :global(.ant-collapse-arrow) {
+  transition: transform var(--t-smooth) var(--ease-gentle);
+}
+
+@media (hover: hover) {
+  .baseCollapse :global(.ant-collapse-header:hover) {
+    opacity: var(--hover-opacity);
+  }
+}

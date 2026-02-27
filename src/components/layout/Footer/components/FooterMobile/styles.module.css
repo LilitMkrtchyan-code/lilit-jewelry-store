@@ -1,0 +1,37 @@
+.footerMobile {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--color-line-dark);
+}
+
+.footerMobile :global(.ant-collapse-header) {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-500);
+  letter-spacing: var(--ls-200);
+}
+
+.subItem {
+  padding: var(--space-300) 0 !important;
+}
+
+.subLink {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-weight: var(--fw-400);
+  font-size: var(--fs-200);
+  color: var(--color-text);
+  letter-spacing: var(--ls-200);
+  transition: var(--t-interactive);
+}
+
+.subLink:visited,
+.subLink:active {
+  color: var(--color-text);
+}
+
+@media (min-width: 768px) {
+  .footerMobile {
+    padding: 0;
+    border-bottom: none;
+    display: none;
+  }
+}

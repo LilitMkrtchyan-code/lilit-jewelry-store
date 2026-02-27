@@ -1,0 +1,25 @@
+.socialLinks {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: var(--color-text);
+  transition: var(--t-interactive);
+}
+
+.socialLink:hover {
+  color: var(--color-text);
+  opacity: var(--hover-opacity);
+}
+
+.socialLink:active {
+  color: var(--color-secondary);
+  opacity: 1;
+}
