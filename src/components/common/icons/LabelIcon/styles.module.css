@@ -8,16 +8,19 @@
 }
 
 .iconLabel:visited,
-.iconLabel:active {
-  color: var(--color-text);
+.iconLabel:focus,
+.iconLabel:focus-visible {
+  color: var(--color-text) !important;
+  opacity: 1;
 }
 
-.iconLabel:hover {
+.iconLabel:active {
+  color: var(--color-text) !important;
   opacity: var(--hover-opacity);
 }
 
 .iconLabel.active {
-  color: var(--color-secondary);
+  color: var(--color-secondary) !important;
 }
 
 .iconLabel svg {
@@ -39,5 +42,12 @@
 @media (max-width: 768px) {
   .iconLabel .hideText {
     display: none;
+  }
+}
+
+@media (hover: hover) {
+  .iconLabel:hover {
+    opacity: var(--hover-opacity);
+    color: var(--color-text) !important;
   }
 }

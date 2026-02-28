@@ -5,7 +5,7 @@
 
 .baseCollapse :global(.ant-collapse-header) {
   font-family: var(--font-heading);
-  font-weight: var(--fw-400);
+  font-weight: var(--fw-500);
   font-size: var(--fs-100);
   color: var(--color-text);
   padding: 20px 0 !important;
@@ -13,12 +13,18 @@
   letter-spacing: var(--ls-200);
   transition: var(--t-interactive);
   opacity: 1;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .baseCollapse :global(.ant-collapse-header:focus),
 .baseCollapse :global(.ant-collapse-header:focus-visible),
 .baseCollapse :global(.ant-collapse-item-active > .ant-collapse-header) {
-  opacity: 1;
+  opacity: 1 !important;
+}
+
+.baseCollapse :global(.ant-collapse-header:active) {
+  opacity: var(--hover-opacity);
 }
 
 .baseCollapse :global(.ant-collapse-arrow) {

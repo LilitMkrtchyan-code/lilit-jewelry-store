@@ -141,7 +141,7 @@ ul {
   max-width: 1460px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 var(--space-400);
 }
 
 button {
@@ -153,6 +153,12 @@ button {
   margin: 0;
   appearance: none;
   outline: none;
+}
+
+a,
+button,
+[role='button'] {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .line-disappear,
@@ -226,6 +232,12 @@ button {
   animation: revealUp var(--t-reveal) var(--ease-reveal) forwards;
   will-change: transform, opacity;
   backface-visibility: hidden;
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 0 15px;
+  }
 }
 
 @media (hover: hover) {

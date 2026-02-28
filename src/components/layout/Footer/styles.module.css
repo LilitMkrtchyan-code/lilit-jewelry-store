@@ -44,6 +44,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0 var(--space-400);
+  }
+}
+
+@media (min-width: 1200px) {
+  .footerLegal {
     padding: 0 60px;
   }
 }

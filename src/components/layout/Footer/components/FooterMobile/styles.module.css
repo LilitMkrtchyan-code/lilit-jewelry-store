@@ -24,8 +24,15 @@
 }
 
 .subLink:visited,
+.subLink:focus,
+.subLink:focus-visible {
+  color: var(--color-text) !important;
+  opacity: 1;
+}
+
 .subLink:active {
-  color: var(--color-text);
+  color: var(--color-text) !important;
+  opacity: var(--hover-opacity);
 }
 
 @media (min-width: 768px) {
@@ -33,5 +40,12 @@
     padding: 0;
     border-bottom: none;
     display: none;
+  }
+}
+
+@media (hover: hover) {
+  .subLink:hover {
+    opacity: var(--hover-opacity);
+    color: var(--color-text) !important;
   }
 }
