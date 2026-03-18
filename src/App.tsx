@@ -1,3 +1,4 @@
+import { useScrollToTop } from './hooks/useScrollToTop';
 import { Routes, Route } from 'react-router-dom';
 import MainLayout from './components/layout/MainLayout';
 import About from './pages/About';
@@ -18,6 +19,8 @@ import Category from './pages/Category';
 import StoreLocator from './pages/StoreLocator';
 
 function App() {
+  useScrollToTop();
+
   return (
     <Routes>
       <Route path="/" element={<MainLayout />}>

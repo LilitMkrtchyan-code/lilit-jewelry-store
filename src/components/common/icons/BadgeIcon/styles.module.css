@@ -2,7 +2,7 @@
   position: relative;
   display: inline-flex;
   align-items: center;
-  color: var(--color-text);
+  color: var(--color-primary);
   cursor: pointer;
   transition:
     color var(--t-fast) var(--ease-reveal),

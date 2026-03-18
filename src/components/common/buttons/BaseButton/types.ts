@@ -1,6 +1,6 @@
 import type { ButtonHTMLAttributes, ReactNode } from 'react';
 
-export type ButtonVariant = 'link' | 'shadow';
+export type ButtonVariant = 'link' | 'shadow' | 'dark';
 
 export type BaseButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   label?: string;

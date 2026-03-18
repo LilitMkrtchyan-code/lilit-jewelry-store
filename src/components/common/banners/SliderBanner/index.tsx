@@ -21,8 +21,8 @@ const SliderBanner = ({ banners }: SliderBannerProps) => {
         <BaseBanner
           key={banner.id}
           {...banner}
-          image={{ src: BANNER_IMAGES[banner.image], alt: banner.alt }}
-          isActive={currentSlide === index}
+          image={{ src: BANNER_IMAGES[banner.image.src], alt: banner.image.alt }}
+          animate={currentSlide === index}
         />
       ))}
     </Carousel>

@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: var(--space-400) 0;
+  padding: 20px 0;
 }
 
 :global(.ant-card .ant-card-cover > *) {
@@ -19,7 +19,10 @@
   font-size: var(--fs-200);
   font-weight: var(--fw-600);
   letter-spacing: var(--ls-200);
-  color: var(--color-text);
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-primary);
+  white-space: normal;
   cursor: pointer;
 }
 
@@ -30,14 +33,14 @@
   letter-spacing: var(--ls-100);
   line-height: var(--lh-200);
   text-align: center;
-  color: var(--color-text);
+  color: var(--color-primary);
   margin: var(--space-400) 0 var(--space-200);
 }
 
 .price {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--fs-200);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-600);
   letter-spacing: var(--ls-200);
   line-height: var(--lh-200);
   color: var(--color-secondary);

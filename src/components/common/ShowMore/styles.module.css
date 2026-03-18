@@ -1,0 +1,39 @@
+.showMore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-600);
+  padding: var(--space-500) 0;
+}
+
+.loaderBox {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--t-fast) var(--ease-gentle);
+}
+
+.loaderBox.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.showMoreBtn:disabled {
+  opacity: var(--hover-opacity);
+  background-color: var(--color-background-dark);
+  border-color: var(--color-background-dark);
+  color: var(--color-text-inverse);
+  cursor: default;
+}
+
+.btnText {
+  padding-right: 6px;
+  letter-spacing: var(--ls-200);
+}
+
+@media (max-width: 575px) {
+  .showMoreBtn {
+    min-width: 190px;
+    padding-left: var(--space-400);
+    padding-right: var(--space-400);
+  }
+}

@@ -1,8 +1,8 @@
 .iconLabel {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  color: var(--color-text);
+  gap: var(--space-300);
+  color: var(--color-primary);
   cursor: pointer;
   transition: var(--t-interactive);
 }
@@ -10,12 +10,12 @@
 .iconLabel:visited,
 .iconLabel:focus,
 .iconLabel:focus-visible {
-  color: var(--color-text) !important;
+  color: var(--color-primary) !important;
   opacity: 1;
 }
 
 .iconLabel:active {
-  color: var(--color-text) !important;
+  color: var(--color-primary) !important;
   opacity: var(--hover-opacity);
 }
 
@@ -29,12 +29,12 @@
 
 .iconLabel .text {
   font-family: var(--font-heading);
-  font-weight: var(--fw-400);
-  font-size: 11px;
-  letter-spacing: var(--ls-200);
+  font-weight: var(--fw-500);
+  font-size: var(--fs-100);
+  letter-spacing: var(--ls-100);
   line-height: 1;
   text-transform: uppercase;
-  color: var(--color-text);
+  color: var(--color-primary);
   --t-smooth: 0.3s;
   --ease-gentle: var(--ease-cinematic);
 }
@@ -48,6 +48,6 @@
 @media (hover: hover) {
   .iconLabel:hover {
     opacity: var(--hover-opacity);
-    color: var(--color-text) !important;
+    color: var(--color-primary) !important;
   }
 }

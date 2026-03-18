@@ -59,11 +59,11 @@
 }
 
 .langItem.active {
-  border-bottom-color: var(--color-text);
+  border-bottom-color: var(--color-primary);
 }
 
 .langItem.active .langName {
-  color: var(--color-text);
+  color: var(--color-primary);
   font-weight: var(--fw-500);
 }
 

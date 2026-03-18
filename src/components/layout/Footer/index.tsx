@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { useToggle } from '../../../hooks/useToggle';
 import { getCurrentYear } from './utils';
 import FooterDesktop from './components/FooterDesktop';
@@ -24,7 +24,15 @@ const Footer = () => {
       <div className={styles.footerBottom}>
         <div className="container">
           <div className={styles.footerLegal}>
-            <div className={styles.copyright}>{t('footer.copyright', { year: currentYear })}</div>
+            <div className={styles.copyright}>
+              <Trans
+                i18nKey="footer.copyright"
+                values={{ year: currentYear }}
+                components={{
+                  year: <span className={styles.year} />,
+                }}
+              />
+            </div>
             <BaseButton onClick={show}>{t('footer.cta')}</BaseButton>
           </div>
         </div>

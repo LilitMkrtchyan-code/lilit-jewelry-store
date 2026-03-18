@@ -41,7 +41,6 @@
 
 .header .menuText,
 .header .searchText {
-  text-transform: capitalize;
   font-size: var(--fs-100);
 }
 

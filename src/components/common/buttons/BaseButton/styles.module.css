@@ -4,7 +4,7 @@
   font-weight: var(--fw-400);
   letter-spacing: var(--ls-200);
   white-space: nowrap;
-  color: var(--color-text);
+  color: var(--color-primary);
   cursor: pointer;
 }
 
@@ -27,6 +27,26 @@
 
 .shadow:hover {
   box-shadow: var(--shadow-100);
+}
+
+.dark {
+  font-family: var(--font-body);
+  background-color: var(--color-background-dark);
+  border: 1px solid var(--color-background-dark);
+  color: var(--color-text-inverse);
+  min-width: 220px;
+  padding: 9px var(--space-500);
+  transition:
+    background-color var(--t-base) var(--ease-gentle),
+    color var(--t-base) var(--ease-gentle),
+    border-color var(--t-base) var(--ease-gentle),
+    opacity var(--t-base) var(--ease-gentle);
+}
+
+.dark:hover {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
 }
 
 @media (max-width: 320px) {

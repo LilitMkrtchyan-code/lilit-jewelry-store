@@ -30,7 +30,7 @@ const FeaturedCategories = () => {
               onClick={() => navigate(`/catalog/${category.slug}`)}
             >
               <AppTitle variant="cardTitle" inline={true} className={styles.cardTitle}>
-                {t(`categories.${category.slug}.title`)}
+                {t(`categories.${category.slug}`)}
               </AppTitle>
             </VisualCard>
           ))}

@@ -6,5 +6,5 @@
 .navLogo:hover,
 .navLogo:visited,
 .navLogo:active {
-  color: var(--color-text);
+  color: var(--color-primary);
 }

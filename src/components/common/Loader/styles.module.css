@@ -1,0 +1,21 @@
+.loader {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customSpinner {
+  border-radius: 50%;
+  border: 1.5px solid var(--color-secondary);
+  border-top-color: var(--color-line-light);
+  animation: spin var(--t-slow) var(--ease-inertia) infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

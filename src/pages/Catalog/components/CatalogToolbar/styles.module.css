@@ -1,0 +1,38 @@
+.catalogToolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-300);
+}
+
+.filterControls {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-fluid-200);
+}
+
+.itemsCount {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-500);
+  font-size: var(--fs-100);
+  letter-spacing: var(--ls-100);
+  line-height: 1;
+  text-transform: uppercase;
+  padding-bottom: var(--underline-gap);
+  color: var(--color-primary);
+}
+
+.countNumber {
+  font-family: var(--font-accent);
+}
+
+.viewOptions {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .filterBtn .filterText {
+    display: none;
+  }
+}

@@ -14,7 +14,7 @@ const BaseCard = ({
 }: BaseCardProps) => (
   <Card
     className={`${styles.card} ${className}`}
-    style={{ width: width ?? '100%' }}
+    style={{ width: width ?? '100%', height: '100%' }}
     cover={
       <div
         className={styles.imgWrapper}
@@ -24,7 +24,7 @@ const BaseCard = ({
           aspectRatio: !height ? 'var(--card-aspect-ratio, 3 / 4)' : undefined,
         }}
       >
-        {imageNode ?? (
+        {!imageNode && (
           <img
             className={`${styles.image} ${imageClassName}`}
             draggable={false}

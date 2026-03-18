@@ -1,7 +1,8 @@
 .pageTitle {
   font-family: var(--font-heading);
   font-size: var(--fs-700);
-  font-weight: var(--fw-700);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
   line-height: 1.1;
   letter-spacing: var(--ls-title-100);
   color: var(--color-text-inverse);
@@ -15,7 +16,7 @@
   text-transform: uppercase;
   letter-spacing: var(--ls-title-300);
   line-height: var(--lh-100);
-  color: var(--color-text);
+  color: var(--color-primary);
   margin-bottom: var(--space-fluid-400);
 }
 
@@ -26,7 +27,7 @@
   font-size: var(--fs-200);
   letter-spacing: var(--ls-200);
   line-height: var(--lh-200);
-  color: var(--color-text);
+  color: var(--color-primary);
   text-transform: uppercase;
   cursor: pointer;
 }

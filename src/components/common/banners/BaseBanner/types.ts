@@ -1,14 +1,15 @@
-import type { BannerCTA } from '../types';
+import type { ReactNode } from 'react';
+import type { BannerButton } from '../types';
 
 export type BaseBannerProps = {
   id: string;
   image: {
     src: string;
-    alt?: string;
+    alt: string;
   };
-  title?: string;
-  subtitle?: string;
-  cta?: BannerCTA;
+  title?: ReactNode;
+  subtitle?: ReactNode;
+  cta?: BannerButton[];
   className?: string;
-  isActive?: boolean;
+  animate?: boolean;
 };

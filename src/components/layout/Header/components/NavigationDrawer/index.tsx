@@ -5,6 +5,7 @@ import MainNavigation from '../MainNavigation';
 import ServiceNavigation from '../ServiceNavigation';
 import Logo from '../../../../common/Logo';
 import LanguageSwitcher from '../../../../common/LanguageSwitcher';
+import { CloseOutlined } from '@ant-design/icons';
 import styles from './styles.module.css';
 
 const NavigationDrawer = ({ open, onClose }: NavDrawerProps) => {
@@ -17,6 +18,7 @@ const NavigationDrawer = ({ open, onClose }: NavDrawerProps) => {
         size={500}
         open={open}
         onClose={onClose}
+        closable={false}
         className={styles.navDrawer}
         styles={{
           body: { padding: 0 },
@@ -26,6 +28,9 @@ const NavigationDrawer = ({ open, onClose }: NavDrawerProps) => {
         }}
       >
         <>
+          <div className="customClose">
+            <CloseOutlined onClick={onClose} />
+          </div>
           <MainNavigation onClose={onClose} isOpen={open} />
           <ServiceNavigation onClose={onClose} onOpenLang={show} />
         </>

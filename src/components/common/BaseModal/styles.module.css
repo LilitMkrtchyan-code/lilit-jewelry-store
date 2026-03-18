@@ -12,7 +12,7 @@
   z-index: 1000;
   top: var(--space-200);
   right: var(--space-200);
-  color: var(--color-text);
+  color: var(--color-primary);
   opacity: 0.8;
   transition: var(--t-interactive);
 }

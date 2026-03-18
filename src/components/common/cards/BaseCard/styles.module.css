@@ -1,6 +1,8 @@
 .card {
   background: none;
   border: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .imgWrapper {
@@ -8,6 +10,7 @@
   overflow: hidden;
   cursor: pointer;
   background-color: var(--color-surface-soft);
+  flex-shrink: 0;
 }
 
 .image {

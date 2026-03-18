@@ -1,0 +1,7 @@
+.productList {
+  width: 100%;
+  display: grid;
+  column-gap: var(--space-500);
+  row-gap: var(--space-700);
+  padding-top: var(--space-400);
+}

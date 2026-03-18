@@ -1,5 +1,6 @@
-export type BannerCTA = {
-  book?: string;
-  shop?: string;
+export type BannerButton = {
+  id: string;
+  label: string;
+  link: string;
+  variant?: 'link' | 'shadow' | 'dark';
 };
-
