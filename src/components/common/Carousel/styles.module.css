@@ -10,6 +10,9 @@
 :global(.swiper-button-next),
 :global(.swiper-button-prev) {
   color: var(--color-secondary);
+  background-color: var(--color-white-glass);
+  padding: var(--space-200);
+  border-radius: 50%;
 }
 
 :global(.swiper-button-next::after),

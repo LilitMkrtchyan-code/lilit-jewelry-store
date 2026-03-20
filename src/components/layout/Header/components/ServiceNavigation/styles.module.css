@@ -11,7 +11,7 @@
 
 .serviceItem {
   font-size: var(--fs-100);
-  color: var(--color-text);
+  color: var(--color-primary);
   padding: 20px 0;
 }
 

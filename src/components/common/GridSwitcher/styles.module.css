@@ -1,0 +1,59 @@
+.gridSwitcher {
+  display: flex;
+  gap: var(--space-200);
+  align-items: center;
+}
+
+.gridBtn {
+  background-color: var(--color-surface-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 34px;
+  color: var(--color-primary);
+  overflow: hidden;
+  cursor: pointer;
+  transition:
+    width var(--t-base) var(--ease-gentle),
+    opacity var(--t-fast) var(--ease-reveal),
+    background-color var(--t-fast) var(--ease-reveal),
+    color var(--t-fast) var(--ease-reveal);
+}
+
+.gridBtn.active,
+.gridBtn:hover:not(.active):not(.hidden) {
+  background-color: var(--color-background-dark);
+  color: var(--color-text-inverse);
+}
+
+.gridBtn.hidden {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition:
+    width var(--t-base) var(--ease-gentle),
+    opacity var(--t-fast) var(--ease-reveal),
+    visibility 0s var(--t-base);
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 34px;
+}
+
+.iconWrapper svg {
+  display: block;
+}
+
+@media (max-width: 360px) {
+  .gridSwitcher {
+    display: none;
+  }
+}

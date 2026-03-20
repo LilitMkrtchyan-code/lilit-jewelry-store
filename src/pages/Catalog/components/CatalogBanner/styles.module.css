@@ -1,0 +1,28 @@
+.title {
+  padding-bottom: var(--space-fluid-200);
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: var(--fw-400);
+  line-height: var(--lh-200);
+  letter-spacing: var(--ls-200);
+  color: var(--color-text-inverse);
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: var(--fs-300);
+  }
+}
+
+@media (max-width: 575px) {
+  .subtitle {
+    padding: 0;
+  }
+}

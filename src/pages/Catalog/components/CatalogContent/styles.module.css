@@ -1,0 +1,40 @@
+.catalogContent {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--space-section);
+}
+
+.filterSidebar {
+  width: 25%;
+  max-width: 350px;
+  flex: 0 0 auto;
+  position: sticky;
+  top: 100px;
+  z-index: 10;
+  height: fit-content;
+  padding-right: var(--space-fluid-300);
+}
+
+.catalogMain {
+  display: flex;
+  gap: var(--space-fluid-300);
+  align-items: flex-start;
+  position: relative;
+}
+
+.gridShrink,
+.gridFull {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.filterDrawer :global(.ant-drawer-header-title) {
+  font-size: var(--fs-300);
+  font-family: var(--font-heading);
+  letter-spacing: var(--ls-200);
+  text-transform: uppercase;
+}
+
+.filterDrawer :global(.ant-drawer-body) {
+  padding: 12px var(--space-500);
+}

@@ -1,15 +1,18 @@
 import type { BANNER_IMAGES } from './const';
-import type { BannerCTA } from '../types';
+import type { BannerButton } from '../types';
+import type { ReactNode } from 'react';
 
 export type BannerImageKey = keyof typeof BANNER_IMAGES;
 
 export type SliderBannerItem = {
   id: string;
-  image: BannerImageKey;
-  title?: string;
-  subtitle?: string;
-  alt?: string;
-  cta?: BannerCTA;
+  image: {
+    src: BannerImageKey;
+    alt: string;
+  };
+  title?: ReactNode;
+  subtitle?: ReactNode;
+  cta?: BannerButton[];
 };
 
 export type SliderBannerProps = {

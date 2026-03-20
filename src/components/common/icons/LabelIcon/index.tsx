@@ -21,22 +21,23 @@ const LabelIcon = ({
   const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
     `${baseClasses} ${isActive ? styles.active : ''}`.trim();
 
-  const labelContent = (isActive: boolean = false) => (
-    <>
-      {icon}
-      {text && (
-        <span
-          className={`
-            ${styles.text} 
-            ${textClassName} 
-            ${hideTextMobile ? styles.hideText : ''} 
-            ${isActive ? 'line-disappear' : 'line-flow'}`.trim()}
-        >
-          {text}
-        </span>
-      )}
-    </>
-  );
+  const labelContent = (isActive: boolean = false) => {
+    const textClasses = [
+      styles.text,
+      textClassName,
+      hideTextMobile ? styles.hideText : '',
+      isActive ? 'line-disappear' : 'line-flow',
+    ]
+      .filter(Boolean)
+      .join(' ');
+
+    return (
+      <>
+        {icon}
+        {text && <span className={textClasses}>{text}</span>}
+      </>
+    );
+  };
 
   return (
     <Tag

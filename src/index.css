@@ -1,7 +1,7 @@
 :root {
-  --font-heading: 'Brilliant Cut Pro', Almarai, Arial, sans-serif;
-  --font-body: 'Fancy Cut Pro', 'Almarai', times, sans-serif;
-  --font-accent: 'Raleway', sans-serif;
+  --font-heading: 'Raleway', sans-serif;
+  --font-body: 'Fancy Cut Pro', 'Almarai', serif;
+  --font-accent: 'Manrope', sans-serif;
 
   --fs-100: 12px;
   --fs-200: 14px;
@@ -18,7 +18,7 @@
   --fw-700: 700;
 
   --lh-100: 1.2;
-  --lh-200: 1.6;
+  --lh-200: 1.5;
 
   --ls-100: 0.5px;
   --ls-200: 0.8px;
@@ -30,8 +30,9 @@
   --ls-title-300: 0.15em;
 
   --color-background: #ffffff;
+  --color-background-dark: #000000;
   --color-secondary: #921813;
-  --color-text: #1a1a1a;
+  --color-primary: #1a1a1a;
   --color-text-secondary: #8c8c8c;
   --color-text-inverse: #ffffff;
   --color-white-glass: #ffffff80;
@@ -45,6 +46,7 @@
   --ease-gentle: cubic-bezier(0.4, 0, 0.2, 1);
   --ease-punchy: cubic-bezier(0.33, 1, 0.68, 1);
   --ease-cinematic: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-inertia: cubic-bezier(0.5, 0.1, 0.4, 0.9);
 
   --t-interactive: color var(--t-fast) var(--ease-reveal), opacity var(--t-fast) var(--ease-reveal);
 
@@ -89,18 +91,20 @@
   padding: 0;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   width: 100% !important;
-  padding-right: 0 !important;
 }
 
 body {
   background-color: var(--color-background);
-  color: var(--color-text);
+  color: var(--color-primary);
   font-size: var(--fs-300);
   font-family: var(--font-body);
   font-weight: var(--fw-400);
@@ -119,7 +123,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
 a {
@@ -141,7 +145,7 @@ ul {
   max-width: 1460px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 var(--space-400);
+  padding: 0 20px;
 }
 
 button {
@@ -232,6 +236,16 @@ button,
   animation: revealUp var(--t-reveal) var(--ease-reveal) forwards;
   will-change: transform, opacity;
   backface-visibility: hidden;
+}
+
+.customClose {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+  cursor: pointer;
+  font-size: var(--fs-300);
+  color: var(--color-primary);
 }
 
 @media (max-width: 320px) {

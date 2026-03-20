@@ -1,0 +1,52 @@
+.filterPanel :global(.ant-collapse-header) {
+  padding: 20px 0 !important;
+  font-size: var(--fs-200);
+  font-weight: var(--fw-600);
+}
+
+.filterPanel :global(.ant-collapse-body) {
+  padding: 0 0 12px !important;
+}
+
+.priceSlider :global(.ant-slider-track) {
+  background-color: var(--color-primary) !important;
+  height: 0.9px !important;
+}
+
+.priceSlider :global(.ant-slider-rail) {
+  background-color: var(--color-line-light) !important;
+  height: 0.9px !important;
+  opacity: var(--hover-opacity) !important;
+}
+
+.priceSlider :global(.ant-slider-handle)::before,
+.priceSlider :global(.ant-slider-handle)::after {
+  display: none !important;
+}
+
+.priceSlider :global(.ant-slider-handle) {
+  width: 15px !important;
+  height: 15px !important;
+  background-color: var(--color-background) !important;
+  border: 1px solid var(--color-primary) !important;
+  border-radius: 50% !important;
+  box-shadow: none !important;
+  transition: none !important;
+  transform: translateX(-50%) !important;
+  margin-top: -4px !important;
+}
+
+.priceSlider :global(.ant-slider-handle:hover),
+.priceSlider :global(.ant-slider-handle:active),
+.priceSlider :global(.ant-slider-handle-dragging),
+.priceSlider :global(.ant-slider-handle:focus) {
+  box-shadow: none !important;
+  transform: translateX(-50%) scale(1) !important;
+}
+
+@media (max-width: 1200px) {
+  .filterPanel {
+    width: 100%;
+    padding-right: 0;
+  }
+}

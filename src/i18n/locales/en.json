@@ -1,219 +1,9 @@
 {
-  "header": {
-    "ariaLabels": {
-      "logo": "Go to home",
-      "menu": "Open navigation menu",
-      "search": "Open search bar",
-      "account": "Go to your account",
-      "cart": "Open shopping cart",
-      "bookingCart": "Open booking cart",
-      "services": "Open Services menu",
-      "contact": "Go to Contact page",
-      "storeLocator": "Go to store locator",
-      "language": "Change language",
-      "instagram": "Follow us on Instagram",
-      "facebook": "Follow us on Facebook"
-    },
-    "iconsText": {
-      "menu": "Menu",
-      "search": "Search",
-      "user": "My Account"
-    },
-    "menu": {
-      "sections": {
-        "shopByCategory": "Shop by Category",
-        "collections": "Collections"
-      },
-      "categories": {
-        "bracelets": "Bracelets",
-        "cufflinks": "Cufflinks",
-        "necklaces": "Necklaces",
-        "rings": "Rings"
-      },
-      "collections": {
-        "signature": "Signature",
-        "prestige": "Prestige",
-        "timeless": "Timeless",
-        "wedding": "Wedding"
-      },
-      "service": {
-        "contact": "Contact Us",
-        "services": "Services",
-        "account": "My Account",
-        "storeLocator": "Find a Boutique",
-        "language": "English"
-      }
-    }
-  },
-  "home": {
-    "heroBanners": [
-      {
-        "id": "1",
-        "image": "ring9",
-        "title": "Fine Jewelry. Handmade",
-        "alt": "Handmade fine jewelry ring with diamonds",
-        "cta": {
-          "book": "Book an Item",
-          "shop": "Shop Now"
-        }
-      },
-      {
-        "id": "2",
-        "image": "ring10",
-        "title": "Latest Rings Collection",
-        "alt": "Close-up of luxury ring from latest collection",
-        "cta": {
-          "book": "Book an Item",
-          "shop": "Shop Now"
-        }
-      },
-      {
-        "id": "3",
-        "image": "cufflinks5",
-        "title": "Premium Cufflinks",
-        "alt": "Set of premium men’s cufflinks",
-        "cta": {
-          "book": "Book an Item",
-          "shop": "Shop Now"
-        }
-      },
-      {
-        "id": "4",
-        "image": "necklace3",
-        "title": "Luxury Necklaces for Men",
-        "alt": "Luxury necklace for men made from gold",
-        "cta": {
-          "book": "Book an Item",
-          "shop": "Shop Now"
-        }
-      }
-    ],
-    "featuredCategories": {
-      "title": "Featured Categories"
-    },
-    "featuredCollections": {
-      "title": "Featured Collections",
-      "cta": "View the collection"
-    },
-    "bestsellers": {
-      "title": "Bestsellers"
-    },
-    "philosophy": {
-      "title": "Always in progress",
-      "description": "Kassaman has grown organically, supported by those who have been with us since the beginning. For us, the process of creation is a continuous journey. We believe in steady progress and staying true to the craft — a core principle that guides everything we do. Each piece is a reflection of this simple, ongoing evolution.",
-      "cta": "Discover our story",
-      "images": {
-        "featured": "Exquisite handcrafted creation",
-        "sketch": "From sketch to reality: the creative process",
-        "process1": "Artisan's hands shaping the future piece",
-        "process2": "Traditional jewelry crafting techniques",
-        "process3": "Dedicated focus on every small detail"
-      }
-    },
-    "visitUs": {
-      "title": "Visit Us",
-      "description": "Experience the artistry of fine jewelry and find your perfect piece in an atmosphere of warmth and inspiration.",
-      "subtitle": "Hours & Location",
-      "address": "Movses Khorenatsu St., 15 Building, Yerevan",
-      "weekdays": "Monday - Saturday",
-      "weekdaysTime": "10:30 AM - 07:30 PM",
-      "weekend": "Sunday",
-      "weekendTime": "10:00 AM - 06:00 PM",
-      "cta": "Find a Boutique",
-      "altText": "Visit our boutique"
-    },
-    "advantages": {
-      "materials": {
-        "title": "Certified materials",
-        "description": "Ethically sourced metals and GIA certified gemstones."
-      },
-      "resizing": {
-        "title": "Free resizing",
-        "description": "Complimentary adjustment for a perfect, lifelong fit."
-      },
-      "cleaning": {
-        "title": "Lifetime cleaning",
-        "description": "Professional care to preserve the brilliance of your jewelry."
-      },
-      "delivery": {
-        "title": "Free delivery",
-        "description": "Insured worldwide shipping in our signature packaging."
-      }
-    }
-  },
-  "catalog": {
-    "title": "Catalog",
-    "description": "Browse all our products here."
-  },
-  "product": {
-    "title": "Product Details",
-    "description": "Information about the selected product."
-  },
-  "collections": {
-    "title": "Collections",
-    "description": "Explore our collections."
-  },
-  "collection": {
-    "title": "Collection",
-    "description": "Explore our collection"
-  },
-  "category": {
-    "title": "Category",
-    "description": "View different categories here."
-  },
-  "services": {
-    "title": "Services",
-    "description": "We provide the following services."
-  },
-  "booking": {
-    "title": "Booking",
-    "description": "Book your service or product here."
-  },
-  "checkout": {
-    "title": "Checkout",
-    "description": "Review your order and make payment."
-  },
-  "about": {
-    "title": "About Us",
-    "description": "This is the About page. You can add information about your company here."
-  },
-  "contact": {
-    "title": "Contact Us",
-    "description": "Get in touch with us through this page."
-  },
-  "faq": {
-    "title": "FAQ",
-    "description": "Frequently Asked Questions."
-  },
-  "blog": {
-    "title": "Blog",
-    "description": "Read our latest news and articles."
-  },
-  "account": {
-    "title": "My Account",
-    "description": "Manage your account details."
-  },
-  "notFound": {
-    "title": "Page Not Found",
-    "description": "The page you are looking for does not exist."
-  },
   "categories": {
-    "rings": {
-      "title": "Rings",
-      "subtitle": "Elegant & modern design"
-    },
-    "necklaces": {
-      "title": "Necklaces",
-      "subtitle": "Perfect jewelry for any look."
-    },
-    "bracelets": {
-      "title": "Bracelets",
-      "subtitle": "A subtle combination of style and character"
-    },
-    "cufflinks": {
-      "title": "Cufflinks",
-      "subtitle": "Refined style for special occasions"
-    }
+    "rings": "Rings",
+    "necklaces": "Necklaces",
+    "bracelets": "Bracelets",
+    "cufflinks": "Cufflinks"
   },
   "productCollections": {
     "signature": {
@@ -236,6 +26,24 @@
       "subtitle": "Elegant symbols for your beginning of forever",
       "altText": "Elegant wedding ring set"
     }
+  },
+  "materials": {
+    "yellowGold": "Yellow Gold",
+    "whiteGold": "White Gold",
+    "roseGold": "Rose Gold",
+    "silver": "Silver",
+    "platinum": "Platinum",
+    "leather": "Leather",
+    "steel": "Steel",
+    "beaded": "Beaded"
+  },
+  "stones": {
+    "diamond": "Diamond",
+    "emerald": "Emerald",
+    "sapphire": "Sapphire",
+    "lazuli": "Lazuli",
+    "pearl": "Pearl",
+    "swarovski": "Swarovski"
   },
   "products": {
     "goldPrestigeBracelet": {
@@ -431,17 +239,67 @@
       "description": "Solid 14K white gold transformer piece that functions as both a ring and a cross pendant. Features Swarovski stones integrated into the frame."
     }
   },
-  "productCard": {
-    "book": "Book an item"
+  "common": {
+    "gridSwitcher": {
+      "switchTo": "Switch to {{count}} columns view",
+      "active": "Active view"
+    },
+    "showMore": "Show More"
   },
-  "modals": {
-    "language": {
-      "title": "Select Language",
-      "altText": "Exquisite handcrafted jewelry detail"
+  "nav": {
+    "home": "Home",
+    "catalog": "Catalog",
+    "rings": "Rings",
+    "necklaces": "Necklaces",
+    "bracelets": "Bracelets",
+    "cufflinks": "Cufflinks",
+    "products": "Products"
+  },
+  "header": {
+    "ariaLabels": {
+      "logo": "Go to home",
+      "menu": "Open navigation menu",
+      "search": "Open search bar",
+      "account": "Go to your account",
+      "cart": "Open shopping cart",
+      "bookingCart": "Open booking cart",
+      "services": "Open Services menu",
+      "contact": "Go to Contact page",
+      "storeLocator": "Go to store locator",
+      "language": "Change language",
+      "instagram": "Follow us on Instagram",
+      "facebook": "Follow us on Facebook"
+    },
+    "iconsText": {
+      "menu": "Menu",
+      "search": "Search",
+      "user": "My Account"
+    },
+    "menu": {
+      "sections": {
+        "shopByCategory": "Shop by Category",
+        "collections": "Collections"
+      },
+      "categories": {
+        "bracelets": "Bracelets",
+        "cufflinks": "Cufflinks",
+        "necklaces": "Necklaces",
+        "rings": "Rings"
+      },
+      "collections": {
+        "signature": "Signature",
+        "prestige": "Prestige",
+        "timeless": "Timeless",
+        "wedding": "Wedding"
+      },
+      "service": {
+        "contact": "Contact Us",
+        "services": "Services",
+        "account": "My Account",
+        "storeLocator": "Find a Boutique",
+        "language": "English"
+      }
     }
-  },
-  "errors": {
-    "default": "Something went wrong. Please try again later"
   },
   "footer": {
     "columns": {
@@ -474,7 +332,208 @@
         "contact": "Contact Us"
       }
     },
-    "copyright": "Copyright © {{year}} Kassaman. All rights reserved",
+    "copyright": "Copyright © <year>{{year}}</year> Kassaman. All rights reserved",
     "cta": "Change Language"
+  },
+  "home": {
+    "heroBanners": [
+      {
+        "id": "1",
+        "image": {
+          "src": "ring9",
+          "alt": "Handmade fine jewelry ring with diamonds"
+        },
+        "title": "Fine Jewelry. Handmade",
+        "cta": [
+          { "id": "1", "label": "Book an Item", "link": "/booking" },
+          { "id": "2", "label": "Shop Now", "link": "/catalog" }
+        ]
+      },
+      {
+        "id": "2",
+        "image": {
+          "src": "ring10",
+          "alt": "Close-up of luxury ring from latest collection"
+        },
+        "title": "Latest Rings Collection",
+        "cta": [
+          { "id": "1", "label": "Book an Item", "link": "/booking" },
+          { "id": "2", "label": "Shop Now", "link": "/catalog" }
+        ]
+      },
+      {
+        "id": "3",
+        "image": {
+          "src": "cufflinks5",
+          "alt": "Set of premium men’s cufflinks"
+        },
+        "title": "Premium Cufflinks",
+        "cta": [
+          { "id": "1", "label": "Book an Item", "link": "/booking" },
+          { "id": "2", "label": "Shop Now", "link": "/catalog" }
+        ]
+      },
+      {
+        "id": "4",
+        "image": {
+          "src": "necklace3",
+          "alt": "Luxury necklace for men made from gold"
+        },
+        "title": "Luxury Necklaces for Men",
+        "cta": [
+          { "id": "1", "label": "Book an Item", "link": "/booking" },
+          { "id": "2", "label": "Shop Now", "link": "/catalog" }
+        ]
+      }
+    ],
+    "featuredCategories": {
+      "title": "Featured Categories"
+    },
+    "featuredCollections": {
+      "title": "Featured Collections",
+      "cta": "View the collection"
+    },
+    "bestsellers": {
+      "title": "Bestsellers"
+    },
+    "philosophy": {
+      "title": "Always in progress",
+      "description": "Kassaman has grown organically, supported by those who have been with us since the beginning. For us, the process of creation is a continuous journey. We believe in steady progress and staying true to the craft — a core principle that guides everything we do. Each piece is a reflection of this simple, ongoing evolution.",
+      "cta": "Discover our story",
+      "images": {
+        "featured": "Exquisite handcrafted creation",
+        "sketch": "From sketch to reality: the creative process",
+        "process1": "Artisan's hands shaping the future piece",
+        "process2": "Traditional jewelry crafting techniques",
+        "process3": "Dedicated focus on every small detail"
+      }
+    },
+    "visitUs": {
+      "title": "Visit Us",
+      "description": "Experience the artistry of fine jewelry and find your perfect piece in an atmosphere of warmth and inspiration.",
+      "subtitle": "Hours & Location",
+      "address": "Movses Khorenatsu St., 15 Building, Yerevan",
+      "weekdays": "Monday - Saturday",
+      "weekdaysTime": "10:30 AM - 07:30 PM",
+      "weekend": "Sunday",
+      "weekendTime": "10:00 AM - 06:00 PM",
+      "cta": "Find a Boutique",
+      "altText": "Visit our boutique"
+    },
+    "advantages": {
+      "materials": {
+        "title": "Certified materials",
+        "description": "Ethically sourced metals and GIA certified gemstones."
+      },
+      "resizing": {
+        "title": "Free resizing",
+        "description": "Complimentary adjustment for a perfect, lifelong fit."
+      },
+      "cleaning": {
+        "title": "Lifetime cleaning",
+        "description": "Professional care to preserve the brilliance of your jewelry."
+      },
+      "delivery": {
+        "title": "Free delivery",
+        "description": "Insured worldwide shipping in our signature packaging."
+      }
+    }
+  },
+  "catalog": {
+    "banner": {
+      "title": "Crafted Jewelry",
+      "description": "Discover our curated collection of handcrafted pieces, where timeless elegance meets modern design for your unique style.",
+      "altText": "Handcrafted jewelry collection showcase"
+    },
+    "toolbar": {
+      "totalItems": "<num>{{count}}</num> items",
+      "showFilters": "Show Sort & Filters",
+      "hideFilters": "Hide Sort & Filters",
+      "sortFilters": "Sort & Filters"
+    },
+    "filters": {
+      "sort": "Sort by",
+      "category": "Category",
+      "collection": "Collection",
+      "material": "Metal",
+      "stone": "Stone",
+      "price": "Price Range",
+      "availability": "Availability",
+      "clearAll": "Clear All"
+    },
+    "sortOptions": {
+      "price_asc": "Price Low to High",
+      "price_desc": "Price High to Low",
+      "newest": "Newest First",
+      "popularity": "Popularity"
+    },
+    "availabilityOptions": {
+      "inStock": "In Stock",
+      "onOrder": "On Order"
+    }
+  },
+  "product": {
+    "title": "Product Details",
+    "description": "Information about the selected product."
+  },
+  "collections": {
+    "title": "Collections",
+    "description": "Explore our collections."
+  },
+  "collection": {
+    "title": "Collection",
+    "description": "Explore our collection"
+  },
+  "category": {
+    "title": "Category",
+    "description": "View different categories here."
+  },
+  "services": {
+    "title": "Services",
+    "description": "We provide the following services."
+  },
+  "booking": {
+    "title": "Booking",
+    "description": "Book your service or product here."
+  },
+  "checkout": {
+    "title": "Checkout",
+    "description": "Review your order and make payment."
+  },
+  "about": {
+    "title": "About Us",
+    "description": "This is the About page. You can add information about your company here."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with us through this page."
+  },
+  "faq": {
+    "title": "FAQ",
+    "description": "Frequently Asked Questions."
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Read our latest news and articles."
+  },
+  "account": {
+    "title": "My Account",
+    "description": "Manage your account details."
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist."
+  },
+  "productCard": {
+    "ctaBook": "Book an item"
+  },
+  "modals": {
+    "language": {
+      "title": "Select Language",
+      "altText": "Exquisite handcrafted jewelry detail"
+    }
+  },
+  "errors": {
+    "default": "Something went wrong. Please try again later"
   }
 }

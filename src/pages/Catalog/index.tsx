@@ -1,13 +1,19 @@
-import { useTranslation } from 'react-i18next';
+import CatalogBanner from './components/CatalogBanner';
+import CatalogContent from './components/CatalogContent';
+import Breadcrumbs from '../../components/common/Breadcrumbs';
+import styles from './styles.module.css';
 
 const Catalog = () => {
-  const { t } = useTranslation();
-
   return (
-    <div>
-      <h1>{t('catalog.title')}</h1>
-      <p>{t('catalog.description')}</p>
-    </div>
+    <>
+      <CatalogBanner />
+      <div className="container">
+        <div className={styles.contentWrapper}>
+          <Breadcrumbs />
+          <CatalogContent />
+        </div>
+      </div>
+    </>
   );
 };
 

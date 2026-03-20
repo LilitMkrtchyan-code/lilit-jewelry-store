@@ -10,12 +10,12 @@
   align-items: center;
   justify-content: center;
   font-size: 22px;
-  color: var(--color-text);
+  color: var(--color-primary);
   transition: var(--t-interactive);
 }
 
 .socialLink:hover {
-  color: var(--color-text);
+  color: var(--color-primary);
   opacity: var(--hover-opacity);
 }
 

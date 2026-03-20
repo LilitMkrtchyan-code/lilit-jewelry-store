@@ -34,7 +34,7 @@ const VisualCard = ({
           onMouseEnter={() => hoverEffect && setIsHovered(true)}
           onMouseLeave={() => hoverEffect && setIsHovered(false)}
           onClick={onClick}
-          className={`${hoverEffect && 'line-flow'}`}
+          className={`${hoverEffect ? 'line-flow' : ''}`}
         >
           {children}
         </div>

@@ -1,0 +1,84 @@
+.selectionControl {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-400);
+  width: fit-content;
+  user-select: none;
+  cursor: pointer;
+}
+
+.nativeInput {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.customControl {
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--color-primary);
+  background-color: transparent;
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--t-interactive);
+}
+
+.checkbox {
+  border-radius: 0;
+}
+
+.radio {
+  border-radius: 50%;
+}
+
+.customControl::after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  transition: var(--t-interactive);
+}
+
+.checkbox::after {
+  width: 5px;
+  height: 10px;
+  border: 1px solid var(--color-primary);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) scale(0.5) translate(-1px, -1px);
+  margin-top: -1px;
+}
+
+.radio::after {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+
+.nativeInput:checked + .customControl::after {
+  opacity: 1;
+  transform: rotate(45deg) scale(1) translate(-1px, -1px);
+}
+
+.nativeInput:checked + .radio::after {
+  transform: scale(1);
+}
+
+.labelText {
+  font-family: var(--font-heading);
+  font-size: var(--fs-100);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-100);
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.nativeInput:focus-visible + .customControl {
+  outline: 1px solid var(--color-primary);
+  outline-offset: 3px;
+}

@@ -5,8 +5,9 @@
 
 .footerMobile :global(.ant-collapse-header) {
   font-size: var(--fs-300);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-600);
   letter-spacing: var(--ls-200);
+  padding: 20px 0 !important;
 }
 
 .subItem {
@@ -16,22 +17,23 @@
 .subLink {
   display: inline-block;
   font-family: var(--font-heading);
-  font-weight: var(--fw-400);
-  font-size: var(--fs-200);
-  color: var(--color-text);
+  font-weight: var(--fw-500);
+  font-size: var(--fs-100);
+  text-transform: uppercase;
   letter-spacing: var(--ls-200);
   transition: var(--t-interactive);
 }
 
+.subLink,
 .subLink:visited,
 .subLink:focus,
 .subLink:focus-visible {
-  color: var(--color-text) !important;
+  color: var(--color-primary) !important;
   opacity: 1;
 }
 
 .subLink:active {
-  color: var(--color-text) !important;
+  color: var(--color-primary) !important;
   opacity: var(--hover-opacity);
 }
 
@@ -46,6 +48,6 @@
 @media (hover: hover) {
   .subLink:hover {
     opacity: var(--hover-opacity);
-    color: var(--color-text) !important;
+    color: var(--color-primary) !important;
   }
 }

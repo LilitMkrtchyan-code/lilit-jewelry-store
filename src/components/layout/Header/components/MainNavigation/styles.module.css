@@ -5,44 +5,47 @@
   --underline-gap: 0;
 }
 
-.mainTitle {
-  font-weight: var(--fw-500);
+.mainNavigation :global(.ant-collapse-header) {
+  padding: 20px 0 !important;
+  font-weight: var(--fw-600);
 }
 
 .mainTitle:visited,
 .mainTitle:focus,
 .mainTitle:focus-visible {
-  color: var(--color-text) !important;
+  color: var(--color-primary) !important;
   opacity: 1;
 }
 
 .mainTitle:active {
-  color: var(--color-text) !important;
+  color: var(--color-primary) !important;
   opacity: var(--hover-opacity);
 }
 
 .subItem {
-  padding: var(--space-300) 0;
+  padding-bottom: 20px;
 }
 
 .subLink {
   font-family: var(--font-heading);
-  font-weight: var(--fw-400);
-  font-size: var(--fs-200);
-  color: var(--color-text);
-  letter-spacing: var(--ls-200);
+  font-weight: var(--fw-500);
+  font-size: var(--fs-100);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-100);
   transition: var(--t-interactive);
 }
 
+.subLink,
+.subLink:link,
 .subLink:visited,
 .subLink:focus,
 .subLink:focus-visible {
-  color: var(--color-text) !important;
+  color: var(--color-primary) !important;
   opacity: 1;
 }
 
 .subLink:active {
-  color: var(--color-text) !important;
+  color: var(--color-primary) !important;
   opacity: var(--hover-opacity);
 }
 
@@ -55,7 +58,7 @@
 @media (hover: hover) {
   .subLink:hover,
   .mainTitle:hover {
-    color: var(--color-text) !important;
+    color: var(--color-primary) !important;
     opacity: var(--hover-opacity);
   }
 }

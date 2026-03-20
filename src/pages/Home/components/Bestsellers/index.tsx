@@ -13,7 +13,8 @@ const Bestsellers = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
 
-  const { data: products, isLoading, isError } = useProducts();
+  const { data: productList, isLoading, isError } = useProducts();
+  const products = productList?.pages.flatMap(page => page.data) ?? [];
 
   return (
     <section className={styles.bestsellers}>
