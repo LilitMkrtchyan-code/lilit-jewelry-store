@@ -1,8 +1,7 @@
 .catalogContent {
   display: flex;
   flex-direction: column;
-  gap: var(--space-600);
-  padding: var(--space-600) 0 var(--space-section);
+  padding-bottom: var(--space-section);
 }
 
 .filterSidebar {
@@ -29,13 +28,13 @@
   min-width: 0;
 }
 
-:global(.ant-drawer .ant-drawer-header) {
-  padding: var(--space-600) var(--space-500) !important;
-}
-
-:global(.ant-drawer .ant-drawer-header-title) {
+.filterDrawer :global(.ant-drawer-header-title) {
   font-size: var(--fs-300);
   font-family: var(--font-heading);
   letter-spacing: var(--ls-200);
   text-transform: uppercase;
+}
+
+.filterDrawer :global(.ant-drawer-body) {
+  padding: 12px var(--space-500);
 }

@@ -246,6 +246,15 @@
     },
     "showMore": "Показать еще"
   },
+  "nav": {
+    "home": "Главная",
+    "catalog": "Каталог",
+    "products": "Товары",
+    "rings": "Кольца",
+    "necklaces": "Ожерелья",
+    "bracelets": "Браслеты",
+    "cufflinks": "Запонки"
+  },
   "header": {
     "ariaLabels": {
       "logo": "Перейти на главную страницу",

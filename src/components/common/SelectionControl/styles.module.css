@@ -73,8 +73,8 @@
   font-size: var(--fs-100);
   font-weight: var(--fw-500);
   text-transform: uppercase;
-  color: var(--color-primary);
   letter-spacing: var(--ls-100);
+  color: var(--color-primary);
   line-height: 1;
 }
 

@@ -246,6 +246,15 @@
     },
     "showMore": "Տեսնել ավելին"
   },
+  "nav": {
+    "home": "Գլխավոր",
+    "catalog": "Կատալոգ",
+    "products": "Ապրանքներ",
+    "rings": "Մատանիներ",
+    "necklaces": "Վզնոցներ",
+    "bracelets": "Թևնոցներ",
+    "cufflinks": "Ճարմանդներ"
+  },
   "header": {
     "ariaLabels": {
       "logo": "Գնալ գլխավոր էջ",

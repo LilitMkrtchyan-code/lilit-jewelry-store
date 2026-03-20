@@ -246,6 +246,15 @@
     },
     "showMore": "Show More"
   },
+  "nav": {
+    "home": "Home",
+    "catalog": "Catalog",
+    "rings": "Rings",
+    "necklaces": "Necklaces",
+    "bracelets": "Bracelets",
+    "cufflinks": "Cufflinks",
+    "products": "Products"
+  },
   "header": {
     "ariaLabels": {
       "logo": "Go to home",

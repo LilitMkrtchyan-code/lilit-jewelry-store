@@ -23,7 +23,7 @@
 }
 
 .subItem {
-  padding: var(--space-300) 0;
+  padding-bottom: 20px;
 }
 
 .subLink {

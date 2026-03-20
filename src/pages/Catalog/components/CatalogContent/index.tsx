@@ -71,6 +71,7 @@ const CatalogContent = () => {
             onClose={closeFilters}
             title={t('catalog.toolbar.sortFilters')}
             closable={false}
+            className={styles.filterDrawer}
           >
             <div className="customClose">
               <CloseOutlined onClick={closeFilters} />
