@@ -1,5 +1,5 @@
 .advantages {
-  padding: 45px 15px;
+  padding: var(--space-700) var(--space-400);
 }
 
 .advantageItem {
@@ -7,14 +7,15 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 50px 0;
-  border-bottom: 1px solid var(--color-line-light);
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  padding: var(--space-300) 0;
 }
 
 .icon {
-  margin-bottom: var(--space-500);
+  background-color: var(--color-surface-soft);
   color: var(--color-primary);
+  margin-bottom: var(--space-500);
+  padding: var(--space-400);
+  border-radius: 50%;
 }
 
 .title {
@@ -25,12 +26,12 @@
   letter-spacing: var(--ls-200);
   text-transform: uppercase;
   color: var(--color-primary);
-  white-space: nowrap;
+  word-break: break-word;
 }
 
 @media (max-width: 768px) {
   .advantageItem {
-    padding: 45px 0;
+    padding: var(--space-600) 0;
   }
 }
 

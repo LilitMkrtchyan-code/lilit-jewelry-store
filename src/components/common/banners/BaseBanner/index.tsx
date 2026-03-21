@@ -25,11 +25,12 @@ const BaseBanner = ({
               {cta.map(button => (
                 <BaseButton
                   key={button.id}
-                  label={button.label}
                   variant={button.variant || 'shadow'}
                   className={styles.bannerButton}
                   onClick={() => navigate(button.link)}
-                />
+                >
+                  {button.label}
+                </BaseButton>
               ))}
             </div>
           )}

@@ -1,6 +1,6 @@
 import type { productGridProps } from './types';
 import ProductList from '../../../../components/product/ProductList';
-import ShowMore from '../../../../components/common/ShowMore';
+import LoadMore from '../../../../components/common/LoadMore';
 import { ErrorMessage } from '../../../../components/common/ErrorMessage';
 
 const ProductGridSection = ({
@@ -20,7 +20,7 @@ const ProductGridSection = ({
   return (
     <>
       <ProductList columns={columns} products={products} />
-      <ShowMore
+      <LoadMore
         isLoading={isFetchingNextPage}
         hasMore={hasNextPage}
         currentCount={currentCount}

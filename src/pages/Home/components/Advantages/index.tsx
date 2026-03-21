@@ -37,7 +37,7 @@ const Advantages = () => {
           justify="center"
         >
           {ADVANTAGES.map((item, index) => (
-            <Col xs={24} sm={12} lg={8} xl={6} key={index}>
+            <Col xs={24} sm={12} lg={6} xl={6} key={index}>
               <div className={styles.advantageItem}>
                 <div className={styles.icon}>{item.icon}</div>
                 <h3 className={styles.title}>{item.title}</h3>
