@@ -244,7 +244,7 @@
       "switchTo": "Փոխել {{count}} սյունակով դիտման",
       "active": "Ակտիվ տեսք"
     },
-    "showMore": "Տեսնել ավելին"
+    "loadMore": "Բեռնել ավելին"
   },
   "nav": {
     "home": "Գլխավոր",
@@ -469,7 +469,8 @@
     "availabilityOptions": {
       "inStock": "Առկա է",
       "onOrder": "Պատվերով"
-    }
+    },
+    "showingItems": "Ցուցադրված է {{currentCount}}-ը {{totalCount}} նմուշից"
   },
   "product": {
     "title": "Ապրանքի մանրամասներ",

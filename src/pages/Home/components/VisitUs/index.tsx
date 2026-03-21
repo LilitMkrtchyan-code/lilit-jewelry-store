@@ -43,12 +43,7 @@ const VisitUs = () => {
         </Col>
         <Col xs={{ order: 1, span: 24 }} lg={{ order: 2, span: 12 }}>
           <div className={styles.imageWrapper}>
-            <img
-              src={cross}
-              alt={t(`${T_PATH}.altText`)}
-              className={styles.image}
-              loading="lazy"
-            />
+            <img src={cross} alt={t(`${T_PATH}.altText`)} className={styles.image} loading="lazy" />
           </div>
         </Col>
       </Row>

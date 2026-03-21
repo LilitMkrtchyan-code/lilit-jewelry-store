@@ -24,14 +24,12 @@ const CardContent = ({
 
   return (
     <div className={contentClasses}>
-      <div className={styles.titleWrapper}>
-        <div className={`${styles.title} ${titleClassName}`}>{title}</div>
-      </div>
+      <div className={`${styles.title} ${titleClassName}`}>{title}</div>
       {description && <div className={`${styles.description} ${descClassName}`}>{description}</div>}
       {buttonText && (
-        <div className={styles.buttonWrapper}>
-          <BaseButton label={buttonText} onClick={onBtnClick} className={styles.cardBtn} />
-        </div>
+        <BaseButton onClick={onBtnClick} className={styles.cardBtn}>
+          {buttonText}
+        </BaseButton>
       )}
     </div>
   );
