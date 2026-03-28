@@ -5,4 +5,5 @@ export type BaseModalProps = {
   onCancel: () => void;
   children: ReactNode;
   className?: string;
+  width?: string | number | object;
 };

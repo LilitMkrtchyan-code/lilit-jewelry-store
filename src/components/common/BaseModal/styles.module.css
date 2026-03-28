@@ -52,13 +52,11 @@
 :global(.fade-slide-enter),
 :global(.fade-slide-appear) {
   opacity: 0;
-  transform: translateY(20px) scale(0.98);
 }
 
 :global(.fade-slide-enter-active),
 :global(.fade-slide-appear-active) {
   opacity: 1;
-  transform: translateY(0) scale(1);
   transition:
     opacity 0.7s var(--ease-gentle),
     transform 0.7s var(--ease-gentle);

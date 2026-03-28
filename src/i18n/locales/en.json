@@ -244,7 +244,8 @@
       "switchTo": "Switch to {{count}} columns view",
       "active": "Active view"
     },
-    "loadMore": "Load More"
+    "loadMore": "Load More",
+    "closeButton": "Close"
   },
   "nav": {
     "home": "Home",
@@ -474,8 +475,12 @@
     "showingItems": "Showing {{currentCount}} of {{totalCount}} items"
   },
   "product": {
-    "title": "Product Details",
-    "description": "Information about the selected product."
+    "productDetails": {
+      "gallery": {
+        "altText": "Fine jewelry detail",
+        "zoomLabel": "View larger image"
+      }
+    }
   },
   "collections": {
     "title": "Collections",

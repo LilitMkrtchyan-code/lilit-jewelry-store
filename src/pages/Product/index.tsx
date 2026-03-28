@@ -1,12 +1,19 @@
-import { useTranslation } from 'react-i18next';
+import { useParams } from 'react-router-dom';
+import { useProducts } from '../../hooks/useProducts';
+import ProductDetails from '../../components/product/ProductDetails';
 
 const Product = () => {
-  const { t } = useTranslation();
+  const { id } = useParams();
+  const { data: productList } = useProducts();
+
+  const products = productList?.pages.flatMap(page => page.data) ?? [];
+  const product = products.find(product => product.id === id);
+
+  if (!product) return <div>Product not found</div>;
 
   return (
-    <div>
-      <h1>{t('product.title')}</h1>
-      <p>{t('product.description')}</p>
+    <div className='container'>
+      <ProductDetails product={product} />
     </div>
   );
 };

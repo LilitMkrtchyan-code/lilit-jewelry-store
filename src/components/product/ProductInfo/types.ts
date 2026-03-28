@@ -1,5 +1,5 @@
 import type { Product } from '../../../types/product';
 
-export type ProductDetailsProps = {
+export type ProductInfoProps = {
   product: Product;
 };

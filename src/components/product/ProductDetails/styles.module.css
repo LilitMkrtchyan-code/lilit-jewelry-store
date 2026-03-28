@@ -1,0 +1,30 @@
+.productDetails {
+  width: 100%;
+  padding: var(--space-400) 0;
+}
+
+.detailsInner {
+  display: flex;
+  gap: var(--space-fluid-500);
+  align-items: flex-start;
+  width: 100%;
+}
+
+.gallerySection {
+  flex: 0 0 55%;
+  min-width: 0;
+}
+
+.infoSection {
+  flex: 1;
+}
+
+@media (max-width: 992px) {
+  .detailsInner {
+    flex-direction: column;
+  }
+
+  .gallerySection {
+    flex: 0 0 100%;
+  }
+}

@@ -29,5 +29,6 @@ export type Product = {
   price: number;
   currency: Currency;
   image: string;
+  galleryImages?: string[];
   inStock: boolean;
 };

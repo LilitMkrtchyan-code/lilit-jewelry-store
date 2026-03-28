@@ -1,0 +1,16 @@
+.myThumbs {
+  width: 100%;
+  height: 100%;
+}
+
+.myThumbs :global(.swiper-wrapper) {
+  align-items: flex-start;
+}
+
+.myThumbs :global(.swiper-slide) {
+  height: auto;
+}
+
+.myThumbs :global(.swiper-slide-thumb-active) [class*='thumbSlide'] {
+  border-color: var(--color-dark);
+}

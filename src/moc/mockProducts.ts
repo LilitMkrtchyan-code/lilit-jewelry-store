@@ -44,6 +44,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 3500,
     currency: 'USD',
     image: bracelet1,
+    galleryImages: [bracelet2, bracelet3, bracelet4, bracelet5, bracelet6],
     inStock: true,
   },
   {
@@ -57,6 +58,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 250,
     currency: 'USD',
     image: bracelet2,
+    galleryImages: [bracelet1, bracelet3, bracelet4, bracelet5, bracelet6],
     inStock: true,
   },
   {
@@ -70,6 +72,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 3100,
     currency: 'USD',
     image: bracelet5,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet7],
     inStock: true,
   },
   {
@@ -83,6 +86,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 120,
     currency: 'USD',
     image: bracelet4,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet5, bracelet6],
     inStock: true,
   },
   {
@@ -96,6 +100,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 100,
     currency: 'USD',
     image: bracelet3,
+    galleryImages: [bracelet1, bracelet2, bracelet4, bracelet5, bracelet6],
     inStock: true,
   },
   {
@@ -109,6 +114,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 1700,
     currency: 'USD',
     image: bracelet6,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -122,6 +128,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 175,
     currency: 'USD',
     image: bracelet7,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -135,6 +142,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 6200,
     currency: 'USD',
     image: bracelet8,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -148,6 +156,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 320,
     currency: 'USD',
     image: cufflinks1,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -161,6 +170,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 130,
     currency: 'USD',
     image: cufflinks2,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -174,6 +184,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 120,
     currency: 'USD',
     image: cufflinks3,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -187,6 +198,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 200,
     currency: 'USD',
     image: cufflinks4,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -200,6 +212,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 2100,
     currency: 'USD',
     image: cufflinks5,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -213,6 +226,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 110,
     currency: 'USD',
     image: cufflinks6,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -226,6 +240,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 110,
     currency: 'USD',
     image: cufflinks7,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -239,6 +254,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 400,
     currency: 'USD',
     image: cufflinks8,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -252,6 +268,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 220,
     currency: 'USD',
     image: cufflinks9,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -265,6 +282,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 260,
     currency: 'USD',
     image: necklace1,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -278,6 +296,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 320,
     currency: 'USD',
     image: necklace2,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -291,6 +310,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 320,
     currency: 'USD',
     image: necklace3,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -304,6 +324,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 350,
     currency: 'USD',
     image: necklace4,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -317,6 +338,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 750,
     currency: 'USD',
     image: necklace5,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -330,6 +352,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 350,
     currency: 'USD',
     image: necklace6,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -343,6 +366,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 2800,
     currency: 'USD',
     image: ring1,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -356,6 +380,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 2200,
     currency: 'USD',
     image: ring2,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -369,6 +394,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 200,
     currency: 'USD',
     image: ring3,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -382,6 +408,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 6000,
     currency: 'USD',
     image: ring4,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -395,6 +422,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 350,
     currency: 'USD',
     image: ring5,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -408,6 +436,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 800,
     currency: 'USD',
     image: ring6,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -421,6 +450,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 700,
     currency: 'USD',
     image: ring7,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -434,6 +464,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 1200,
     currency: 'USD',
     image: ring8,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -447,6 +478,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 920,
     currency: 'USD',
     image: ring10,
+    galleryImages: [bracelet1, bracelet2, bracelet3, bracelet4, bracelet5],
     inStock: true,
   },
 ];

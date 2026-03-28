@@ -244,7 +244,8 @@
       "switchTo": "Փոխել {{count}} սյունակով դիտման",
       "active": "Ակտիվ տեսք"
     },
-    "loadMore": "Բեռնել ավելին"
+    "loadMore": "Բեռնել ավելին",
+    "closeButton": "Փակել"
   },
   "nav": {
     "home": "Գլխավոր",
@@ -473,8 +474,12 @@
     "showingItems": "Ցուցադրված է {{currentCount}}-ը {{totalCount}} նմուշից"
   },
   "product": {
-    "title": "Ապրանքի մանրամասներ",
-    "description": "Տեղեկատվություն ընտրված ապրանքի մասին։"
+    "productDetails": {
+      "gallery": {
+        "altText": "Զարդի մանրամասն տեսքը",
+        "zoomLabel": "Դիտել մեծացված պատկեր"
+      }
+    }
   },
   "collections": {
     "title": "Հավաքածուներ",

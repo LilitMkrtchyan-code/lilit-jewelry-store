@@ -23,7 +23,7 @@
 
 .gridBtn.active,
 .gridBtn:hover:not(.active):not(.hidden) {
-  background-color: var(--color-background-dark);
+  background-color: var(--color-dark);
   color: var(--color-text-inverse);
 }
 
