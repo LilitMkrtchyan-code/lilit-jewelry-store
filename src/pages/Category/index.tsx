@@ -1,14 +1,17 @@
-import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const Category = () => {
-  const { t } = useTranslation();
+  const { categorySlug } = useParams();
+  const navigate = useNavigate();
 
-  return (
-    <div>
-      <h1>{t('category.title')}</h1>
-      <p>{t('category.description')}</p>
-    </div>
-  );
+  useEffect(() => {
+    if (categorySlug) {
+      navigate(`/catalog?category=${categorySlug}`, { replace: true });
+    }
+  }, [categorySlug, navigate]);
+
+  return null;
 };
 
 export default Category;

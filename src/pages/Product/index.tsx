@@ -1,20 +1,24 @@
 import { useParams } from 'react-router-dom';
-import { useProducts } from '../../hooks/useProducts';
+import { useProduct } from '../../hooks/useProduct';
 import ProductDetails from '../../components/product/ProductDetails';
+import Advantages from '../../components/common/Advantages';
+import SimilarProducts from '../../components/product/SimilarProducts';
 
 const Product = () => {
   const { id } = useParams();
-  const { data: productList } = useProducts();
+  const { data: product, isLoading, isError } = useProduct(id ?? '');
 
-  const products = productList?.pages.flatMap(page => page.data) ?? [];
-  const product = products.find(product => product.id === id);
-
-  if (!product) return <div>Product not found</div>;
+  if (isLoading) return <div>Loading...</div>;
+  if (isError || !product) return <div>Product not found</div>;
 
   return (
-    <div className='container'>
-      <ProductDetails product={product} />
-    </div>
+    <>
+      <div className="container">
+        <ProductDetails product={product} />
+        <SimilarProducts product={product} />
+      </div>
+      <Advantages />
+    </>
   );
 };
 

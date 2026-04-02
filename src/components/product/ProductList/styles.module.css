@@ -4,3 +4,9 @@
   column-gap: var(--space-500);
   row-gap: var(--space-700);
 }
+
+@media (max-width: 575px) {
+  .productList {
+    column-gap: var(--space-400);
+  }
+}

@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { useCatalogFilters } from '../../../../hooks/useCatalogFilters';
 import { useEffect, useMemo, useState } from 'react';
 import { useToggle } from '../../../../hooks/useToggle';
 import { useProducts } from '../../../../hooks/useProducts';
@@ -13,6 +14,7 @@ import styles from './styles.module.css';
 
 const CatalogContent = () => {
   const { t } = useTranslation();
+  const { filters, setFilter } = useCatalogFilters();
 
   const {
     data: productList,
@@ -21,7 +23,7 @@ const CatalogContent = () => {
     isFetchingNextPage,
     isLoading,
     isError,
-  } = useProducts();
+  } = useProducts({ limit: 12, ...filters });
 
   const {
     isVisible: isFiltersOpen,
@@ -76,12 +78,12 @@ const CatalogContent = () => {
             <div className="customClose">
               <CloseOutlined onClick={closeFilters} />
             </div>
-            <FilterPanel />
+            <FilterPanel filters={filters} setFilter={setFilter} />
           </BaseDrawer>
         ) : (
           isFiltersOpen && (
             <aside className={styles.filterSidebar}>
-              <FilterPanel />
+              <FilterPanel filters={filters} setFilter={setFilter} />
             </aside>
           )
         )}

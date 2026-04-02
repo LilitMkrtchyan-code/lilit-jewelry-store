@@ -30,5 +30,7 @@ export type Product = {
   currency: Currency;
   image: string;
   galleryImages?: string[];
+  createdAt: string;
+  popularity: number;
   inStock: boolean;
 };

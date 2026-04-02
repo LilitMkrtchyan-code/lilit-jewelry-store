@@ -1,12 +1,19 @@
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
+import type { FilterPanelProps } from './types';
 import { FILTER_SECTIONS } from './const';
 import { Slider } from 'antd';
 import FilterGroup from '../FilterGroup';
 import BaseCollapse from '../../../../components/common/BaseCollapse';
 import styles from './styles.module.css';
 
-const FilterPanel = () => {
+const FilterPanel = ({ filters, setFilter }: FilterPanelProps) => {
   const { t } = useTranslation();
+
+  const [priceRange, setPriceRange] = useState<[number, number]>([
+    filters.priceMin ?? 0,
+    filters.priceMax ?? 10000,
+  ]);
 
   const items = FILTER_SECTIONS.map(section => ({
     key: section.key,
@@ -19,7 +26,11 @@ const FilterPanel = () => {
             min={0}
             max={10000}
             step={50}
-            defaultValue={[0, 10000]}
+            value={priceRange}
+            onChange={val => setPriceRange(val as [number, number])}
+            onChangeComplete={([min, max]) => {
+              setFilter({ priceMin: String(min), priceMax: String(max) });
+            }}
             tooltip={{
               formatter: value => `$${value?.toLocaleString()}`,
             }}
@@ -34,6 +45,8 @@ const FilterPanel = () => {
             }
             type={section.type}
             name={section.key}
+            activeValue={filters[section.key as keyof typeof filters] as string}
+            onSelect={(key, value) => setFilter({ [key]: value })}
           />
         )}
       </>

@@ -479,6 +479,9 @@
       "gallery": {
         "altText": "Fine jewelry detail",
         "zoomLabel": "View larger image"
+      },
+      "similarProducts": {
+        "title": "You might also like"
       }
     }
   },

@@ -478,6 +478,9 @@
       "gallery": {
         "altText": "Զարդի մանրամասն տեսքը",
         "zoomLabel": "Դիտել մեծացված պատկեր"
+      },
+      "similarProducts": {
+        "title": "Նման զարդեր"
       }
     }
   },

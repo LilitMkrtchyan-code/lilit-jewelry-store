@@ -1,5 +1,5 @@
 .advantages {
-  padding: var(--space-700) var(--space-400);
+  padding: var(--space-fluid-500) var(--space-400);
 }
 
 .advantageItem {
@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: var(--space-300) 0;
+  padding: var(--space-400) 0;
 }
 
 .icon {
@@ -27,12 +27,6 @@
   text-transform: uppercase;
   color: var(--color-primary);
   word-break: break-word;
-}
-
-@media (max-width: 768px) {
-  .advantageItem {
-    padding: var(--space-600) 0;
-  }
 }
 
 @media (max-width: 320px) {

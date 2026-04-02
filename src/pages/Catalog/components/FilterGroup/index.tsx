@@ -2,7 +2,7 @@ import type { FilterGroupProps } from './types';
 import SelectionControl from '../../../../components/common/SelectionControl';
 import styles from './styles.module.css';
 
-const FilterGroup = ({ options, type, name }: FilterGroupProps) => {
+const FilterGroup = ({ options, type, name, activeValue, onSelect }: FilterGroupProps) => {
   if (typeof options !== 'object' || options === null) {
     return null;
   }
@@ -15,6 +15,10 @@ const FilterGroup = ({ options, type, name }: FilterGroupProps) => {
           label={label}
           type={type}
           name={type === 'radio' ? name : key}
+          checked={activeValue === key}
+          onChange={e => {
+            onSelect(name, e.target.checked ? key : null);
+          }}
         />
       ))}
     </div>

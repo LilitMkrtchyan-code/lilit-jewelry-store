@@ -1,6 +1,6 @@
 .productDetails {
   width: 100%;
-  padding: var(--space-400) 0;
+  padding: var(--space-400) 0 var(--space-section);
 }
 
 .detailsInner {
