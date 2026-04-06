@@ -14,7 +14,7 @@ export type GetProductsParams = {
   page: number;
   limit?: number;
   category?: CategorySlug;
-  collection: Collection;
+  collection?: Collection;
   material?: Material;
   stone?: Stone;
   priceMin?: number;
