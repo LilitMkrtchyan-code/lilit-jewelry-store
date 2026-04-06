@@ -7,6 +7,7 @@ export const useCatalogFilters = () => {
   const filters: CatalogFiltersProps = {
     category: searchParams.get('category') ?? undefined,
     material: (searchParams.get('material') as GetProductsParams['material']) ?? undefined,
+    collection: (searchParams.get('collection') as GetProductsParams['collection']) ?? undefined,
     stone: (searchParams.get('stone') as GetProductsParams['stone']) ?? undefined,
     sort: (searchParams.get('sort') as GetProductsParams['sort']) ?? undefined,
     priceMin:

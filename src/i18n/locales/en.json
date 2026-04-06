@@ -5,6 +5,12 @@
     "bracelets": "Bracelets",
     "cufflinks": "Cufflinks"
   },
+  "collections": {
+    "signature": "Signature",
+    "prestige": "Prestige",
+    "timeless": "Timeless",
+    "wedding": "Wedding"
+  },
   "productCollections": {
     "signature": {
       "title": "Signature",
@@ -50,25 +56,37 @@
       "name": "Gold Bracelet Prestige",
       "materials": ["Yellow Gold", "Leather"],
       "stones": ["Diamond"],
-      "description": "An architectural piece in solid 14K yellow gold. The central element features a prominent large diamond, encircled by a meticulous setting of smaller brilliant-cut stones for enhanced light reflection. Mounted on a durable premium leather band, this high-weight bracelet focuses on intricate stone-setting and clean geometric lines."
+      "description": "An architectural piece in solid 14K yellow gold. The central element features a prominent large diamond, encircled by a meticulous setting of smaller brilliant-cut stones for enhanced light reflection. Mounted on a durable premium leather band, this high-weight bracelet focuses on intricate stone-setting and clean geometric lines.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "platinumSignatureBracelet": {
       "name": "Platinum Bracele Signature ",
       "materials": ["Platinum", "Leather"],
       "stones": [],
-      "description": "Exquisite men's bracelet from the Signature collection. Crafted from high-grade platinum and premium leather, this accessory combines industrial strength with elegant design. Perfect for a sophisticated modern look."
+      "description": "Exquisite men's bracelet from the Signature collection. Crafted from high-grade platinum and premium leather, this accessory combines industrial strength with elegant design. Perfect for a sophisticated modern look.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "diamondPrestigeBracelet": {
       "name": "Diamond Bracelet Prestige",
       "materials": ["Yellow Gold", "White Gold", "Leather"],
       "stones": ["Diamond"],
-      "description": "An exceptional piece from the Prestige collection. This men's bracelet features a sophisticated blend of yellow and white gold with genuine diamonds, set on a premium leather band."
+      "description": "An exceptional piece from the Prestige collection. This men's bracelet features a sophisticated blend of yellow and white gold with genuine diamonds, set on a premium leather band.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "beadedSignatureBracelet": {
       "name": "Beaded Bracelet Signature",
       "materials": ["Beaded", "Silver"],
       "stones": [],
-      "description": "A stylish and versatile men's bracelet from the Signature collection. Featuring high-quality beads and 925 sterling silver accents, this piece is perfect for layering or wearing as a standalone accessory."
+      "description": "A stylish and versatile men's bracelet from the Signature collection. Featuring high-quality beads and 925 sterling silver accents, this piece is perfect for layering or wearing as a standalone accessory.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "leatherTimelessBracelet": {
       "name": "Leather Bracelet Timeless",
@@ -80,7 +98,10 @@
       "name": "Gold Chain Bracelet",
       "materials": ["White Gold"],
       "stones": ["Diamond"],
-      "description": "A sophisticated chain bracelet from the Timeless collection, crafted in 14K white gold. Featuring a subtle diamond accent, this piece offers a modern take on a classic design, perfect for the man who appreciates understated luxury."
+      "description": "A sophisticated chain bracelet from the Timeless collection, crafted in 14K white gold. Featuring a subtle diamond accent, this piece offers a modern take on a classic design, perfect for the man who appreciates understated luxury.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "silverTimelessBracelet": {
       "name": "Silver Bracelet Timeless",
@@ -92,151 +113,226 @@
       "name": "Gemstone Bracelet  Prestige ",
       "materials": ["White Gold", "Leather"],
       "stones": ["Diamond"],
-      "description": "A masterpiece of the Prestige collection, designed for the most discerning collectors. This exceptional bracelet pairs lustrous white gold with hand-selected diamonds of superior clarity, set upon a bespoke leather band. A true statement of luxury and success."
+      "description": "A masterpiece of the Prestige collection, designed for the most discerning collectors. This exceptional bracelet pairs lustrous white gold with hand-selected diamonds of superior clarity, set upon a bespoke leather band. A true statement of luxury and success.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "goldTimelessCufflinks": {
       "name": "Gold Cufflinks Timeless ",
       "materials": ["Yellow Gold", "White Gold"],
       "stones": [],
-      "description": "Sophisticated cufflinks from the Timeless collection, featuring a masterful combination of yellow and white gold. These essential accessories offer a clean, geometric design that adds a touch of classic luxury to any formal attire."
+      "description": "Sophisticated cufflinks from the Timeless collection, featuring a masterful combination of yellow and white gold. These essential accessories offer a clean, geometric design that adds a touch of classic luxury to any formal attire.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "silverSignatureCufflinks": {
       "name": "Silver Cufflinks Signature",
       "materials": ["Silver"],
       "stones": ["Swarovski"],
-      "description": "Modern and original cufflinks from the Signature collection. Crafted from 925 sterling silver with a deep red rhodium plating, these cufflinks feature a harmonious combination of dark metal and Swarovski crystals."
+      "description": "Modern and original cufflinks from the Signature collection. Crafted from 925 sterling silver with a deep red rhodium plating, these cufflinks feature a harmonious combination of dark metal and Swarovski crystals.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "goldSilverTimelessCufflinks": {
       "name": "Gold & Silver Cufflinks",
       "materials": ["Silver", "Yellow Gold"],
       "stones": [],
-      "description": "Essential cufflinks from the Timeless collection, featuring a balanced mix of sterling silver and 14K yellow gold accents. The bicolor design offers maximum versatility, making them a perfect match for any timepiece or jewelry."
+      "description": "Essential cufflinks from the Timeless collection, featuring a balanced mix of sterling silver and 14K yellow gold accents. The bicolor design offers maximum versatility, making them a perfect match for any timepiece or jewelry.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "pearlSignatureCufflinks": {
       "name": "Pearl Cufflinks Signature",
       "materials": ["Rose Gold"],
       "stones": ["Pearl"],
-      "description": "Natural pearls set in 14K rose gold. The design focuses on the contrast between the warm polished metal and the pearl's surface. A clean, distinctive accessory from the Signature collection."
+      "description": "Natural pearls set in 14K rose gold. The design focuses on the contrast between the warm polished metal and the pearl's surface. A clean, distinctive accessory from the Signature collection.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "diamondPrestigeCufflinks": {
       "name": "Diamond Cufflinks",
       "materials": ["Yellow Gold"],
       "stones": ["Diamond"],
-      "description": "These 14-karat yellow gold cufflinks from the Prestige collection feature diamonds set in a geometric frame. This statement accessory shines with the sparkle of pure gold and diamonds."
+      "description": "These 14-karat yellow gold cufflinks from the Prestige collection feature diamonds set in a geometric frame. This statement accessory shines with the sparkle of pure gold and diamonds.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "silverLazuliCufflinks": {
       "name": "Silver Lazuli Cufflinks",
       "materials": ["Silver"],
       "stones": ["Lazuli"],
-      "description": "Sterling silver cufflinks with natural polished lapis lazuli. The design highlights the stone's deep blue hue. This accessory is from the Signature collection, which emphasizes natural materials and color combinations."
+      "description": "Sterling silver cufflinks with natural polished lapis lazuli. The design highlights the stone's deep blue hue. This accessory is from the Signature collection, which emphasizes natural materials and color combinations.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "silverTimelessCufflinks": {
       "name": "Silver & Rose Gold Cufflinks",
       "materials": ["Silver", "Rose Gold"],
       "stones": [],
-      "description": "A combination of 925 sterling silver and 14-karat rose gold, these cufflinks from the Timeless collection feature a design that harmoniously blends two metallic tones. An accessory for a modern and practical look."
+      "description": "A combination of 925 sterling silver and 14-karat rose gold, these cufflinks from the Timeless collection feature a design that harmoniously blends two metallic tones. An accessory for a modern and practical look.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "bicolorPrestigeCufflinks": {
       "name": "Bicolor Cufflinks Prestige",
       "materials": ["Silver", "Yellow Gold"],
       "stones": ["Swarovski"],
-      "description": "Premium cufflinks crafted from sterling silver and yellow gold. The silver surface is coated with a protective rhodium plating, ensuring a long-lasting shine. Each piece is adorned with a Swarovski crystal."
+      "description": "Premium cufflinks crafted from sterling silver and yellow gold. The silver surface is coated with a protective rhodium plating, ensuring a long-lasting shine. Each piece is adorned with a Swarovski crystal.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "bicolorTimelessCufflinks": {
       "name": "Bicolor Cufflinks Timeless",
       "materials": ["White Gold", "Yellow Gold"],
       "stones": [],
-      "description": "A classic accessory from the Timeless collection. An elegant combination of white and yellow gold. These solid gold cufflinks feature a minimalist design, without stones, emphasizing the combination of the two precious metals."
+      "description": "A classic accessory from the Timeless collection. An elegant combination of white and yellow gold. These solid gold cufflinks feature a minimalist design, without stones, emphasizing the combination of the two precious metals.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "silverSignatureNecklace": {
       "name": "Silver Necklace Signature",
       "materials": ["Silver"],
       "stones": [],
-      "description": "This Signature Collection necklace is crafted from rhodium-plated 925 sterling silver and genuine African ebony. The design highlights the exquisite combination of rare wood and polished metal."
+      "description": "This Signature Collection necklace is crafted from rhodium-plated 925 sterling silver and genuine African ebony. The design highlights the exquisite combination of rare wood and polished metal.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "roseGoldSignatureNecklace": {
       "name": "Rose Gold Necklace",
       "materials": ["Rose Gold", "Silver", "Leather"],
       "stones": ["Swarovski"],
-      "description": "This unique necklace from the Signature collection combines rose gold and rhodium-plated silver on a high-quality leather strap. The centerpiece is adorned with Swarovski crystals. The accessory is based on a combination of warm gold, dark leather, and glitter."
+      "description": "This unique necklace from the Signature collection combines rose gold and rhodium-plated silver on a high-quality leather strap. The centerpiece is adorned with Swarovski crystals. The accessory is based on a combination of warm gold, dark leather, and glitter.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "swarovskiSignatureNecklace": {
       "name": "Swarovski Necklace Signature",
       "materials": ["Silver"],
       "stones": ["Swarovski"],
-      "description": "Rhodium-plated 925 sterling silver necklace featuring a sequence of precision-cut Swarovski stones. The design integrates multiple crystals into a sleek geometric frame for enhanced light reflection. A sharp, contemporary piece from the Signature collection defined by its brilliant, multi-stone finish."
+      "description": "Rhodium-plated 925 sterling silver necklace featuring a sequence of precision-cut Swarovski stones. The design integrates multiple crystals into a sleek geometric frame for enhanced light reflection. A sharp, contemporary piece from the Signature collection defined by its brilliant, multi-stone finish.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "biGoldLeatherNecklace": {
       "name": "Bi-Gold & Leather Necklace",
       "materials": ["Yellow Gold", "White Gold", "Leather"],
       "stones": [],
-      "description": "A minimalist necklace crafted from 14-karat yellow and white gold with a durable leather strap. This piece from the Signature collection combines polished metals and leather. A modern and understated accessory for everyday wear."
+      "description": "A minimalist necklace crafted from 14-karat yellow and white gold with a durable leather strap. This piece from the Signature collection combines polished metals and leather. A modern and understated accessory for everyday wear.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "crossPrestigeNecklace": {
       "name": "Cross Necklace Prestige",
       "materials": ["Silver", "Yellow Gold"],
       "stones": [],
-      "description": "A structural cross pendant from the Prestige collection, crafted from 925 sterling silver with 14K yellow gold detailing. The design features a layered, bicolor aesthetic with a protective rhodium finish on the silver elements. A substantial and symbolic piece defined by its clean, architectural lines."
+      "description": "A structural cross pendant from the Prestige collection, crafted from 925 sterling silver with 14K yellow gold detailing. The design features a layered, bicolor aesthetic with a protective rhodium finish on the silver elements. A substantial and symbolic piece defined by its clean, architectural lines.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "beBetterSignatureNecklace": {
       "name": "Be Better Necklace",
       "materials": ["Silver"],
       "stones": [],
-      "description": "A conceptual piece from the Signature collection, crafted from high-grade 925 sterling silver with a durable rhodium finish. The design centers on the 'Be Better' engraving, combining a raw, industrial aesthetic. A meaningful, solid-weight accessory for a distinct personal statement."
+      "description": "A conceptual piece from the Signature collection, crafted from high-grade 925 sterling silver with a durable rhodium finish. The design centers on the 'Be Better' engraving, combining a raw, industrial aesthetic. A meaningful, solid-weight accessory for a distinct personal statement.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "goldPrestigeRing": {
       "name": "Gold Diamond Ring Prestige",
       "materials": ["White Gold"],
       "stones": ["Diamond"],
-      "description": "An elite statement ring from the Prestige collection, crafted from solid 14K white gold. The design is defined by hand-applied blue rhodium lines that create a sharp, modern contrast against the polished metal. Centered with a premium diamond, this piece merges high-end luxury with a bold, technical aesthetic."
+      "description": "An elite statement ring from the Prestige collection, crafted from solid 14K white gold. The design is defined by hand-applied blue rhodium lines that create a sharp, modern contrast against the polished metal. Centered with a premium diamond, this piece merges high-end luxury with a bold, technical aesthetic.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "diamondPrestigeRing": {
       "name": "Diamond Bicolor Ring",
       "materials": ["Yellow Gold", "White Gold"],
       "stones": ["Diamond"],
-      "description": "A prestigious bicolor ring crafted from yellow and white gold. The architectural design features a striking contrast between the two gold tones, crowned with a brilliant-cut diamond. A high-value accessory from the Prestige collection precise craftsmanship."
+      "description": "A prestigious bicolor ring crafted from yellow and white gold. The architectural design features a striking contrast between the two gold tones, crowned with a brilliant-cut diamond. A high-value accessory from the Prestige collection precise craftsmanship.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "silverSignatureRing": {
       "name": "Silver Ring Signature",
       "materials": ["Silver"],
       "stones": ["Swarovski"],
-      "description": "A bold statement ring from the Signature collection, crafted from 925 sterling silver with a protective rhodium finish. The design features integrated Swarovski stones that add a sharp, light-reflecting contrast to the polished metallic surface."
+      "description": "A bold statement ring from the Signature collection, crafted from 925 sterling silver with a protective rhodium finish. The design features integrated Swarovski stones that add a sharp, light-reflecting contrast to the polished metallic surface.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "emeraldPrestigeRing": {
       "name": "Emerald & Diamond Ring",
       "materials": ["White Gold"],
       "stones": ["Emerald", "Diamond"],
-      "description": "A masterpiece of the Prestige collection, this elite ring is crafted from solid 14K white gold. It features a magnificent natural emerald centerpiece, flanked by precision-cut diamonds. A high-jewelry investment piece that combines rare gemstones."
+      "description": "A masterpiece of the Prestige collection, this elite ring is crafted from solid 14K white gold. It features a magnificent natural emerald centerpiece, flanked by precision-cut diamonds. A high-jewelry investment piece that combines rare gemstones.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "silverSwarovskiRing": {
       "name": "Silver Swarovski Ring",
       "materials": ["Silver"],
       "stones": ["Swarovski"],
-      "description": "This solid 925 sterling silver ring from the Signature collection is adorned with Swarovski crystals, giving it a modern and elegant look. This high-quality accessory is designed to last and highlight your individual style."
+      "description": "This solid 925 sterling silver ring from the Signature collection is adorned with Swarovski crystals, giving it a modern and elegant look. This high-quality accessory is designed to last and highlight your individual style.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "yellowGoldWeddingRing": {
       "name": "Wedding Ring",
       "materials": ["Yellow Gold"],
       "stones": ["Diamond"],
-      "description": "A wedding ring from the bridal collection, crafted from 14-karat yellow gold. This men's wedding ring is encrusted with diamonds, combining sparkle with refined luxury."
+      "description": "A wedding ring from the bridal collection, crafted from 14-karat yellow gold. This men's wedding ring is encrusted with diamonds, combining sparkle with refined luxury.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "whiteGoldWeddingRing": {
       "name": "Wedding Ring",
       "materials": ["White Gold"],
       "stones": ["Diamond"],
-      "description": "Solid 14K white gold ring with a mirror-polish finish. Diamonds are integrated into the metal frame. Clean and durable design for daily wear."
+      "description": "Solid 14K white gold ring with a mirror-polish finish. Diamonds are integrated into the metal frame. Clean and durable design for daily wear.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "sapphirePrestigeRing": {
       "name": "Sapphire & Diamond Ring",
       "materials": ["Rose Gold"],
       "stones": ["Sapphire", "Diamond"],
-      "description": "Solid rose gold ring featuring a natural sapphire and diamond accents. The stones are set into a geometric, heavy-weight frame. High-end finish for a distinct masculine look."
+      "description": "Solid rose gold ring featuring a natural sapphire and diamond accents. The stones are set into a geometric, heavy-weight frame. High-end finish for a distinct masculine look.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     },
     "crossRingSignature": {
       "name": "Cross & Ring Signature",
       "materials": ["White Gold"],
       "stones": ["Swarovski"],
-      "description": "Solid 14K white gold transformer piece that functions as both a ring and a cross pendant. Features Swarovski stones integrated into the frame."
+      "description": "Solid 14K white gold transformer piece that functions as both a ring and a cross pendant. Features Swarovski stones integrated into the frame.",
+      "details": "A timeless piece designed to elevate any look with effortless elegance. Crafted with attention to detail and a focus on quality, it reflects a balance of modern design and classic aesthetics.",
+      "shipping": "Returns are accepted within 14 days of delivery. Items must be unworn, in original packaging, and accompanied by a receipt. Customized or engraved pieces are non-returnable.",
+      "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     }
   },
   "common": {
@@ -244,7 +340,13 @@
       "switchTo": "Switch to {{count}} columns view",
       "active": "Active view"
     },
+    "addToBag": "Add to Bag",
+    "addToFavorites": "Add to Favorites",
+    "bookAppointment": "Book An Appointment",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock",
     "loadMore": "Load More",
+    "readMore": "Read More",
     "closeButton": "Close"
   },
   "nav": {
@@ -262,6 +364,7 @@
       "menu": "Open navigation menu",
       "search": "Open search bar",
       "account": "Go to your account",
+      "favorites": "View favorites",
       "cart": "Open shopping cart",
       "bookingCart": "Open booking cart",
       "services": "Open Services menu",
@@ -297,6 +400,7 @@
         "contact": "Contact Us",
         "services": "Services",
         "account": "My Account",
+        "favorites": "Favorites",
         "storeLocator": "Find a Boutique",
         "language": "English"
       }
@@ -480,14 +584,21 @@
         "altText": "Fine jewelry detail",
         "zoomLabel": "View larger image"
       },
-      "similarProducts": {
-        "title": "You might also like"
+      "extraInfo": {
+        "details": {
+          "label": "details"
+        },
+        "shipping": {
+          "label": "shipping & returns"
+        },
+        "materials": {
+          "label": "materials"
+        }
       }
+    },
+    "similarProducts": {
+      "title": "You might also like"
     }
-  },
-  "collections": {
-    "title": "Collections",
-    "description": "Explore our collections."
   },
   "collection": {
     "title": "Collection",

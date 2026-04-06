@@ -1,14 +1,17 @@
-import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const Collection = () => {
-  const { t } = useTranslation();
+  const { slug } = useParams();
+  const navigate = useNavigate();
 
-  return (
-    <div>
-      <h1>{t('collection.title')}</h1>
-      <p>{t('collection.description')}</p>
-    </div>
-  );
+  useEffect(() => {
+    if (slug) {
+      navigate(`/catalog?collection=${slug}`, { replace: true });
+    }
+  }, [slug, navigate]);
+
+  return null;
 };
 
 export default Collection;

@@ -9,12 +9,13 @@ const BadgeIcon = ({
   to,
   as = 'button',
   ariaLabel = '',
+  className = '',
 }: BadgeIconProps) => {
   const Tag = COMPONENTS[as];
 
   const isLink = as === 'navlink' || as === 'link';
 
-  const baseClasses = `${styles.badgeIcon} ${count > 0 ? styles.quantity : ''}`;
+  const baseClasses = `${styles.badgeIcon} ${className} ${count > 0 ? styles.quantity : ''}`;
   const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
     `${baseClasses} ${isActive ? styles.active : ''}`.trim();
 

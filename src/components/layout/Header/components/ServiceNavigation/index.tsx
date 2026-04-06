@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import type { ServiceNavigationProps } from './types';
 import { HEADER_SERVICE_NAVIGATION } from './const';
 import LabelIcon from '../../../../common/icons/LabelIcon';
-import { Earth, HandPlatter, Headset, MapPin, UserRound } from 'lucide-react';
+import { Earth, HandPlatter, Headset, Heart, MapPin, UserRound } from 'lucide-react';
 import styles from './styles.module.css';
 
 const ICON_COMPONENTS: Record<string, React.ReactNode> = {
@@ -11,6 +11,7 @@ const ICON_COMPONENTS: Record<string, React.ReactNode> = {
   services: <HandPlatter size={20} strokeWidth={1} />,
   storeLocator: <MapPin size={20} strokeWidth={1} />,
   language: <Earth size={20} strokeWidth={1} />,
+  favorites: <Heart size={20} strokeWidth={1} />,
 };
 
 const ServiceNavigation = ({ onClose, onOpenLang }: ServiceNavigationProps) => {

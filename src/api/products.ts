@@ -9,6 +9,7 @@ export const getProducts = async (
     page,
     limit = 12,
     category,
+    collection,
     material,
     stone,
     priceMin,
@@ -22,6 +23,7 @@ export const getProducts = async (
       let products = [...MOCK_PRODUCTS];
 
       if (category) products = products.filter(p => p.category === category);
+      if (collection) products = products.filter(p => p.collections.includes(collection));
       if (material) products = products.filter(p => p.material?.includes(material));
       if (stone) products = products.filter(p => p.stone?.includes(stone));
       if (priceMin !== undefined) products = products.filter(p => p.price >= priceMin);

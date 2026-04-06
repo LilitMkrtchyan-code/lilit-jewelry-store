@@ -1,4 +1,5 @@
 .advantages {
+  width: 100%;
   padding: var(--space-fluid-500) var(--space-400);
 }
 
@@ -30,6 +31,10 @@
 }
 
 @media (max-width: 320px) {
+  .advantages {
+    padding: var(--space-fluid-500) 0;
+  }
+
   .title {
     font-size: var(--fs-100);
     letter-spacing: var(--ls-100);

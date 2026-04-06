@@ -1,0 +1,25 @@
+.productExtraInfo {
+  padding: var(--space-600) 0;
+}
+
+.drawerContent {
+  font-family: var(--font-body);
+  font-size: var(--fs-300);
+  line-height: var(--lh-200);
+  color: var(--color-primary);
+  letter-spacing: var(--ls-100);
+}
+
+.extraInfoDrawer :global(.ant-drawer-header-title) {
+  font-size: var(--fs-300);
+  font-family: var(--font-heading);
+  letter-spacing: var(--ls-200);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.extraInfoDrawer :global(.ant-drawer-close) {
+  position: absolute;
+  top: var(--space-400);
+  right: 0;
+}

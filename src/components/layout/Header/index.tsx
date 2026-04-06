@@ -1,14 +1,18 @@
 import { useToggle } from '../../../hooks/useToggle';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LabelIcon from '../../common/icons/LabelIcon';
 import BadgeIcon from '../../common/icons/BadgeIcon';
 import Logo from '../../common/Logo';
-import { ClipboardClock, Menu, Search, ShoppingBag, UserRound } from 'lucide-react';
+import { ClipboardClock, Heart, Menu, Search, ShoppingBag, UserRound } from 'lucide-react';
 import NavigationDrawer from './components/NavigationDrawer';
 import styles from './styles.module.css';
 
 const Header = () => {
   const { isVisible, hide, show } = useToggle();
+
+  const navigate = useNavigate();
+
   const { t } = useTranslation();
 
   return (
@@ -39,6 +43,12 @@ const Header = () => {
             <Logo />
           </div>
           <div className={styles.topRight}>
+            <BadgeIcon
+              icon={<Heart size={20} strokeWidth={1} />}
+              onClick={() => navigate('/favorites')}
+              className={styles.userFavorites}
+              ariaLabel={t('header.ariaLabels.favorites')}
+            />
             <LabelIcon
               icon={<UserRound size={20} strokeWidth={1} />}
               as="navlink"

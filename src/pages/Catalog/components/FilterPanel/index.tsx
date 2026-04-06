@@ -55,7 +55,10 @@ const FilterPanel = ({ filters, setFilter }: FilterPanelProps) => {
 
   return (
     <div className={styles.filterPanel}>
-      <BaseCollapse items={items} defaultActiveKey={['sort', 'category', 'material', 'price']} />
+      <BaseCollapse
+        items={items}
+        defaultActiveKey={['sort', 'category', 'collection', 'material', 'price']}
+      />
     </div>
   );
 };

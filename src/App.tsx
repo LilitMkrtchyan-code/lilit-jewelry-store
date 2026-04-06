@@ -17,6 +17,7 @@ import Product from './pages/Product';
 import Services from './pages/Services';
 import Category from './pages/Category';
 import StoreLocator from './pages/StoreLocator';
+import Favorites from './pages/Favorites';
 
 function App() {
   useScrollToTop();
@@ -35,6 +36,7 @@ function App() {
         <Route path="checkout" element={<Checkout />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="favorites" element={<Favorites />} />
         <Route path="faq" element={<FAQ />} />
         <Route path="blog" element={<Blog />} />
         <Route path="account" element={<Account />} />

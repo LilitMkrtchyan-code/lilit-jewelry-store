@@ -45,7 +45,8 @@
 }
 
 @media (max-width: 768px) {
-  .userIcon {
+  .userIcon,
+  .userFavorites {
     display: none;
   }
 }

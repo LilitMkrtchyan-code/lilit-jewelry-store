@@ -1,8 +1,8 @@
 import { useParams } from 'react-router-dom';
 import { useProduct } from '../../hooks/useProduct';
 import ProductDetails from '../../components/product/ProductDetails';
-import Advantages from '../../components/common/Advantages';
 import SimilarProducts from '../../components/product/SimilarProducts';
+import Advantages from '../../components/common/Advantages';
 
 const Product = () => {
   const { id } = useParams();

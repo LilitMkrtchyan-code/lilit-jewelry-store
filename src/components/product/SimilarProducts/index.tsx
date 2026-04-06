@@ -18,7 +18,7 @@ const SimilarProducts = ({ product }: SimilarProductsProps) => {
   return (
     <section className={styles.similarProducts}>
       <AppTitle as="h2" variant="sectionTitle">
-        {t('product.productDetails.similarProducts.title')}
+        {t('product.similarProducts.title')}
       </AppTitle>
       <ProductCarousel
         products={products}

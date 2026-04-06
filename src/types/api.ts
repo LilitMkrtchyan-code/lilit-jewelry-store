@@ -1,4 +1,4 @@
-import type { CategorySlug, Material, Stone } from './product';
+import type { CategorySlug, Collection, Material, Stone } from './product';
 
 export type PaginatedResponse<T> = {
   data: T[];
@@ -14,6 +14,7 @@ export type GetProductsParams = {
   page: number;
   limit?: number;
   category?: CategorySlug;
+  collection: Collection;
   material?: Material;
   stone?: Stone;
   priceMin?: number;

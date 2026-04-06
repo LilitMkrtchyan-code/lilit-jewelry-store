@@ -14,6 +14,12 @@ export const FILTER_SECTIONS: FilterSectionConfig[] = [
     type: 'checkbox',
   },
   {
+    key: 'collection',
+    labelKey: 'catalog.filters.collection',
+    optionsKey: 'collections',
+    type: 'checkbox',
+  },
+  {
     key: 'material',
     labelKey: 'catalog.filters.material',
     optionsKey: 'materials',
