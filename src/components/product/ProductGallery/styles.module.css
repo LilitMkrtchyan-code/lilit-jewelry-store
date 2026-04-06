@@ -1,0 +1,30 @@
+.productGallery {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: var(--space-400);
+  width: 100%;
+  align-items: start;
+}
+
+.thumbsColumn {
+  width: 100%;
+  overflow: hidden;
+}
+
+.mainSliderColumn {
+  min-width: 0;
+  aspect-ratio: 4 / 5;
+  padding: var(--space-100);
+  background-color: var(--color-surface-soft);
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .productGallery {
+    grid-template-columns: 1fr;
+  }
+
+  .thumbsColumn {
+    display: none;
+  }
+}

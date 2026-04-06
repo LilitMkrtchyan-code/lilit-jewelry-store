@@ -1,0 +1,121 @@
+.productSummary {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  width: 100%;
+}
+
+.title {
+  font-size: var(--fs-500);
+  text-align: left;
+  margin-bottom: var(--space-500);
+}
+
+.descriptionBox {
+  margin-bottom: var(--space-500);
+}
+
+.description {
+  font-family: var(--font-body);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-400);
+  color: var(--color-primary);
+  letter-spacing: var(--ls-100);
+  line-height: var(--lh-200);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.descriptionBox .moreBtn {
+  display: inline-block;
+  padding-bottom: 0;
+}
+
+.materials {
+  font-family: var(--font-heading);
+  font-size: var(--fs-100);
+  letter-spacing: var(--ls-300);
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-500);
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-400);
+  margin-bottom: var(--space-700);
+}
+
+.price {
+  font-family: var(--font-accent);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-500);
+  letter-spacing: var(--ls-200);
+  color: var(--color-primary);
+}
+
+.stockBadge {
+  font-size: 10px;
+  font-family: var(--font-heading);
+  letter-spacing: var(--ls-title-300);
+  text-transform: uppercase;
+  padding: var(--space-100) var(--space-200);
+  color: var(--color-secondary);
+  font-weight: var(--fw-500);
+  border: 1px solid var(--color-line-dark);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-300);
+  width: 100%;
+}
+
+.mainRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-400);
+}
+
+.cartBtn {
+  flex: 1;
+  background: var(--color-surface-soft);
+  border: 1px solid var(--color-surface-soft);
+  color: var(--color-primary);
+}
+
+.bookBtn {
+  width: 100%;
+}
+
+.favoritesBtn {
+  color: var(--color-primary);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.favoritesBtn:hover svg {
+  color: var(--color-secondary);
+}
+
+.truncated {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 320px) {
+  .mainRow {
+    flex-direction: column-reverse;
+  }
+
+  .bookBtn,
+  .cartBtn {
+    width: 100%;
+    min-width: 160px;
+  }
+}

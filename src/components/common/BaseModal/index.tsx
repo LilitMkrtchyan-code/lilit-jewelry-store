@@ -2,7 +2,16 @@ import { Modal } from 'antd';
 import type { BaseModalProps } from './types';
 import styles from './styles.module.css';
 
-const BaseModal = ({ open, onCancel, children, className = '' }: BaseModalProps) => {
+const BaseModal = ({ open, onCancel, children, className = '', width }: BaseModalProps) => {
+  const defaultWidth = {
+    xs: '85%',
+    sm: '80%',
+    md: '80%',
+    lg: '70%',
+    xl: '900px',
+    xxl: '1000px',
+  };
+
   return (
     <Modal
       open={open}
@@ -14,14 +23,7 @@ const BaseModal = ({ open, onCancel, children, className = '' }: BaseModalProps)
       mousePosition={{ x: 0, y: 0 }}
       transitionName="fade-slide"
       maskTransitionName="fade"
-      width={{
-        xs: '85%',
-        sm: '80%',
-        md: '80%',
-        lg: '70%',
-        xl: '900px',
-        xxl: '1000px',
-      }}
+      width={width ?? defaultWidth}
       styles={{
         mask: {
           backdropFilter: 'blur(10px)',

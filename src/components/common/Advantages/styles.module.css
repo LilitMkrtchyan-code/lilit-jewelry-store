@@ -1,5 +1,6 @@
 .advantages {
-  padding: var(--space-700) var(--space-400);
+  width: 100%;
+  padding: var(--space-fluid-500) var(--space-400);
 }
 
 .advantageItem {
@@ -7,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: var(--space-300) 0;
+  padding: var(--space-400) 0;
 }
 
 .icon {
@@ -29,13 +30,11 @@
   word-break: break-word;
 }
 
-@media (max-width: 768px) {
-  .advantageItem {
-    padding: var(--space-600) 0;
-  }
-}
-
 @media (max-width: 320px) {
+  .advantages {
+    padding: var(--space-fluid-500) 0;
+  }
+
   .title {
     font-size: var(--fs-100);
     letter-spacing: var(--ls-100);

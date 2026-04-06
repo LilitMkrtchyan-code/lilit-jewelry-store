@@ -1,6 +1,6 @@
 import type { ButtonHTMLAttributes, ReactNode } from 'react';
 
-export type ButtonVariant = 'link' | 'shadow' | 'dark';
+export type ButtonVariant = 'link' | 'shadow' | 'dark' | 'close';
 
 export type BaseButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   onClick?: () => void;

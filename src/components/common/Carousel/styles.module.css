@@ -9,15 +9,22 @@
 
 :global(.swiper-button-next),
 :global(.swiper-button-prev) {
-  color: var(--color-secondary);
+  color: var(--color-dark);
+  transform: scale(0.9);
   background-color: var(--color-white-glass);
   padding: var(--space-200);
-  border-radius: 50%;
+  transition:
+    opacity var(--t-base) var(--ease-gentle),
+    transform var(--t-base) var(--ease-gentle);
+}
+
+:global(.swiper-button-disabled) {
+  opacity: 0 !important;
 }
 
 :global(.swiper-button-next::after),
 :global(.swiper-button-prev::after) {
-  color: var(--color-secondary);
+  color: var(--color-dark);
 }
 
 :global(.swiper-pagination-bullet) {

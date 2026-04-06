@@ -18,6 +18,7 @@
 .link {
   color: var(--color-primary);
   transition: var(--t-interactive);
+  --underline-gap: 0;
 }
 
 .link:hover {

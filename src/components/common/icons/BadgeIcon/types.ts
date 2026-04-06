@@ -5,6 +5,7 @@ type BaseProps = {
   count?: number;
   onClick?: () => void;
   ariaLabel?: string;
+  className?: string;
 };
 
 type NavLinkProps = BaseProps & {

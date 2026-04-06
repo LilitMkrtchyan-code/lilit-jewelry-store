@@ -1,0 +1,12 @@
+.productInfo {
+  width: 100%;
+  padding: 0 var(--space-fluid-500);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 992px) {
+  .productInfo {
+    padding: 30px var(--space-300);
+  }
+}

@@ -1,0 +1,23 @@
+.closeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--space-700);
+  min-height: var(--space-700);
+  font-size: 46px;
+  font-weight: 100;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.icon {
+  font-family: var(--font-heading);
+  display: block;
+  line-height: 0;
+  transition: var(--t-interactive);
+  transform: translateY(-0.06em);
+}
+
+.closeButton:hover .icon {
+  opacity: var(--hover-opacity);
+}

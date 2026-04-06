@@ -1,3 +1,5 @@
+import type { useCatalogFilters } from '../../../../hooks/useCatalogFilters';
+
 type SelectionFilter = {
   key: string;
   labelKey: string;
@@ -13,3 +15,8 @@ type RangeFilter = {
 };
 
 export type FilterSectionConfig = SelectionFilter | RangeFilter;
+
+export type FilterPanelProps = {
+  filters: ReturnType<typeof useCatalogFilters>['filters'];
+  setFilter: ReturnType<typeof useCatalogFilters>['setFilter'];
+};
