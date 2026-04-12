@@ -335,6 +335,15 @@
       "materialsInfo": "A precious metal, 14k solid gold combines beauty and durability, making it an excellent choice for those seeking high-quality and long-lasting jewelry. With proper care, 14k solid gold jewelry will not oxidize or discolor, therefore remaining beautiful and wearable for life."
     }
   },
+  "newsletter": {
+    "title": "Join our newsletter",
+    "subtitle": "Get the latest updates on new collections and exclusive offers.",
+    "placeholder": "Email",
+    "button": "Subscribe",
+    "success": "Thank you for subscribing!",
+    "alreadySubscribed": "You are already subscribed",
+    "error": "Something went wrong. Please try again."
+  },
   "common": {
     "gridSwitcher": {
       "switchTo": "Switch to {{count}} columns view",

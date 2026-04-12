@@ -36,7 +36,7 @@
   font-weight: var(--fw-400);
   color: var(--color-primary);
   letter-spacing: var(--ls-100);
-  line-height: var(--lh-200);
+  line-height: 1.6;
   padding: var(--space-400) 0 var(--space-200);
   overflow-wrap: anywhere;
   word-break: break-word;

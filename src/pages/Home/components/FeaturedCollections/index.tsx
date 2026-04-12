@@ -17,39 +17,41 @@ const FeaturedCollections = () => {
 
   return (
     <section className={styles.collections}>
-      <AppTitle variant={'sectionTitle'} className={styles.title}>
-        {t(`${T_PATH}.title`)}
-      </AppTitle>
-      {isError ? (
-        <ErrorMessage message={t('errors.default')} />
-      ) : isLoading ? (
-        <div className="loading">Loading Collections...</div>
-      ) : (
-        <div className={styles.collectionList}>
-          <Row gutter={[30, 30]}>
-            {collections?.map(collection => (
-              <Col key={collection.id} span={24} md={12} lg={12}>
-                <VisualCard
-                  className={styles.ratio}
-                  contentClassName={styles.content}
-                  image={{ src: collection.image.src, alt: t(`${collection.image.alt}`) }}
-                  onClick={() => navigate(`/collections/${collection.slug}`)}
-                  hoverEffect={false}
-                >
-                  <CardContent
-                    title={t(collection.titleKey)}
-                    description={collection.subtitleKey ? t(collection.subtitleKey) : undefined}
-                    buttonText={t(`${T_PATH}.cta`)}
-                    animate={true}
-                    titleClassName={styles.contentTitle}
-                    descClassName={styles.desc}
-                  />
-                </VisualCard>
-              </Col>
-            ))}
-          </Row>
-        </div>
-      )}
+      <div className="container">
+        <AppTitle variant={'sectionTitle'} className={styles.title}>
+          {t(`${T_PATH}.title`)}
+        </AppTitle>
+        {isError ? (
+          <ErrorMessage message={t('errors.default')} />
+        ) : isLoading ? (
+          <div className="loading">Loading Collections...</div>
+        ) : (
+          <div className={styles.collectionList}>
+            <Row gutter={[30, 30]}>
+              {collections?.map(collection => (
+                <Col key={collection.id} span={24} md={12} lg={12}>
+                  <VisualCard
+                    className={styles.ratio}
+                    contentClassName={styles.content}
+                    image={{ src: collection.image.src, alt: t(`${collection.image.alt}`) }}
+                    onClick={() => navigate(`/collections/${collection.slug}`)}
+                    hoverEffect={false}
+                  >
+                    <CardContent
+                      title={t(collection.titleKey)}
+                      description={collection.subtitleKey ? t(collection.subtitleKey) : undefined}
+                      buttonText={t(`${T_PATH}.cta`)}
+                      animate={true}
+                      titleClassName={styles.contentTitle}
+                      descClassName={styles.desc}
+                    />
+                  </VisualCard>
+                </Col>
+              ))}
+            </Row>
+          </div>
+        )}
+      </div>
     </section>
   );
 };

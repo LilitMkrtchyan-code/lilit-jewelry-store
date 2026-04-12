@@ -15,16 +15,18 @@ const Bestsellers = () => {
 
   return (
     <section className={styles.bestsellers}>
-      <AppTitle as={'h2'} variant={'sectionTitle'} className={styles.title}>
-        {t(`${T_PATH}.title`)}
-      </AppTitle>
-      <ProductCarousel
-        products={products}
-        isLoading={isLoading}
-        isError={isError}
-        onClickProduct={product => navigate(`/product/${product.id}`)}
-        onClickBook={() => navigate(`/booking`)}
-      />
+      <div className="container">
+        <AppTitle as={'h2'} variant={'sectionTitle'} className={styles.title}>
+          {t(`${T_PATH}.title`)}
+        </AppTitle>
+        <ProductCarousel
+          products={products}
+          isLoading={isLoading}
+          isError={isError}
+          onClickProduct={product => navigate(`/product/${product.id}`)}
+          onClickBook={() => navigate(`/booking`)}
+        />
+      </div>
     </section>
   );
 };

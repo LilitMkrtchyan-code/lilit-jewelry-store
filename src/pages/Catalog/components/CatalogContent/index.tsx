@@ -57,55 +57,59 @@ const CatalogContent = () => {
 
   return (
     <div className={styles.catalogContent}>
-      <CatalogToolbar
-        isFiltersOpen={isFiltersOpen}
-        availableOptions={availableOptions}
-        hiddenOptions={hiddenOptions}
-        onChangeColumns={handleChangeColumns}
-        onToggleFilters={toggleFilters}
-        totalItems={total}
-        columns={columns}
-      />
-      <div className={styles.catalogMain}>
-        {isDrawerMode ? (
-          <BaseDrawer
-            open={isFiltersOpen}
-            onClose={closeFilters}
-            title={t('catalog.toolbar.sortFilters')}
-            closable={false}
-            className={styles.filterDrawer}
-          >
-            <div className="customClose">
-              <CloseOutlined onClick={closeFilters} />
-            </div>
-            <FilterPanel filters={filters} setFilter={setFilter} />
-          </BaseDrawer>
-        ) : (
-          isFiltersOpen && (
-            <aside className={styles.filterSidebar}>
-              <FilterPanel filters={filters} setFilter={setFilter} />
-            </aside>
-          )
-        )}
-        {isError ? (
-          <ErrorMessage />
-        ) : isLoading ? (
-          <div>Loading...</div>
-        ) : (
-          <div className={isFiltersOpen ? styles.gridShrink : styles.gridFull}>
-            <ProductGridSection
-              columns={columns}
-              currentCount={currentCount}
-              totalCount={total}
-              products={products}
-              fetchNextPage={fetchNextPage}
-              hasNextPage={hasNextPage}
-              isFetchingNextPage={isFetchingNextPage}
-              isLoading={isLoading}
-              isError={isError}
-            />
+      <div className="container">
+        <div className={styles.catalogInner}>
+          <CatalogToolbar
+            isFiltersOpen={isFiltersOpen}
+            availableOptions={availableOptions}
+            hiddenOptions={hiddenOptions}
+            onChangeColumns={handleChangeColumns}
+            onToggleFilters={toggleFilters}
+            totalItems={total}
+            columns={columns}
+          />
+          <div className={styles.catalogMain}>
+            {isDrawerMode ? (
+              <BaseDrawer
+                open={isFiltersOpen}
+                onClose={closeFilters}
+                title={t('catalog.toolbar.sortFilters')}
+                closable={false}
+                className={styles.filterDrawer}
+              >
+                <div className="customClose">
+                  <CloseOutlined onClick={closeFilters} />
+                </div>
+                <FilterPanel filters={filters} setFilter={setFilter} />
+              </BaseDrawer>
+            ) : (
+              isFiltersOpen && (
+                <aside className={styles.filterSidebar}>
+                  <FilterPanel filters={filters} setFilter={setFilter} />
+                </aside>
+              )
+            )}
+            {isError ? (
+              <ErrorMessage />
+            ) : isLoading ? (
+              <div>Loading...</div>
+            ) : (
+              <div className={isFiltersOpen ? styles.gridShrink : styles.gridFull}>
+                <ProductGridSection
+                  columns={columns}
+                  currentCount={currentCount}
+                  totalCount={total}
+                  products={products}
+                  fetchNextPage={fetchNextPage}
+                  hasNextPage={hasNextPage}
+                  isFetchingNextPage={isFetchingNextPage}
+                  isLoading={isLoading}
+                  isError={isError}
+                />
+              </div>
+            )}
           </div>
-        )}
+        </div>
       </div>
     </div>
   );

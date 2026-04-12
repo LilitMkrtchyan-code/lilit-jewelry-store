@@ -18,36 +18,38 @@ const Breadcrumbs = ({ className = '', productName }: BreadcrumbsProps) => {
 
   return (
     <nav aria-label="Breadcrumb" className={`${styles.breadcrumbs} ${className}`}>
-      <ul className={styles.list}>
-        <li className={styles.item}>
-          <Link to="/" className={`${styles.link} line-flow`}>
-            {t('nav.home')}
-          </Link>
-        </li>
+      <div className="container">
+        <ul className={styles.list}>
+          <li className={styles.item}>
+            <Link to="/" className={`${styles.link} line-flow`}>
+              {t('nav.home')}
+            </Link>
+          </li>
 
-        {filteredPathnames.map((name, index) => {
-          const originalIndex = pathnames.indexOf(name);
-          const routeTo = `/${pathnames.slice(0, originalIndex + 1).join('/')}`;
-          const isLast = index === filteredPathnames.length - 1;
+          {filteredPathnames.map((name, index) => {
+            const originalIndex = pathnames.indexOf(name);
+            const routeTo = `/${pathnames.slice(0, originalIndex + 1).join('/')}`;
+            const isLast = index === filteredPathnames.length - 1;
 
-          return (
-            <li key={routeTo} className={styles.item}>
-              <span className={styles.separator}>/</span>
-              {isLast ? (
-                <span className={styles.current}>
-                  {productName
-                    ? t(`products.${productName}.name`)
-                    : t(`nav.${name}`, { defaultValue: name })}
-                </span>
-              ) : (
-                <Link to={routeTo} className={`${styles.link} line-flow`}>
-                  {t(`nav.${name}`, { defaultValue: name })}
-                </Link>
-              )}
-            </li>
-          );
-        })}
-      </ul>
+            return (
+              <li key={routeTo} className={styles.item}>
+                <span className={styles.separator}>/</span>
+                {isLast ? (
+                  <span className={styles.current}>
+                    {productName
+                      ? t(`products.${productName}.name`)
+                      : t(`nav.${name}`, { defaultValue: name })}
+                  </span>
+                ) : (
+                  <Link to={routeTo} className={`${styles.link} line-flow`}>
+                    {t(`nav.${name}`, { defaultValue: name })}
+                  </Link>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </nav>
   );
 };

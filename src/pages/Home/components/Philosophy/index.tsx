@@ -22,24 +22,26 @@ const Philosophy = () => {
 
   return (
     <section className={styles.philosophy}>
-      <Row gutter={0} align="middle">
-        <Col xs={{ order: 1, span: 24 }} lg={{ order: 1, span: 12 }}>
-          <PhilosophyGallery images={imagesWithDesc} />
-        </Col>
-        <Col xs={{ order: 2, span: 24 }} lg={{ order: 2, span: 12 }}>
-          <div className={styles.contentWrapper}>
-            <CardContent
-              title={t(`${T_PATH}.title`)}
-              description={t(`${T_PATH}.description`)}
-              titleClassName={styles.title}
-              descClassName={styles.desc}
-              buttonText={t(`${T_PATH}.cta`)}
-              onBtnClick={() => navigate('/about')}
-              align={contentAlign}
-            />
-          </div>
-        </Col>
-      </Row>
+      <div className="container">
+        <Row gutter={0} align="middle">
+          <Col xs={{ order: 1, span: 24 }} lg={{ order: 1, span: 12 }}>
+            <PhilosophyGallery images={imagesWithDesc} />
+          </Col>
+          <Col xs={{ order: 2, span: 24 }} lg={{ order: 2, span: 12 }}>
+            <div className={styles.contentWrapper}>
+              <CardContent
+                title={t(`${T_PATH}.title`)}
+                description={t(`${T_PATH}.description`)}
+                titleClassName={styles.title}
+                descClassName={styles.desc}
+                buttonText={t(`${T_PATH}.cta`)}
+                onBtnClick={() => navigate('/about')}
+                align={contentAlign}
+              />
+            </div>
+          </Col>
+        </Row>
+      </div>
     </section>
   );
 };
