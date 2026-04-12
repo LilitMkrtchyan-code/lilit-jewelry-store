@@ -13,7 +13,11 @@ export default async function subscribeHandler(request: VercelRequest, response:
 
   try {
     const API_KEY = process.env.LOOPS_API_KEY;
-    
+
+    if (API_KEY) {
+      console.log('API Key length:', API_KEY.length);
+    }
+
     if (!API_KEY) {
       console.error('Missing LOOPS_API_KEY');
       return response.status(500).json({ message: 'Configuration error' });
