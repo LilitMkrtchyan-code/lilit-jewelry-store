@@ -41,6 +41,8 @@
   --color-surface-dim: #f9f9f9;
   --color-line-light: #e6e6e6;
   --color-line-dark: #cccbce;
+  --color-success: #3a8735;
+  --color-error: #d32f2f;
 
   --ease-reveal: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --ease-gentle: cubic-bezier(0.4, 0, 0.2, 1);

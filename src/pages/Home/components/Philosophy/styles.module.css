@@ -31,9 +31,3 @@
     padding-right: 7%;
   }
 }
-
-@media (max-width: 320px) {
-  .philosophy .desc {
-    font-size: var(--fs-200);
-  }
-}

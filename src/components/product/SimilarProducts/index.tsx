@@ -17,16 +17,18 @@ const SimilarProducts = ({ product }: SimilarProductsProps) => {
 
   return (
     <section className={styles.similarProducts}>
-      <AppTitle as="h2" variant="sectionTitle">
-        {t('product.similarProducts.title')}
-      </AppTitle>
-      <ProductCarousel
-        products={products}
-        isLoading={isLoading}
-        isError={isError}
-        onClickProduct={product => navigate(`/product/${product.id}`)}
-        onClickBook={() => navigate('/booking')}
-      />
+      <div className="container">
+        <AppTitle as="h2" variant="sectionTitle">
+          {t('product.similarProducts.title')}
+        </AppTitle>
+        <ProductCarousel
+          products={products}
+          isLoading={isLoading}
+          isError={isError}
+          onClickProduct={product => navigate(`/product/${product.id}`)}
+          onClickBook={() => navigate('/booking')}
+        />
+      </div>
     </section>
   );
 };

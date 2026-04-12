@@ -1,6 +1,7 @@
 .advantages {
   width: 100%;
-  padding: var(--space-fluid-500) var(--space-400);
+  padding: var(--space-fluid-400) var(--space-400);
+  background-color: var(--color-surface-soft);
 }
 
 .advantageItem {

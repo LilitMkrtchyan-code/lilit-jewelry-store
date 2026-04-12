@@ -14,28 +14,30 @@ const FeaturedCategories = () => {
 
   return (
     <section className={styles.categories}>
-      {isError ? (
-        <ErrorMessage message={t('errors.default')} />
-      ) : isLoading ? (
-        <div className="loading">Loading Categories...</div>
-      ) : (
-        <div className={styles.categoryList}>
-          {categories?.map(category => (
-            <VisualCard
-              key={category.id}
-              width={300}
-              image={{ src: category.image, alt: category.slug }}
-              hoverEffect={true}
-              contentClassName={styles.categoryContent}
-              onClick={() => navigate(`/catalog/${category.slug}`)}
-            >
-              <AppTitle variant="cardTitle" inline={true} className={styles.cardTitle}>
-                {t(`categories.${category.slug}`)}
-              </AppTitle>
-            </VisualCard>
-          ))}
-        </div>
-      )}
+      <div className="container">
+        {isError ? (
+          <ErrorMessage message={t('errors.default')} />
+        ) : isLoading ? (
+          <div className="loading">Loading Categories...</div>
+        ) : (
+          <div className={styles.categoryList}>
+            {categories?.map(category => (
+              <VisualCard
+                key={category.id}
+                width={300}
+                image={{ src: category.image, alt: category.slug }}
+                hoverEffect={true}
+                contentClassName={styles.categoryContent}
+                onClick={() => navigate(`/catalog/${category.slug}`)}
+              >
+                <AppTitle variant="cardTitle" inline={true} className={styles.cardTitle}>
+                  {t(`categories.${category.slug}`)}
+                </AppTitle>
+              </VisualCard>
+            ))}
+          </div>
+        )}
+      </div>
     </section>
   );
 };

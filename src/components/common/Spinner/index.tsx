@@ -4,7 +4,7 @@ import BaseButton from '../buttons/BaseButton';
 import Loader from '../Loader';
 import styles from './styles.module.css';
 
-const LoadMore = ({ isLoading, onClick, hasMore, currentCount, totalCount }: ShowMoreProps) => {
+const Spinner = ({ isLoading, onClick, hasMore, currentCount, totalCount }: ShowMoreProps) => {
   const { t } = useTranslation();
 
   if (!hasMore) return null;
@@ -30,4 +30,4 @@ const LoadMore = ({ isLoading, onClick, hasMore, currentCount, totalCount }: Sho
     </div>
   );
 };
-export default LoadMore;
+export default Spinner;

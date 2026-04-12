@@ -1,3 +1,5 @@
 .bestsellers {
+  width: 100%;
+  background-color: var(--color-background);
   padding: var(--space-section) 0;
 }
