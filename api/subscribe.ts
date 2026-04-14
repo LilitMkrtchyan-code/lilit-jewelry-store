@@ -14,13 +14,16 @@ export default async function subscribeHandler(request: VercelRequest, response:
   try {
     const API_KEY = process.env.LOOPS_API_KEY;
 
-    if (API_KEY) {
-      console.log('API Key length:', API_KEY.length);
-    }
+    console.log('DEBUG: Checking API_KEY...');
+    console.log('DEBUG: Type of key:', typeof API_KEY);
+    console.log('DEBUG: Key exists?', !!API_KEY);
 
-    if (!API_KEY) {
-      console.error('Missing LOOPS_API_KEY');
-      return response.status(500).json({ message: 'Configuration error' });
+    if (!API_KEY || API_KEY.length === 0) {
+      return response.status(500).json({
+        message: 'Configuration error',
+        details: 'Vercel does not see LOOPS_API_KEY',
+        env_check: !!process.env.LOOPS_API_KEY,
+      });
     }
 
     const loopsResponse = await fetch('https://app.loops.so/api/v1/contacts/create', {
